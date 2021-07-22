@@ -1,19 +1,31 @@
 ﻿#pragma once
 #include "pch.h"
+
+
 #include "Delegates.h"
 #include "CMdSpi.h"
 
 namespace PhoenixCTP
 {
+	ref class MdApi;
+
 	public ref class MdSpi
 	{
 	public:
 		/// <summary>
 		/// 用于储存CTP的C++原生SPI指针
 		/// </summary>
-		CThostFtdcMdSpi* spi;
+		CThostFtdcMdSpi* pCSpi;
+
+		MdApi^ api;
 
 		inline MdSpi();
+
+		inline MdSpi(MdApi^ pMdApi);
+
+		inline void FireEvent();
+
+		inline void SetApi(MdApi^ pMdApi);
 
 		event DOnFrontConnected^ FrontConnected;
 
@@ -67,5 +79,4 @@ namespace PhoenixCTP
 
 		inline virtual void OnRtnForQuoteRsp(ForQuoteRspField^ pForQuoteRsp);
 	};
-
 }

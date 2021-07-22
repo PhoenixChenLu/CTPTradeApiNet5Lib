@@ -129,8 +129,30 @@ namespace PhoenixCTP
 		/// <remarks></remarks>
 		inline virtual int UnSubscribeForQuoteRsp(array<System::String^>^ ppInstrumentID, int nCount);
 
+		/// <summary>
+		/// 用户登录请求
+		/// </summary>
+		/// <param name="pReqUserLoginField">托管的登录请求类</param>
+		/// <param name="nRequestID">请求ID</param>
+		/// <returns></returns>
+		inline virtual int ReqUserLogin(ReqUserLoginField^ pReqUserLoginField, int nRequestID);
+
+		/// <summary>
+		/// 登出请求
+		/// </summary>
+		/// <param name="pUserLogout">托管的登出请求类</param>
+		/// <param name="nReqstID">请求ID</param>
+		/// <returns></returns>
+		inline virtual int ReqUserLogout(UserLogoutField^ pUserLogout, int nReqstID);
+
+		/// <summary>
+		/// 请求查询组播合约
+		/// </summary>
+		/// <param name="pQryMulticastInstrumentField">托管的请求查询组播合约类</param>
+		/// <param name="nRequestID">请求ID</param>
+		/// <returns></returns>
+		inline virtual int ReqQryMulticastInstrument(QryMulticastInstrumentField^ pQryMulticastInstrumentField, int nRequestID);
+
 		~MdApi();
 	};
 }
-
-

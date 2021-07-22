@@ -30,8 +30,8 @@ namespace PhoenixCTP
 		CThostFtdcFensUserInfoField* getUnmanagedStructP(void)
 		{
 			CThostFtdcFensUserInfoField* result = new CThostFtdcFensUserInfoField();
-			strcpy_s(result->BrokerID, netString2ConstChar(BrokerID));
-			strcpy_s(result->UserID, netString2ConstChar(UserID));
+			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
+			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			result->LoginMode = LoginMode;
 			return result;
 		}
@@ -169,6 +169,88 @@ namespace PhoenixCTP
 	};
 
 	/// <summary>
+	/// 用户登录请求
+	/// </summary>
+	public ref struct ReqUserLoginField
+	{
+		/// <summary>
+		/// 交易日
+		/// </summary>
+		System::String^ TradingDay;
+		/// <summary>
+		/// 经纪公司代码
+		/// </summary>
+		System::String^ BrokerID;
+		/// <summary>
+		/// 用户代码
+		/// </summary>
+		System::String^ UserID;
+		/// <summary>
+		/// 密码
+		/// </summary>
+		System::String^ Password;
+		/// <summary>
+		/// 用户端产品信息
+		/// </summary>
+		System::String^ UserProductInfo;
+		/// <summary>
+		/// 接口端产品信息
+		/// </summary>
+		System::String^ InterfaceProductInfo;
+		/// <summary>
+		/// 协议信息
+		/// </summary>
+		System::String^ ProtocolInfo;
+		/// <summary>
+		/// Mac地址
+		/// </summary>
+		System::String^ MacAddress;
+		/// <summary>
+		/// 动态密码
+		/// </summary>
+		System::String^ OneTimePassword;
+		/// <summary>
+		/// 保留的无效字段
+		/// </summary>
+		System::String^ reserve1;
+		/// <summary>
+		/// 登录备注
+		/// </summary>
+		System::String^ LoginRemark;
+		/// <summary>
+		/// 终端IP端口
+		/// </summary>
+		int ClientIPPort;
+		/// <summary>
+		/// 终端IP地址
+		/// </summary>
+		System::String^ ClientIPAddress;
+
+		/// <summary>
+		/// 将本结构体转化成非托管的结构体类型
+		/// </summary>
+		/// <returns>新生成的非托管类型结构体指针</returns>
+		CThostFtdcReqUserLoginField* getUnmanagedStructP()
+		{
+			CThostFtdcReqUserLoginField* result = new CThostFtdcReqUserLoginField();
+			TradingDay ? (result->TradingDay, netString2ConstChar(TradingDay)) : false;
+			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
+			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			Password ? strcpy_s(result->Password, netString2ConstChar(Password)) : false;
+			UserProductInfo ? strcpy_s(result->UserProductInfo, netString2ConstChar(UserProductInfo)) : false;
+			InterfaceProductInfo ? strcpy_s(result->InterfaceProductInfo, netString2ConstChar(InterfaceProductInfo)) : false;
+			ProtocolInfo ? strcpy_s(result->ProtocolInfo, netString2ConstChar(ProtocolInfo)) : false;
+			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
+			OneTimePassword ? strcpy_s(result->OneTimePassword, netString2ConstChar(OneTimePassword)) : false;
+			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
+			LoginRemark ? strcpy_s(result->LoginRemark, netString2ConstChar(LoginRemark)) : false;
+			ClientIPPort ? result->ClientIPPort = ClientIPPort : false;
+			ClientIPAddress ? strcpy_s(result->ClientIPAddress, netString2ConstChar(ClientIPAddress)) : false;
+			return result;
+		}
+	};
+
+	/// <summary>
 	/// 用户登出请求
 	/// </summary>
 	public ref struct UserLogoutField
@@ -199,6 +281,45 @@ namespace PhoenixCTP
 		UserLogoutField(CThostFtdcUserLogoutField* source)
 		{
 			initFromUnmanagedStruct(source);
+		}
+
+		/// <summary>
+		/// 将本结构体转化成非托管的结构体类型
+		/// </summary>
+		/// <returns>新生成的非托管类型结构体指针</returns>
+		CThostFtdcUserLogoutField* getUnmanagedStructP()
+		{
+			CThostFtdcUserLogoutField* result = new CThostFtdcUserLogoutField();
+			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
+			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
+		}
+	};
+
+	/// <summary>
+	/// 查询组播合约
+	/// </summary>
+	public ref struct QryMulticastInstrumentField
+	{
+		/// <summary>
+		/// 主题号
+		/// </summary>
+		int TopicID;
+		/// <summary>
+		/// 合约代码
+		/// </summary>
+		System::String^ InstrumentID;
+
+		/// <summary>
+		/// 将本结构体转化成非托管的结构体类型
+		/// </summary>
+		/// <returns>新生成的非托管类型结构体指针</returns>
+		CThostFtdcQryMulticastInstrumentField* getUnmanagedStructP()
+		{
+			CThostFtdcQryMulticastInstrumentField* result = new CThostFtdcQryMulticastInstrumentField();
+			result->TopicID = TopicID;
+			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -584,5 +705,4 @@ namespace PhoenixCTP
 			initFromUnmanagedStruct(source);
 		}
 	};
-
 }

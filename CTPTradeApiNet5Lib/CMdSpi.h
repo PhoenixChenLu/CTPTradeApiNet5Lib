@@ -4,7 +4,7 @@
 
 namespace PhoenixCTP
 {
-	class CMdSpi:CThostFtdcMdSpi
+	public class CMdSpi:public CThostFtdcMdSpi
 	{
 	public:
 		System::IntPtr pMdSpi;

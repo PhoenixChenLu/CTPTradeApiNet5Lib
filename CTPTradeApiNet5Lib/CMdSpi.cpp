@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "CMdSpi.h"
 
+#include <iostream>
+
 namespace PhoenixCTP
 {
 	CMdSpi::CMdSpi(System::IntPtr intPMdSpi)
@@ -17,6 +19,7 @@ namespace PhoenixCTP
 
 	void CMdSpi::OnFrontConnected()
 	{
+		std::cout << "On front connected in CMdSpi" << std::endl;;
 		safe_cast<MdSpi^>(intPtr2ManagedClass(this->pMdSpi))->OnFrontConnected();
 	}
 

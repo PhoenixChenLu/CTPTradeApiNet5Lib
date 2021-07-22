@@ -1,17 +1,46 @@
 ﻿#include "pch.h"
 #include "MdSpi.h"
 
+#include <iostream>
+
 namespace PhoenixCTP
 {
+	class CMdSpi;
+	
 	MdSpi::MdSpi()
 	{
 		System::IntPtr pMdSpi = managedClass2IntPtr(this);
 		CMdSpi* pCMdSpi = new CMdSpi(pMdSpi);
+		pCSpi = pCMdSpi;
+		std::cout << "initalizing pCSpi" << std::endl;
+		std::cout << "value is: " << pCMdSpi << std::endl;
 	}
+
+	MdSpi::MdSpi(MdApi^ pMdApi)
+	{
+		System::IntPtr pMdSpi = managedClass2IntPtr(this);
+		CMdSpi* pCMdSpi = new CMdSpi(pMdSpi);
+		pCSpi = pCMdSpi;
+		SetApi(pMdApi);
+	}
+
+	void MdSpi::FireEvent()
+	{
+		std::cout << "Calling on Front Connected Method" << std::endl;
+		pCSpi->OnFrontConnected();
+	}
+
+	void MdSpi::SetApi(MdApi^ pMdApi)
+	{
+		this->api = pMdApi;
+	}
+
 
 	void MdSpi::OnFrontConnected()
 	{
+		std::cout << "On front connected in MdSpi" << std::endl;;
 		this->FrontConnected();
+		std::cout << "EventFired" << std::endl;;
 	}
 
 	void MdSpi::OnFrontDisconnected(int nReason)

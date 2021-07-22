@@ -58,7 +58,7 @@ namespace PhoenixCTP
 
 	void MdApi::RegisterSpi(MdSpi^ pSpi)
 	{
-		this->api->RegisterSpi(pSpi->spi);
+		this->api->RegisterSpi(pSpi->pCSpi);
 	}
 
 	int MdApi::SubscribeMarketData(array<System::String^>^ ppInstrumentID, int nCount)
@@ -79,6 +79,21 @@ namespace PhoenixCTP
 	int MdApi::UnSubscribeForQuoteRsp(array<System::String^>^ ppInstrumentID, int nCount)
 	{
 		return this->api->UnSubscribeForQuoteRsp(netArray2CharArray(ppInstrumentID), nCount);
+	}
+
+	int MdApi::ReqUserLogin(ReqUserLoginField^ pReqUserLoginField, int nRequestID)
+	{
+		return this->api->ReqUserLogin(pReqUserLoginField->getUnmanagedStructP(), nRequestID);
+	}
+
+	int MdApi::ReqUserLogout(UserLogoutField^ pUserLogout, int nReqstID)
+	{
+		return this->api->ReqUserLogout(pUserLogout->getUnmanagedStructP(), nReqstID);
+	}
+
+	int MdApi::ReqQryMulticastInstrument(QryMulticastInstrumentField^ pQryMulticastInstrumentField, int nRequestID)
+	{
+		return this->api->ReqQryMulticastInstrument(pQryMulticastInstrumentField->getUnmanagedStructP(), nRequestID);
 	}
 
 	MdApi::~MdApi()
