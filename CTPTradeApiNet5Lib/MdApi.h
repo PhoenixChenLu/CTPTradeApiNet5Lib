@@ -11,8 +11,19 @@ namespace PhoenixCTP
 		/// <summary>
 		/// 用于储存CTP的C++原生API指针
 		/// </summary>
-		CThostFtdcMdApi* api = nullptr;
+		CThostFtdcMdApi* CApi = nullptr;
 
+		/// <summary>
+		/// 用于储存绑定的MdSpi的托管指针
+		/// </summary>
+		MdSpi^ Spi = nullptr;
+
+		/// <summary>
+		/// 将成员变量Spi设置成给定的Spi
+		/// </summary>
+		/// <param name="Spi">给定的MdSpi托管类型的指针</param>
+		void SetSpi(MdSpi^ Spi);
+		
 		/// <summary>
 		/// 创建原始C++类当中的MdApi
 		/// </summary>

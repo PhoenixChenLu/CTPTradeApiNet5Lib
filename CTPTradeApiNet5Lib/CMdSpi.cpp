@@ -19,7 +19,6 @@ namespace PhoenixCTP
 
 	void CMdSpi::OnFrontConnected()
 	{
-		std::cout << "On front connected in CMdSpi" << std::endl;;
 		safe_cast<MdSpi^>(intPtr2ManagedClass(this->pMdSpi))->OnFrontConnected();
 	}
 
@@ -30,6 +29,7 @@ namespace PhoenixCTP
 
 	void CMdSpi::OnHeartBeatWarning(int nTimeLapse)
 	{
+		safe_cast<MdSpi^>(intPtr2ManagedClass(this->pMdSpi))->OnHeartBeatWarning(nTimeLapse);
 	}
 
 	void CMdSpi::OnRspUserLogin(CThostFtdcRspUserLoginField* pRspUserLogin, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast)

@@ -124,6 +124,7 @@
     <ClInclude Include="ApiStructs.h" />
     <ClInclude Include="CMdSpi.h" />
     <ClInclude Include="Delegates.h" />
+    <ClInclude Include="EventArgsStructs.h" />
     <ClInclude Include="Functions.h" />
     <ClInclude Include="MdApi.h" />
     <ClInclude Include="MdSpi.h" />

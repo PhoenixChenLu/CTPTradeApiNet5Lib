@@ -1,17 +1,24 @@
 ﻿#include "pch.h"
 #include "MdApi.h"
 
+#include <iostream>
+
 namespace PhoenixCTP
 {
+	void MdApi::SetSpi(MdSpi^ Spi)
+	{
+		this->Spi = Spi;
+	}
+
 	CThostFtdcMdApi* MdApi::CreateFtdcMdApi(System::String^ pszFlowPath, const bool bIsUsingUdp, const bool bIsMulticast)
 	{
 		const char* pszFlowPathChar = netString2ConstChar(pszFlowPath);
-		return CThostFtdcMdApi::CreateFtdcMdApi(pszFlowPathChar, bIsUsingUdp, bIsMulticast);
+		return CThostFtdcMdApi::CreateFtdcMdApi();
 	}
 
 	void MdApi::CreateMdApi(System::String^ pszFlowPath, const bool bIsUsingUdp, const bool bIsMulticast)
 	{
-		this->api = MdApi::CreateFtdcMdApi(pszFlowPath, bIsUsingUdp, bIsMulticast);
+		this->CApi = MdApi::CreateFtdcMdApi(pszFlowPath, bIsUsingUdp, bIsMulticast);
 	}
 
 	System::String^ MdApi::GetApiVersion()
@@ -22,78 +29,82 @@ namespace PhoenixCTP
 
 	void MdApi::Release()
 	{
-		this->api->Release();
+		this->CApi->Release();
 	}
 
 	void MdApi::Init()
 	{
-		this->api->Init();
+		this->CApi->Init();
 	}
 
 	int MdApi::Join()
 	{
-		return this->api->Join();
+		return this->CApi->Join();
 	}
 
 	System::String^ MdApi::GetTradingDay()
 	{
-		const char* tradingDay = this->api->GetTradingDay();
+		const char* tradingDay = this->CApi->GetTradingDay();
 		return gcnew System::String(tradingDay);
 	}
 
 	void MdApi::RegisterFront(System::String^ pszFrontAddress)
 	{
-		this->api->RegisterFront(netString2Char(pszFrontAddress));
+		this->CApi->RegisterFront(netString2Char(pszFrontAddress));
 	}
 
 	void MdApi::RegisterNameServer(System::String^ pszNsAddress)
 	{
-		this->api->RegisterNameServer(netString2Char(pszNsAddress));
+		this->CApi->RegisterNameServer(netString2Char(pszNsAddress));
 	}
 
 	void MdApi::RegisterFensUserInfo(FensUserInfoField^ pFensUserInfo)
 	{
-		this->api->RegisterFensUserInfo(pFensUserInfo->getUnmanagedStructP());
+		this->CApi->RegisterFensUserInfo(pFensUserInfo->getUnmanagedStructP());
 	}
 
 	void MdApi::RegisterSpi(MdSpi^ pSpi)
 	{
-		this->api->RegisterSpi(pSpi->pCSpi);
+		if (pSpi->api != this)
+			pSpi->SetApi(this);
+		this->SetSpi(pSpi);
+		this->CApi->RegisterSpi(pSpi->pCSpi);
 	}
 
 	int MdApi::SubscribeMarketData(array<System::String^>^ ppInstrumentID, int nCount)
 	{
-		return this->api->SubscribeMarketData(netArray2CharArray(ppInstrumentID), nCount);
+		return this->CApi->SubscribeMarketData(netArray2CharArray(ppInstrumentID), nCount);
 	}
 
 	int MdApi::UnSubscribeMarketData(array<System::String^>^ ppInstrumentID, int nCount)
 	{
-		return this->api->UnSubscribeMarketData(netArray2CharArray(ppInstrumentID), nCount);
+		return this->CApi->UnSubscribeMarketData(netArray2CharArray(ppInstrumentID), nCount);
 	}
 
 	int MdApi::SubscribeForQuoteRsp(array<System::String^>^ ppInstrumentID, int nCount)
 	{
-		return this->api->SubscribeForQuoteRsp(netArray2CharArray(ppInstrumentID), nCount);
+		return this->CApi->SubscribeForQuoteRsp(netArray2CharArray(ppInstrumentID), nCount);
 	}
 
 	int MdApi::UnSubscribeForQuoteRsp(array<System::String^>^ ppInstrumentID, int nCount)
 	{
-		return this->api->UnSubscribeForQuoteRsp(netArray2CharArray(ppInstrumentID), nCount);
+		return this->CApi->UnSubscribeForQuoteRsp(netArray2CharArray(ppInstrumentID), nCount);
 	}
 
 	int MdApi::ReqUserLogin(ReqUserLoginField^ pReqUserLoginField, int nRequestID)
 	{
-		return this->api->ReqUserLogin(pReqUserLoginField->getUnmanagedStructP(), nRequestID);
+		CThostFtdcReqUserLoginField* unmanagedLogin = pReqUserLoginField->getUnmanagedStructP();
+		return this->CApi->ReqUserLogin(pReqUserLoginField->getUnmanagedStructP(), nRequestID);
 	}
 
 	int MdApi::ReqUserLogout(UserLogoutField^ pUserLogout, int nReqstID)
 	{
-		return this->api->ReqUserLogout(pUserLogout->getUnmanagedStructP(), nReqstID);
+		return this->CApi->ReqUserLogout(pUserLogout->getUnmanagedStructP(), nReqstID);
 	}
 
 	int MdApi::ReqQryMulticastInstrument(QryMulticastInstrumentField^ pQryMulticastInstrumentField, int nRequestID)
 	{
-		return this->api->ReqQryMulticastInstrument(pQryMulticastInstrumentField->getUnmanagedStructP(), nRequestID);
+		return this->CApi->ReqQryMulticastInstrument(pQryMulticastInstrumentField->getUnmanagedStructP(), nRequestID);
 	}
 
 	MdApi::~MdApi()

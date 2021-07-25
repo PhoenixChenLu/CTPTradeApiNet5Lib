@@ -57,6 +57,9 @@
     <ClInclude Include="Functions.h">
       <Filter>Header Files\Resources</Filter>
     </ClInclude>
+    <ClInclude Include="EventArgsStructs.h">
+      <Filter>Header Files\Resources</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp">
