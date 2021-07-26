@@ -65,7 +65,7 @@ namespace PhoenixCTP
 
 	void MdApi::RegisterSpi(MdSpi^ pSpi)
 	{
-		if (pSpi->api != this)
+		if (pSpi->Api != this)
 			pSpi->SetApi(this);
 		this->SetSpi(pSpi);
 		this->CApi->RegisterSpi(pSpi->pCSpi);
