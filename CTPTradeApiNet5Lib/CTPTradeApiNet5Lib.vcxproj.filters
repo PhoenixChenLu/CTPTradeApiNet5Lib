@@ -28,6 +28,9 @@
     <Filter Include="Source Files\Classes">
       <UniqueIdentifier>{5c85fd43-bcf8-4a5a-b3bc-c22aed9e311e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\CTPHeader">
+      <UniqueIdentifier>{a8682ac3-a267-4f5f-aa9f-c936f395ad73}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PhoenixCTP.h">
@@ -60,6 +63,24 @@
     <ClInclude Include="EventArgsStructs.h">
       <Filter>Header Files\Resources</Filter>
     </ClInclude>
+    <ClInclude Include="ThostFtdcMdApi.h">
+      <Filter>Header Files\CTPHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="ThostFtdcTraderApi.h">
+      <Filter>Header Files\CTPHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="ThostFtdcUserApiDataType.h">
+      <Filter>Header Files\CTPHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="ThostFtdcUserApiStruct.h">
+      <Filter>Header Files\CTPHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="TraderApi.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="TraderSpi.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp">
@@ -78,6 +99,12 @@
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="MdSpi.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="TraderApi.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="TraderSpi.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>

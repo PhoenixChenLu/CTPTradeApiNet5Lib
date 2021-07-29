@@ -1,6 +1,11 @@
 ﻿#pragma once
 namespace PhoenixCTP
 {
+	/// <summary>
+	/// 将托管的string类转化为char*类型指针
+	/// </summary>
+	/// <param name="source">托管的string类型字符串</param>
+	/// <returns>指向转化后字符串的char指针</returns>
 	inline const char* netString2ConstChar(System::String^ source)
 	{
 		System::IntPtr ptr = System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(source);

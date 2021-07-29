@@ -23,7 +23,7 @@ namespace PhoenixCTP
 		/// </summary>
 		/// <param name="Spi">给定的MdSpi托管类型的指针</param>
 		void SetSpi(MdSpi^ Spi);
-		
+
 		/// <summary>
 		/// 创建原始C++类当中的MdApi
 		/// </summary>
@@ -32,7 +32,6 @@ namespace PhoenixCTP
 		/// <param name="bIsMulticast"></param>
 		/// <returns>创建出的UserApi指针</returns>
 		inline static CThostFtdcMdApi* CreateFtdcMdApi(System::String^ pszFlowPath, const bool bIsUsingUdp, const bool bIsMulticast);
-
 
 		/// <summary>
 		/// 在.net类当中创建原始MdApi，并将创建好的原始C++MdApi放入类的api成员变量当中
@@ -81,7 +80,6 @@ namespace PhoenixCTP
 		/// <remarks>“tcp”代表传输协议，“127.0.0.1”代表服务器地址。”17001”代表服务器端口号。</remarks>
 		inline virtual void RegisterFront(System::String^ pszFrontAddress);
 
-
 		/// <summary>
 		/// 注册名字服务器网络地址
 		/// </summary>
@@ -102,7 +100,6 @@ namespace PhoenixCTP
 		/// </summary>
 		/// <param name="pSpi">派生自.net接口类MdSpi的实例</param>
 		inline virtual void RegisterSpi(MdSpi^ pSpi);
-
 
 		/// <summary>
 		/// 订阅行情。

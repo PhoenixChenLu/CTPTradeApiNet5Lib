@@ -1,7 +1,6 @@
 ﻿#pragma once
 #include "pch.h"
 
-
 #include "Delegates.h"
 #include "CMdSpi.h"
 

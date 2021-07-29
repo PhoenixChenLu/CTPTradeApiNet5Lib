@@ -11,4 +11,5 @@
 
 // add headers that you want to pre-compile here
 #include "ThostFtdcMdApi.h"
+#include "ThostFtdcTraderApi.h"
 #endif //PCH_H

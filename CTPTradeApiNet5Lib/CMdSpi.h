@@ -4,7 +4,7 @@
 
 namespace PhoenixCTP
 {
-	public class CMdSpi:public CThostFtdcMdSpi
+	public class CMdSpi :public CThostFtdcMdSpi
 	{
 	public:
 		System::IntPtr pMdSpi;
@@ -118,5 +118,4 @@ namespace PhoenixCTP
 		/// <param name="pForQuoteRsp">发给做市商的询价请求结构体指针</param>
 		inline virtual void OnRtnForQuoteRsp(CThostFtdcForQuoteRspField* pForQuoteRsp) override;
 	};
-
 }
