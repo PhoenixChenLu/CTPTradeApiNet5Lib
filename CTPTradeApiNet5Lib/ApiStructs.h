@@ -6,8 +6,8 @@
 namespace PhoenixCTP
 {
 	/// <summary>
-	///信息分发
-	/// </summary>
+///信息分发
+/// </summary>
 	public ref struct DisseminationField
 	{
 		/// <summary>
@@ -47,6 +47,7 @@ namespace PhoenixCTP
 			CThostFtdcDisseminationField* result = new CThostFtdcDisseminationField();
 			result->SequenceSeries = SequenceSeries;
 			result->SequenceNo = SequenceNo;
+			return result;
 		}
 	};
 
@@ -158,6 +159,7 @@ namespace PhoenixCTP
 			LoginRemark ? strcpy_s(result->LoginRemark, netString2ConstChar(LoginRemark)) : false;
 			result->ClientIPPort = ClientIPPort;
 			ClientIPAddress ? strcpy_s(result->ClientIPAddress, netString2ConstChar(ClientIPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -269,6 +271,7 @@ namespace PhoenixCTP
 			CZCETime ? strcpy_s(result->CZCETime, netString2ConstChar(CZCETime)) : false;
 			FFEXTime ? strcpy_s(result->FFEXTime, netString2ConstChar(FFEXTime)) : false;
 			INETime ? strcpy_s(result->INETime, netString2ConstChar(INETime)) : false;
+			return result;
 		}
 	};
 
@@ -314,6 +317,7 @@ namespace PhoenixCTP
 			CThostFtdcUserLogoutField* result = new CThostFtdcUserLogoutField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -359,6 +363,7 @@ namespace PhoenixCTP
 			CThostFtdcForceUserLogoutField* result = new CThostFtdcForceUserLogoutField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -422,6 +427,7 @@ namespace PhoenixCTP
 			UserProductInfo ? strcpy_s(result->UserProductInfo, netString2ConstChar(UserProductInfo)) : false;
 			AuthCode ? strcpy_s(result->AuthCode, netString2ConstChar(AuthCode)) : false;
 			AppID ? strcpy_s(result->AppID, netString2ConstChar(AppID)) : false;
+			return result;
 		}
 	};
 
@@ -485,6 +491,7 @@ namespace PhoenixCTP
 			UserProductInfo ? strcpy_s(result->UserProductInfo, netString2ConstChar(UserProductInfo)) : false;
 			AppID ? strcpy_s(result->AppID, netString2ConstChar(AppID)) : false;
 			result->AppType = AppType;
+			return result;
 		}
 	};
 
@@ -572,6 +579,7 @@ namespace PhoenixCTP
 			result->AppType = AppType;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			ClientIPAddress ? strcpy_s(result->ClientIPAddress, netString2ConstChar(ClientIPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -689,6 +697,7 @@ namespace PhoenixCTP
 			FFEXTime ? strcpy_s(result->FFEXTime, netString2ConstChar(FFEXTime)) : false;
 			INETime ? strcpy_s(result->INETime, netString2ConstChar(INETime)) : false;
 			RandomString ? strcpy_s(result->RandomString, netString2ConstChar(RandomString)) : false;
+			return result;
 		}
 	};
 
@@ -800,6 +809,7 @@ namespace PhoenixCTP
 			RecordNum ? strcpy_s(result->RecordNum, netString2ConstChar(RecordNum)) : false;
 			result->SessionID = SessionID;
 			result->RequestID = RequestID;
+			return result;
 		}
 	};
 
@@ -869,6 +879,7 @@ namespace PhoenixCTP
 			result->TradeAmt = TradeAmt;
 			result->CustFee = CustFee;
 			CurrencyCode ? strcpy_s(result->CurrencyCode, netString2ConstChar(CurrencyCode)) : false;
+			return result;
 		}
 	};
 
@@ -938,6 +949,7 @@ namespace PhoenixCTP
 			result->TradeAmt = TradeAmt;
 			result->CustFee = CustFee;
 			CurrencyCode ? strcpy_s(result->CurrencyCode, netString2ConstChar(CurrencyCode)) : false;
+			return result;
 		}
 	};
 
@@ -1007,6 +1019,7 @@ namespace PhoenixCTP
 			result->TradeAmt = TradeAmt;
 			result->CustFee = CustFee;
 			CurrencyCode ? strcpy_s(result->CurrencyCode, netString2ConstChar(CurrencyCode)) : false;
+			return result;
 		}
 	};
 
@@ -1076,6 +1089,7 @@ namespace PhoenixCTP
 			result->TradeAmt = TradeAmt;
 			result->CustFee = CustFee;
 			CurrencyCode ? strcpy_s(result->CurrencyCode, netString2ConstChar(CurrencyCode)) : false;
+			return result;
 		}
 	};
 
@@ -1133,6 +1147,7 @@ namespace PhoenixCTP
 			result->FuturePwdFlag = FuturePwdFlag;
 			FutureAccPwd ? strcpy_s(result->FutureAccPwd, netString2ConstChar(FutureAccPwd)) : false;
 			CurrencyCode ? strcpy_s(result->CurrencyCode, netString2ConstChar(CurrencyCode)) : false;
+			return result;
 		}
 	};
 
@@ -1208,6 +1223,7 @@ namespace PhoenixCTP
 			result->UseAmt = UseAmt;
 			result->FetchAmt = FetchAmt;
 			CurrencyCode ? strcpy_s(result->CurrencyCode, netString2ConstChar(CurrencyCode)) : false;
+			return result;
 		}
 	};
 
@@ -1247,6 +1263,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcTransferQryDetailReqField* result = new CThostFtdcTransferQryDetailReqField();
 			FutureAccount ? strcpy_s(result->FutureAccount, netString2ConstChar(FutureAccount)) : false;
+			return result;
 		}
 	};
 
@@ -1364,6 +1381,7 @@ namespace PhoenixCTP
 			CurrencyCode ? strcpy_s(result->CurrencyCode, netString2ConstChar(CurrencyCode)) : false;
 			result->TxAmount = TxAmount;
 			result->Flag = Flag;
+			return result;
 		}
 	};
 
@@ -1409,6 +1427,7 @@ namespace PhoenixCTP
 			CThostFtdcRspInfoField* result = new CThostFtdcRspInfoField();
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
+			return result;
 		}
 	};
 
@@ -1460,6 +1479,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ExchangeName ? strcpy_s(result->ExchangeName, netString2ConstChar(ExchangeName)) : false;
 			result->ExchangeProperty = ExchangeProperty;
+			return result;
 		}
 	};
 
@@ -1607,6 +1627,7 @@ namespace PhoenixCTP
 			result->UnderlyingMultiple = UnderlyingMultiple;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
 			ExchangeProductID ? strcpy_s(result->ExchangeProductID, netString2ConstChar(ExchangeProductID)) : false;
+			return result;
 		}
 	};
 
@@ -1850,6 +1871,7 @@ namespace PhoenixCTP
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
 			UnderlyingInstrID ? strcpy_s(result->UnderlyingInstrID, netString2ConstChar(UnderlyingInstrID)) : false;
+			return result;
 		}
 	};
 
@@ -1907,6 +1929,7 @@ namespace PhoenixCTP
 			BrokerAbbr ? strcpy_s(result->BrokerAbbr, netString2ConstChar(BrokerAbbr)) : false;
 			BrokerName ? strcpy_s(result->BrokerName, netString2ConstChar(BrokerName)) : false;
 			result->IsActive = IsActive;
+			return result;
 		}
 	};
 
@@ -1976,6 +1999,7 @@ namespace PhoenixCTP
 			Password ? strcpy_s(result->Password, netString2ConstChar(Password)) : false;
 			result->InstallCount = InstallCount;
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
+			return result;
 		}
 	};
 
@@ -2087,6 +2111,7 @@ namespace PhoenixCTP
 			Mobile ? strcpy_s(result->Mobile, netString2ConstChar(Mobile)) : false;
 			CommModelID ? strcpy_s(result->CommModelID, netString2ConstChar(CommModelID)) : false;
 			MarginModelID ? strcpy_s(result->MarginModelID, netString2ConstChar(MarginModelID)) : false;
+			return result;
 		}
 	};
 
@@ -2174,6 +2199,7 @@ namespace PhoenixCTP
 			BranchID ? strcpy_s(result->BranchID, netString2ConstChar(BranchID)) : false;
 			result->BizType = BizType;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
+			return result;
 		}
 	};
 
@@ -2231,6 +2257,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ParticipantID ? strcpy_s(result->ParticipantID, netString2ConstChar(ParticipantID)) : false;
 			result->IsActive = IsActive;
+			return result;
 		}
 	};
 
@@ -2288,6 +2315,7 @@ namespace PhoenixCTP
 			UserName ? strcpy_s(result->UserName, netString2ConstChar(UserName)) : false;
 			Password ? strcpy_s(result->Password, netString2ConstChar(Password)) : false;
 			result->IsActive = IsActive;
+			return result;
 		}
 	};
 
@@ -2333,6 +2361,7 @@ namespace PhoenixCTP
 			CThostFtdcSuperUserFunctionField* result = new CThostFtdcSuperUserFunctionField();
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			result->FunctionCode = FunctionCode;
+			return result;
 		}
 	};
 
@@ -2384,6 +2413,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorGroupID ? strcpy_s(result->InvestorGroupID, netString2ConstChar(InvestorGroupID)) : false;
 			InvestorGroupName ? strcpy_s(result->InvestorGroupName, netString2ConstChar(InvestorGroupName)) : false;
+			return result;
 		}
 	};
 
@@ -2711,6 +2741,7 @@ namespace PhoenixCTP
 			result->BizType = BizType;
 			result->FrozenSwap = FrozenSwap;
 			result->RemainSwap = RemainSwap;
+			return result;
 		}
 	};
 
@@ -3044,6 +3075,7 @@ namespace PhoenixCTP
 			result->TasPosition = TasPosition;
 			result->TasPositionCost = TasPositionCost;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -3155,6 +3187,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -3272,6 +3305,7 @@ namespace PhoenixCTP
 			result->BizType = BizType;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -3593,6 +3627,7 @@ namespace PhoenixCTP
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			result->BandingUpperPrice = BandingUpperPrice;
 			result->BandingLowerPrice = BandingLowerPrice;
+			return result;
 		}
 	};
 
@@ -3662,6 +3697,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			result->TradingRight = TradingRight;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -3737,6 +3773,7 @@ namespace PhoenixCTP
 			result->IsActive = IsActive;
 			result->IsUsingOTP = IsUsingOTP;
 			result->IsAuthForce = IsAuthForce;
+			return result;
 		}
 	};
 
@@ -3812,6 +3849,7 @@ namespace PhoenixCTP
 			LastLoginTime ? strcpy_s(result->LastLoginTime, netString2ConstChar(LastLoginTime)) : false;
 			ExpireDate ? strcpy_s(result->ExpireDate, netString2ConstChar(ExpireDate)) : false;
 			WeakExpireDate ? strcpy_s(result->WeakExpireDate, netString2ConstChar(WeakExpireDate)) : false;
+			return result;
 		}
 	};
 
@@ -3863,6 +3901,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			result->BrokerFunctionCode = BrokerFunctionCode;
+			return result;
 		}
 	};
 
@@ -4010,6 +4049,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			MaxTradeID ? strcpy_s(result->MaxTradeID, netString2ConstChar(MaxTradeID)) : false;
 			MaxOrderMessageReference ? strcpy_s(result->MaxOrderMessageReference, netString2ConstChar(MaxOrderMessageReference)) : false;
+			return result;
 		}
 	};
 
@@ -4091,6 +4131,7 @@ namespace PhoenixCTP
 			Content ? strcpy_s(result->Content, netString2ConstChar(Content)) : false;
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -4190,6 +4231,7 @@ namespace PhoenixCTP
 			result->ShortMarginRatioByVolume = ShortMarginRatioByVolume;
 			result->IsRelative = IsRelative;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -4277,6 +4319,7 @@ namespace PhoenixCTP
 			result->ShortMarginRatioByVolume = ShortMarginRatioByVolume;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -4406,6 +4449,7 @@ namespace PhoenixCTP
 			result->NoShortMarginRatioByMoney = NoShortMarginRatioByMoney;
 			result->NoShortMarginRatioByVolume = NoShortMarginRatioByVolume;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -4469,6 +4513,7 @@ namespace PhoenixCTP
 			result->FromCurrencyUnit = FromCurrencyUnit;
 			ToCurrencyID ? strcpy_s(result->ToCurrencyID, netString2ConstChar(ToCurrencyID)) : false;
 			result->ExchangeRate = ExchangeRate;
+			return result;
 		}
 	};
 
@@ -4514,6 +4559,7 @@ namespace PhoenixCTP
 			CThostFtdcSettlementRefField* result = new CThostFtdcSettlementRefField();
 			TradingDay ? strcpy_s(result->TradingDay, netString2ConstChar(TradingDay)) : false;
 			result->SettlementID = SettlementID;
+			return result;
 		}
 	};
 
@@ -4571,6 +4617,7 @@ namespace PhoenixCTP
 			CurrTime ? strcpy_s(result->CurrTime, netString2ConstChar(CurrTime)) : false;
 			result->CurrMillisec = CurrMillisec;
 			ActionDay ? strcpy_s(result->ActionDay, netString2ConstChar(ActionDay)) : false;
+			return result;
 		}
 	};
 
@@ -4622,6 +4669,7 @@ namespace PhoenixCTP
 			TradingDay ? strcpy_s(result->TradingDay, netString2ConstChar(TradingDay)) : false;
 			result->CommPhaseNo = CommPhaseNo;
 			SystemID ? strcpy_s(result->SystemID, netString2ConstChar(SystemID)) : false;
+			return result;
 		}
 	};
 
@@ -4799,6 +4847,7 @@ namespace PhoenixCTP
 			LoginRemark ? strcpy_s(result->LoginRemark, netString2ConstChar(LoginRemark)) : false;
 			Password ? strcpy_s(result->Password, netString2ConstChar(Password)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -4850,6 +4899,7 @@ namespace PhoenixCTP
 			result->FrontID = FrontID;
 			result->SessionID = SessionID;
 			SystemName ? strcpy_s(result->SystemName, netString2ConstChar(SystemName)) : false;
+			return result;
 		}
 	};
 
@@ -4907,6 +4957,7 @@ namespace PhoenixCTP
 			LastReportDate ? strcpy_s(result->LastReportDate, netString2ConstChar(LastReportDate)) : false;
 			LastReportTime ? strcpy_s(result->LastReportTime, netString2ConstChar(LastReportTime)) : false;
 			result->IsActive = IsActive;
+			return result;
 		}
 	};
 
@@ -4964,6 +5015,7 @@ namespace PhoenixCTP
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			OldPassword ? strcpy_s(result->OldPassword, netString2ConstChar(OldPassword)) : false;
 			NewPassword ? strcpy_s(result->NewPassword, netString2ConstChar(NewPassword)) : false;
+			return result;
 		}
 	};
 
@@ -5189,6 +5241,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -5618,6 +5671,7 @@ namespace PhoenixCTP
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -5933,6 +5987,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -6008,6 +6063,7 @@ namespace PhoenixCTP
 			OrderLocalID ? strcpy_s(result->OrderLocalID, netString2ConstChar(OrderLocalID)) : false;
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
+			return result;
 		}
 	};
 
@@ -6155,6 +6211,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -6374,6 +6431,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -6527,6 +6585,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -6608,6 +6667,7 @@ namespace PhoenixCTP
 			ActionLocalID ? strcpy_s(result->ActionLocalID, netString2ConstChar(ActionLocalID)) : false;
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
+			return result;
 		}
 	};
 
@@ -6779,6 +6839,7 @@ namespace PhoenixCTP
 			result->SequenceNo = SequenceNo;
 			result->TradeSource = TradeSource;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -7010,6 +7071,7 @@ namespace PhoenixCTP
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -7121,6 +7183,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			LoginRemark ? strcpy_s(result->LoginRemark, netString2ConstChar(LoginRemark)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -7214,6 +7277,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -7289,6 +7353,7 @@ namespace PhoenixCTP
 			result->SettlementID = SettlementID;
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -7370,6 +7435,7 @@ namespace PhoenixCTP
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
 			result->IsFromSopt = IsFromSopt;
 			TradingPassword ? strcpy_s(result->TradingPassword, netString2ConstChar(TradingPassword)) : false;
+			return result;
 		}
 	};
 
@@ -7439,6 +7505,7 @@ namespace PhoenixCTP
 			FromCurrencyID ? strcpy_s(result->FromCurrencyID, netString2ConstChar(FromCurrencyID)) : false;
 			result->MortgageAmount = MortgageAmount;
 			ToCurrencyID ? strcpy_s(result->ToCurrencyID, netString2ConstChar(ToCurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -7478,6 +7545,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcBrokerSyncField* result = new CThostFtdcBrokerSyncField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
+			return result;
 		}
 	};
 
@@ -7589,6 +7657,7 @@ namespace PhoenixCTP
 			Mobile ? strcpy_s(result->Mobile, netString2ConstChar(Mobile)) : false;
 			CommModelID ? strcpy_s(result->CommModelID, netString2ConstChar(CommModelID)) : false;
 			MarginModelID ? strcpy_s(result->MarginModelID, netString2ConstChar(MarginModelID)) : false;
+			return result;
 		}
 	};
 
@@ -7658,6 +7727,7 @@ namespace PhoenixCTP
 			ClientID ? strcpy_s(result->ClientID, netString2ConstChar(ClientID)) : false;
 			result->IsActive = IsActive;
 			result->ClientIDType = ClientIDType;
+			return result;
 		}
 	};
 
@@ -7709,6 +7779,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorGroupID ? strcpy_s(result->InvestorGroupID, netString2ConstChar(InvestorGroupID)) : false;
 			InvestorGroupName ? strcpy_s(result->InvestorGroupName, netString2ConstChar(InvestorGroupName)) : false;
+			return result;
 		}
 	};
 
@@ -8030,6 +8101,7 @@ namespace PhoenixCTP
 			result->SpecProductExchangeMargin = SpecProductExchangeMargin;
 			result->FrozenSwap = FrozenSwap;
 			result->RemainSwap = RemainSwap;
+			return result;
 		}
 	};
 
@@ -8363,6 +8435,7 @@ namespace PhoenixCTP
 			result->TasPosition = TasPosition;
 			result->TasPositionCost = TasPositionCost;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -8462,6 +8535,7 @@ namespace PhoenixCTP
 			result->ShortMarginRatioByVolume = ShortMarginRatioByVolume;
 			result->IsRelative = IsRelative;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -8561,6 +8635,7 @@ namespace PhoenixCTP
 			result->CloseTodayRatioByMoney = CloseTodayRatioByMoney;
 			result->CloseTodayRatioByVolume = CloseTodayRatioByVolume;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -8630,6 +8705,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			result->TradingRight = TradingRight;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -8717,6 +8793,7 @@ namespace PhoenixCTP
 			InsertTimeEnd ? strcpy_s(result->InsertTimeEnd, netString2ConstChar(InsertTimeEnd)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -8804,6 +8881,7 @@ namespace PhoenixCTP
 			TradeTimeEnd ? strcpy_s(result->TradeTimeEnd, netString2ConstChar(TradeTimeEnd)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -8873,6 +8951,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -8936,6 +9015,7 @@ namespace PhoenixCTP
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
 			result->BizType = BizType;
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
+			return result;
 		}
 	};
 
@@ -8981,6 +9061,7 @@ namespace PhoenixCTP
 			CThostFtdcQryInvestorField* result = new CThostFtdcQryInvestorField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
+			return result;
 		}
 	};
 
@@ -9050,6 +9131,7 @@ namespace PhoenixCTP
 			ClientID ? strcpy_s(result->ClientID, netString2ConstChar(ClientID)) : false;
 			result->ClientIDType = ClientIDType;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
+			return result;
 		}
 	};
 
@@ -9089,6 +9171,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQryInvestorGroupField* result = new CThostFtdcQryInvestorGroupField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
+			return result;
 		}
 	};
 
@@ -9164,6 +9247,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -9233,6 +9317,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -9290,6 +9375,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -9329,6 +9415,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQryBrokerField* result = new CThostFtdcQryBrokerField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
+			return result;
 		}
 	};
 
@@ -9380,6 +9467,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ParticipantID ? strcpy_s(result->ParticipantID, netString2ConstChar(ParticipantID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
+			return result;
 		}
 	};
 
@@ -9419,6 +9507,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQrySuperUserFunctionField* result = new CThostFtdcQrySuperUserFunctionField();
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -9476,6 +9565,7 @@ namespace PhoenixCTP
 			result->SessionID = SessionID;
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -9527,6 +9617,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			ParticipantID ? strcpy_s(result->ParticipantID, netString2ConstChar(ParticipantID)) : false;
+			return result;
 		}
 	};
 
@@ -9566,6 +9657,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQryFrontStatusField* result = new CThostFtdcQryFrontStatusField();
 			result->FrontID = FrontID;
+			return result;
 		}
 	};
 
@@ -9635,6 +9727,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -9686,6 +9779,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
+			return result;
 		}
 	};
 
@@ -9743,6 +9837,7 @@ namespace PhoenixCTP
 			ClientID ? strcpy_s(result->ClientID, netString2ConstChar(ClientID)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
+			return result;
 		}
 	};
 
@@ -9782,6 +9877,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQrySuperUserField* result = new CThostFtdcQrySuperUserField();
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -9821,6 +9917,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQryExchangeField* result = new CThostFtdcQryExchangeField();
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
+			return result;
 		}
 	};
 
@@ -9878,6 +9975,7 @@ namespace PhoenixCTP
 			result->ProductClass = ProductClass;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
+			return result;
 		}
 	};
 
@@ -9953,6 +10051,7 @@ namespace PhoenixCTP
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
+			return result;
 		}
 	};
 
@@ -10004,6 +10103,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -10049,6 +10149,7 @@ namespace PhoenixCTP
 			CThostFtdcQryBrokerUserField* result = new CThostFtdcQryBrokerUserField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -10094,6 +10195,7 @@ namespace PhoenixCTP
 			CThostFtdcQryBrokerUserFunctionField* result = new CThostFtdcQryBrokerUserFunctionField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -10145,6 +10247,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ParticipantID ? strcpy_s(result->ParticipantID, netString2ConstChar(ParticipantID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
+			return result;
 		}
 	};
 
@@ -10190,6 +10293,7 @@ namespace PhoenixCTP
 			CThostFtdcQrySyncDepositField* result = new CThostFtdcQrySyncDepositField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			DepositSeqNo ? strcpy_s(result->DepositSeqNo, netString2ConstChar(DepositSeqNo)) : false;
+			return result;
 		}
 	};
 
@@ -10253,6 +10357,7 @@ namespace PhoenixCTP
 			TradingDay ? strcpy_s(result->TradingDay, netString2ConstChar(TradingDay)) : false;
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -10316,6 +10421,7 @@ namespace PhoenixCTP
 			result->HedgeFlag = HedgeFlag;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -10373,6 +10479,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			result->HedgeFlag = HedgeFlag;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -10424,6 +10531,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			FromCurrencyID ? strcpy_s(result->FromCurrencyID, netString2ConstChar(FromCurrencyID)) : false;
 			ToCurrencyID ? strcpy_s(result->ToCurrencyID, netString2ConstChar(ToCurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -10469,6 +10577,7 @@ namespace PhoenixCTP
 			CThostFtdcQrySyncFundMortgageField* result = new CThostFtdcQrySyncFundMortgageField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			MortgageSeqNo ? strcpy_s(result->MortgageSeqNo, netString2ConstChar(MortgageSeqNo)) : false;
+			return result;
 		}
 	};
 
@@ -10562,6 +10671,7 @@ namespace PhoenixCTP
 			TradingDay ? strcpy_s(result->TradingDay, netString2ConstChar(TradingDay)) : false;
 			result->SettlementID = SettlementID;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -10643,6 +10753,7 @@ namespace PhoenixCTP
 			result->ValueMethod = ValueMethod;
 			result->IsRelative = IsRelative;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -10760,6 +10871,7 @@ namespace PhoenixCTP
 			result->MShortMarginRatioByMoney = MShortMarginRatioByMoney;
 			result->MShortMarginRatioByVolume = MShortMarginRatioByVolume;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -10883,6 +10995,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -10988,6 +11101,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -11075,6 +11189,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -11144,6 +11259,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -11201,6 +11317,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			result->ClosePrice = ClosePrice;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -11372,6 +11489,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -11507,6 +11625,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -11822,6 +11941,7 @@ namespace PhoenixCTP
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -12035,6 +12155,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -12116,6 +12237,7 @@ namespace PhoenixCTP
 			InsertTimeStart ? strcpy_s(result->InsertTimeStart, netString2ConstChar(InsertTimeStart)) : false;
 			InsertTimeEnd ? strcpy_s(result->InsertTimeEnd, netString2ConstChar(InsertTimeEnd)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -12341,6 +12463,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -12410,6 +12533,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -12461,6 +12585,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
+			return result;
 		}
 	};
 
@@ -12626,6 +12751,7 @@ namespace PhoenixCTP
 			result->Volume = Volume;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -12683,6 +12809,7 @@ namespace PhoenixCTP
 			ClientID ? strcpy_s(result->ClientID, netString2ConstChar(ClientID)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
+			return result;
 		}
 	};
 
@@ -12866,6 +12993,7 @@ namespace PhoenixCTP
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -12911,6 +13039,7 @@ namespace PhoenixCTP
 			CThostFtdcQryErrExecOrderField* result = new CThostFtdcQryErrExecOrderField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
+			return result;
 		}
 	};
 
@@ -13058,6 +13187,7 @@ namespace PhoenixCTP
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -13103,6 +13233,7 @@ namespace PhoenixCTP
 			CThostFtdcQryErrExecOrderActionField* result = new CThostFtdcQryErrExecOrderActionField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
+			return result;
 		}
 	};
 
@@ -13178,6 +13309,7 @@ namespace PhoenixCTP
 			result->Direction = Direction;
 			result->TradingRight = TradingRight;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -13241,6 +13373,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			result->Direction = Direction;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -13340,6 +13473,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -13529,6 +13663,7 @@ namespace PhoenixCTP
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -13610,6 +13745,7 @@ namespace PhoenixCTP
 			InsertTimeEnd ? strcpy_s(result->InsertTimeEnd, netString2ConstChar(InsertTimeEnd)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -13727,6 +13863,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -13796,6 +13933,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -13985,6 +14123,7 @@ namespace PhoenixCTP
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
 			ReplaceSysID ? strcpy_s(result->ReplaceSysID, netString2ConstChar(ReplaceSysID)) : false;
+			return result;
 		}
 	};
 
@@ -14126,6 +14265,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -14483,6 +14623,7 @@ namespace PhoenixCTP
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
 			ReplaceSysID ? strcpy_s(result->ReplaceSysID, netString2ConstChar(ReplaceSysID)) : false;
+			return result;
 		}
 	};
 
@@ -14690,6 +14831,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -14777,6 +14919,7 @@ namespace PhoenixCTP
 			InsertTimeEnd ? strcpy_s(result->InsertTimeEnd, netString2ConstChar(InsertTimeEnd)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -15026,6 +15169,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -15095,6 +15239,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -15146,6 +15291,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
+			return result;
 		}
 	};
 
@@ -15281,6 +15427,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -15338,6 +15485,7 @@ namespace PhoenixCTP
 			ClientID ? strcpy_s(result->ClientID, netString2ConstChar(ClientID)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
+			return result;
 		}
 	};
 
@@ -15407,6 +15555,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			result->Delta = Delta;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -15482,6 +15631,7 @@ namespace PhoenixCTP
 			ActionDay ? strcpy_s(result->ActionDay, netString2ConstChar(ActionDay)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -15557,6 +15707,7 @@ namespace PhoenixCTP
 			result->Offset = Offset;
 			result->OffsetType = OffsetType;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -15614,6 +15765,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -15719,6 +15871,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -15884,6 +16037,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -16001,6 +16155,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -16052,6 +16207,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
+			return result;
 		}
 	};
 
@@ -16115,6 +16271,7 @@ namespace PhoenixCTP
 			result->GuarantRatio = GuarantRatio;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -16172,6 +16329,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -16307,6 +16465,7 @@ namespace PhoenixCTP
 			result->SessionID = SessionID;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -16538,6 +16697,7 @@ namespace PhoenixCTP
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -16607,6 +16767,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -16772,6 +16933,7 @@ namespace PhoenixCTP
 			BranchID ? strcpy_s(result->BranchID, netString2ConstChar(BranchID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -16841,6 +17003,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -16904,6 +17067,7 @@ namespace PhoenixCTP
 			result->ExchangeRate = ExchangeRate;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
+			return result;
 		}
 	};
 
@@ -16955,6 +17119,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
+			return result;
 		}
 	};
 
@@ -17012,6 +17177,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -17081,6 +17247,7 @@ namespace PhoenixCTP
 			result->LastPrice = LastPrice;
 			result->PriceInterval = PriceInterval;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -17192,6 +17359,7 @@ namespace PhoenixCTP
 			result->StrikeRatioByMoney = StrikeRatioByMoney;
 			result->StrikeRatioByVolume = StrikeRatioByVolume;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -17249,6 +17417,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -17348,6 +17517,7 @@ namespace PhoenixCTP
 			result->CloseTodayRatioByMoney = CloseTodayRatioByMoney;
 			result->CloseTodayRatioByVolume = CloseTodayRatioByVolume;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -17405,6 +17575,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -17510,6 +17681,7 @@ namespace PhoenixCTP
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			result->OrderCommByTrade = OrderCommByTrade;
 			result->OrderActionCommByTrade = OrderActionCommByTrade;
+			return result;
 		}
 	};
 
@@ -17567,6 +17739,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -17624,6 +17797,7 @@ namespace PhoenixCTP
 			result->TradeParamID = TradeParamID;
 			TradeParamValue ? strcpy_s(result->TradeParamValue, netString2ConstChar(TradeParamValue)) : false;
 			Memo ? strcpy_s(result->Memo, netString2ConstChar(Memo)) : false;
+			return result;
 		}
 	};
 
@@ -17717,6 +17891,7 @@ namespace PhoenixCTP
 			result->ShortMarginRatioByMoney = ShortMarginRatioByMoney;
 			result->ShortMarginRatioByVolume = ShortMarginRatioByVolume;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -17798,6 +17973,7 @@ namespace PhoenixCTP
 			result->ArbiOpenVolume = ArbiOpenVolume;
 			result->OpenVolume = OpenVolume;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
+			return result;
 		}
 	};
 
@@ -17843,6 +18019,7 @@ namespace PhoenixCTP
 			CThostFtdcLoginForbiddenIPField* result = new CThostFtdcLoginForbiddenIPField();
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -17894,6 +18071,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			result->IsWhite = IsWhite;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -18041,6 +18219,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -18176,6 +18355,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -18467,6 +18647,7 @@ namespace PhoenixCTP
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -18674,6 +18855,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -18755,6 +18937,7 @@ namespace PhoenixCTP
 			InsertTimeStart ? strcpy_s(result->InsertTimeStart, netString2ConstChar(InsertTimeStart)) : false;
 			InsertTimeEnd ? strcpy_s(result->InsertTimeEnd, netString2ConstChar(InsertTimeEnd)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -18956,6 +19139,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -19007,6 +19191,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
+			return result;
 		}
 	};
 
@@ -19166,6 +19351,7 @@ namespace PhoenixCTP
 			result->OptSelfCloseFlag = OptSelfCloseFlag;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -19265,6 +19451,7 @@ namespace PhoenixCTP
 			result->ToAmount = ToAmount;
 			result->IsManualSwap = IsManualSwap;
 			result->IsAllRemainSetZero = IsAllRemainSetZero;
+			return result;
 		}
 	};
 
@@ -19310,6 +19497,7 @@ namespace PhoenixCTP
 			CThostFtdcQrySyncDelaySwapField* result = new CThostFtdcQrySyncDelaySwapField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			DelaySwapSeqNo ? strcpy_s(result->DelaySwapSeqNo, netString2ConstChar(DelaySwapSeqNo)) : false;
+			return result;
 		}
 	};
 
@@ -19397,6 +19585,7 @@ namespace PhoenixCTP
 			MarginModelID ? strcpy_s(result->MarginModelID, netString2ConstChar(MarginModelID)) : false;
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -19448,6 +19637,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
+			return result;
 		}
 	};
 
@@ -19511,6 +19701,7 @@ namespace PhoenixCTP
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
 			BrokerSecAgentID ? strcpy_s(result->BrokerSecAgentID, netString2ConstChar(BrokerSecAgentID)) : false;
 			result->CheckSelfAccount = CheckSelfAccount;
+			return result;
 		}
 	};
 
@@ -19568,6 +19759,7 @@ namespace PhoenixCTP
 			BrokerSecAgentID ? strcpy_s(result->BrokerSecAgentID, netString2ConstChar(BrokerSecAgentID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -19751,6 +19943,7 @@ namespace PhoenixCTP
 			ActionDay ? strcpy_s(result->ActionDay, netString2ConstChar(ActionDay)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -19814,6 +20007,7 @@ namespace PhoenixCTP
 			result->PreClosePrice = PreClosePrice;
 			result->PreOpenInterest = PreOpenInterest;
 			result->PreDelta = PreDelta;
+			return result;
 		}
 	};
 
@@ -19895,6 +20089,7 @@ namespace PhoenixCTP
 			result->LowerLimitPrice = LowerLimitPrice;
 			result->SettlementPrice = SettlementPrice;
 			result->CurrDelta = CurrDelta;
+			return result;
 		}
 	};
 
@@ -19952,6 +20147,7 @@ namespace PhoenixCTP
 			result->Volume = Volume;
 			result->Turnover = Turnover;
 			result->OpenInterest = OpenInterest;
+			return result;
 		}
 	};
 
@@ -20009,6 +20205,7 @@ namespace PhoenixCTP
 			result->BidVolume1 = BidVolume1;
 			result->AskPrice1 = AskPrice1;
 			result->AskVolume1 = AskVolume1;
+			return result;
 		}
 	};
 
@@ -20066,6 +20263,7 @@ namespace PhoenixCTP
 			result->BidVolume2 = BidVolume2;
 			result->BidPrice3 = BidPrice3;
 			result->BidVolume3 = BidVolume3;
+			return result;
 		}
 	};
 
@@ -20123,6 +20321,7 @@ namespace PhoenixCTP
 			result->AskVolume2 = AskVolume2;
 			result->AskPrice3 = AskPrice3;
 			result->AskVolume3 = AskVolume3;
+			return result;
 		}
 	};
 
@@ -20180,6 +20379,7 @@ namespace PhoenixCTP
 			result->BidVolume4 = BidVolume4;
 			result->BidPrice5 = BidPrice5;
 			result->BidVolume5 = BidVolume5;
+			return result;
 		}
 	};
 
@@ -20237,6 +20437,7 @@ namespace PhoenixCTP
 			result->AskVolume4 = AskVolume4;
 			result->AskPrice5 = AskPrice5;
 			result->AskVolume5 = AskVolume5;
+			return result;
 		}
 	};
 
@@ -20300,6 +20501,7 @@ namespace PhoenixCTP
 			result->UpdateMillisec = UpdateMillisec;
 			ActionDay ? strcpy_s(result->ActionDay, netString2ConstChar(ActionDay)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -20345,6 +20547,7 @@ namespace PhoenixCTP
 			CThostFtdcMarketDataBandingPriceField* result = new CThostFtdcMarketDataBandingPriceField();
 			result->BandingUpperPrice = BandingUpperPrice;
 			result->BandingLowerPrice = BandingLowerPrice;
+			return result;
 		}
 	};
 
@@ -20384,6 +20587,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcMarketDataExchangeField* result = new CThostFtdcMarketDataExchangeField();
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
+			return result;
 		}
 	};
 
@@ -20429,6 +20633,7 @@ namespace PhoenixCTP
 			CThostFtdcSpecificInstrumentField* result = new CThostFtdcSpecificInstrumentField();
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -20522,6 +20727,7 @@ namespace PhoenixCTP
 			result->EnterReason = EnterReason;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -20573,6 +20779,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
+			return result;
 		}
 	};
 
@@ -20630,6 +20837,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -20693,6 +20901,7 @@ namespace PhoenixCTP
 			result->Algorithm = Algorithm;
 			Memo ? strcpy_s(result->Memo, netString2ConstChar(Memo)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -20750,6 +20959,7 @@ namespace PhoenixCTP
 			result->InvestorRange = InvestorRange;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			result->Discount = Discount;
+			return result;
 		}
 	};
 
@@ -20795,6 +21005,7 @@ namespace PhoenixCTP
 			CThostFtdcQryTransferBankField* result = new CThostFtdcQryTransferBankField();
 			BankID ? strcpy_s(result->BankID, netString2ConstChar(BankID)) : false;
 			BankBrchID ? strcpy_s(result->BankBrchID, netString2ConstChar(BankBrchID)) : false;
+			return result;
 		}
 	};
 
@@ -20852,6 +21063,7 @@ namespace PhoenixCTP
 			BankBrchID ? strcpy_s(result->BankBrchID, netString2ConstChar(BankBrchID)) : false;
 			BankName ? strcpy_s(result->BankName, netString2ConstChar(BankName)) : false;
 			result->IsActive = IsActive;
+			return result;
 		}
 	};
 
@@ -20921,6 +21133,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -21140,6 +21353,7 @@ namespace PhoenixCTP
 			result->SpecPosiType = SpecPosiType;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			CombInstrumentID ? strcpy_s(result->CombInstrumentID, netString2ConstChar(CombInstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -21197,6 +21411,7 @@ namespace PhoenixCTP
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			Password ? strcpy_s(result->Password, netString2ConstChar(Password)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -21344,6 +21559,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			MaxTradeID ? strcpy_s(result->MaxTradeID, netString2ConstChar(MaxTradeID)) : false;
 			MaxOrderMessageReference ? strcpy_s(result->MaxOrderMessageReference, netString2ConstChar(MaxOrderMessageReference)) : false;
+			return result;
 		}
 	};
 
@@ -21395,6 +21611,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ParticipantID ? strcpy_s(result->ParticipantID, netString2ConstChar(ParticipantID)) : false;
 			TraderID ? strcpy_s(result->TraderID, netString2ConstChar(TraderID)) : false;
+			return result;
 		}
 	};
 
@@ -21434,6 +21651,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQryNoticeField* result = new CThostFtdcQryNoticeField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
+			return result;
 		}
 	};
 
@@ -21485,6 +21703,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			Content ? strcpy_s(result->Content, netString2ConstChar(Content)) : false;
 			SequenceLabel ? strcpy_s(result->SequenceLabel, netString2ConstChar(SequenceLabel)) : false;
+			return result;
 		}
 	};
 
@@ -21542,6 +21761,7 @@ namespace PhoenixCTP
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			result->UserRightType = UserRightType;
 			result->IsForbidden = IsForbidden;
+			return result;
 		}
 	};
 
@@ -21599,6 +21819,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -21638,6 +21859,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcLoadSettlementInfoField* result = new CThostFtdcLoadSettlementInfoField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
+			return result;
 		}
 	};
 
@@ -21731,6 +21953,7 @@ namespace PhoenixCTP
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
 			result->FundMortgageRatio = FundMortgageRatio;
 			result->BalanceAlgorithm = BalanceAlgorithm;
+			return result;
 		}
 	};
 
@@ -21788,6 +22011,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			OldPassword ? strcpy_s(result->OldPassword, netString2ConstChar(OldPassword)) : false;
 			NewPassword ? strcpy_s(result->NewPassword, netString2ConstChar(NewPassword)) : false;
+			return result;
 		}
 	};
 
@@ -21851,6 +22075,7 @@ namespace PhoenixCTP
 			OldPassword ? strcpy_s(result->OldPassword, netString2ConstChar(OldPassword)) : false;
 			NewPassword ? strcpy_s(result->NewPassword, netString2ConstChar(NewPassword)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -21914,6 +22139,7 @@ namespace PhoenixCTP
 			reserve2 ? strcpy_s(result->reserve2, netString2ConstChar(reserve2)) : false;
 			CombInstrumentID ? strcpy_s(result->CombInstrumentID, netString2ConstChar(CombInstrumentID)) : false;
 			LegInstrumentID ? strcpy_s(result->LegInstrumentID, netString2ConstChar(LegInstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -21953,6 +22179,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQrySyncStatusField* result = new CThostFtdcQrySyncStatusField();
 			TradingDay ? strcpy_s(result->TradingDay, netString2ConstChar(TradingDay)) : false;
+			return result;
 		}
 	};
 
@@ -22034,6 +22261,7 @@ namespace PhoenixCTP
 			result->ImplyLevel = ImplyLevel;
 			CombInstrumentID ? strcpy_s(result->CombInstrumentID, netString2ConstChar(CombInstrumentID)) : false;
 			LegInstrumentID ? strcpy_s(result->LegInstrumentID, netString2ConstChar(LegInstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -22079,6 +22307,7 @@ namespace PhoenixCTP
 			CThostFtdcSyncStatusField* result = new CThostFtdcSyncStatusField();
 			TradingDay ? strcpy_s(result->TradingDay, netString2ConstChar(TradingDay)) : false;
 			result->DataSyncStatus = DataSyncStatus;
+			return result;
 		}
 	};
 
@@ -22124,6 +22353,7 @@ namespace PhoenixCTP
 			CThostFtdcQryLinkManField* result = new CThostFtdcQryLinkManField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
+			return result;
 		}
 	};
 
@@ -22229,6 +22459,7 @@ namespace PhoenixCTP
 			result->Priority = Priority;
 			UOAZipCode ? strcpy_s(result->UOAZipCode, netString2ConstChar(UOAZipCode)) : false;
 			PersonFullName ? strcpy_s(result->PersonFullName, netString2ConstChar(PersonFullName)) : false;
+			return result;
 		}
 	};
 
@@ -22280,6 +22511,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			result->UserEventType = UserEventType;
+			return result;
 		}
 	};
 
@@ -22373,6 +22605,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -22424,6 +22657,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			BankID ? strcpy_s(result->BankID, netString2ConstChar(BankID)) : false;
 			BankBrchID ? strcpy_s(result->BankBrchID, netString2ConstChar(BankBrchID)) : false;
+			return result;
 		}
 	};
 
@@ -22481,6 +22715,7 @@ namespace PhoenixCTP
 			BankID ? strcpy_s(result->BankID, netString2ConstChar(BankID)) : false;
 			BankBrchID ? strcpy_s(result->BankBrchID, netString2ConstChar(BankBrchID)) : false;
 			BankName ? strcpy_s(result->BankName, netString2ConstChar(BankName)) : false;
+			return result;
 		}
 	};
 
@@ -22652,6 +22887,7 @@ namespace PhoenixCTP
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			CombInstrumentID ? strcpy_s(result->CombInstrumentID, netString2ConstChar(CombInstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -22907,6 +23143,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -23084,6 +23321,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -23153,6 +23391,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -23222,6 +23461,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -23279,6 +23519,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			ParkedOrderID ? strcpy_s(result->ParkedOrderID, netString2ConstChar(ParkedOrderID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
+			return result;
 		}
 	};
 
@@ -23336,6 +23577,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			ParkedOrderActionID ? strcpy_s(result->ParkedOrderActionID, netString2ConstChar(ParkedOrderActionID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
+			return result;
 		}
 	};
 
@@ -23405,6 +23647,7 @@ namespace PhoenixCTP
 			result->UsingRatio = UsingRatio;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
 			result->FundMortgageRatio = FundMortgageRatio;
+			return result;
 		}
 	};
 
@@ -23474,6 +23717,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			CombInstrumentID ? strcpy_s(result->CombInstrumentID, netString2ConstChar(CombInstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -23513,6 +23757,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcMarketDataAveragePriceField* result = new CThostFtdcMarketDataAveragePriceField();
 			result->AveragePrice = AveragePrice;
+			return result;
 		}
 	};
 
@@ -23564,6 +23809,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			Password ? strcpy_s(result->Password, netString2ConstChar(Password)) : false;
+			return result;
 		}
 	};
 
@@ -23639,6 +23885,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
 			IPMask ? strcpy_s(result->IPMask, netString2ConstChar(IPMask)) : false;
+			return result;
 		}
 	};
 
@@ -23714,6 +23961,7 @@ namespace PhoenixCTP
 			result->SequenceSeries = SequenceSeries;
 			result->SequenceNo = SequenceNo;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
+			return result;
 		}
 	};
 
@@ -23801,6 +24049,7 @@ namespace PhoenixCTP
 			result->SequenceNo = SequenceNo;
 			FieldContent ? strcpy_s(result->FieldContent, netString2ConstChar(FieldContent)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
+			return result;
 		}
 	};
 
@@ -23852,6 +24101,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
+			return result;
 		}
 	};
 
@@ -23897,6 +24147,7 @@ namespace PhoenixCTP
 			CThostFtdcQryErrOrderField* result = new CThostFtdcQryErrOrderField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
+			return result;
 		}
 	};
 
@@ -24134,6 +24385,7 @@ namespace PhoenixCTP
 			MacAddress ? strcpy_s(result->MacAddress, netString2ConstChar(MacAddress)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -24575,6 +24827,7 @@ namespace PhoenixCTP
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			ExchangeInstID ? strcpy_s(result->ExchangeInstID, netString2ConstChar(ExchangeInstID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -24620,6 +24873,7 @@ namespace PhoenixCTP
 			CThostFtdcQryErrOrderActionField* result = new CThostFtdcQryErrOrderActionField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
+			return result;
 		}
 	};
 
@@ -24851,6 +25105,7 @@ namespace PhoenixCTP
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -24890,6 +25145,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQryExchangeSequenceField* result = new CThostFtdcQryExchangeSequenceField();
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
+			return result;
 		}
 	};
 
@@ -24941,6 +25197,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			result->SequenceNo = SequenceNo;
 			result->MarketStatus = MarketStatus;
+			return result;
 		}
 	};
 
@@ -25040,6 +25297,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -25097,6 +25355,7 @@ namespace PhoenixCTP
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
+			return result;
 		}
 	};
 
@@ -25178,6 +25437,7 @@ namespace PhoenixCTP
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
 			result->OptionRoyaltyPriceType = OptionRoyaltyPriceType;
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
+			return result;
 		}
 	};
 
@@ -25235,6 +25495,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -25310,6 +25571,7 @@ namespace PhoenixCTP
 			result->FindMarginRateAlgoID = FindMarginRateAlgoID;
 			result->HandleTradingAccountAlgoID = HandleTradingAccountAlgoID;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -25355,6 +25617,7 @@ namespace PhoenixCTP
 			CThostFtdcQueryBrokerDepositField* result = new CThostFtdcQueryBrokerDepositField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
+			return result;
 		}
 	};
 
@@ -25466,6 +25729,7 @@ namespace PhoenixCTP
 			result->Available = Available;
 			result->Reserve = Reserve;
 			result->FrozenMargin = FrozenMargin;
+			return result;
 		}
 	};
 
@@ -25505,6 +25769,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQryCFMMCBrokerKeyField* result = new CThostFtdcQryCFMMCBrokerKeyField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
+			return result;
 		}
 	};
 
@@ -25580,6 +25845,7 @@ namespace PhoenixCTP
 			result->KeyID = KeyID;
 			CurrentKey ? strcpy_s(result->CurrentKey, netString2ConstChar(CurrentKey)) : false;
 			result->KeyKind = KeyKind;
+			return result;
 		}
 	};
 
@@ -25643,6 +25909,7 @@ namespace PhoenixCTP
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			result->KeyID = KeyID;
 			CurrentKey ? strcpy_s(result->CurrentKey, netString2ConstChar(CurrentKey)) : false;
+			return result;
 		}
 	};
 
@@ -25688,6 +25955,7 @@ namespace PhoenixCTP
 			CThostFtdcQryCFMMCTradingAccountKeyField* result = new CThostFtdcQryCFMMCTradingAccountKeyField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
+			return result;
 		}
 	};
 
@@ -25769,6 +26037,7 @@ namespace PhoenixCTP
 			result->LastDrift = LastDrift;
 			result->LastSuccess = LastSuccess;
 			result->OTPType = OTPType;
+			return result;
 		}
 	};
 
@@ -25832,6 +26101,7 @@ namespace PhoenixCTP
 			result->OTPType = OTPType;
 			FirstOTP ? strcpy_s(result->FirstOTP, netString2ConstChar(FirstOTP)) : false;
 			SecondOTP ? strcpy_s(result->SecondOTP, netString2ConstChar(SecondOTP)) : false;
+			return result;
 		}
 	};
 
@@ -25883,6 +26153,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			CommModelID ? strcpy_s(result->CommModelID, netString2ConstChar(CommModelID)) : false;
 			CommModelName ? strcpy_s(result->CommModelName, netString2ConstChar(CommModelName)) : false;
+			return result;
 		}
 	};
 
@@ -25928,6 +26199,7 @@ namespace PhoenixCTP
 			CThostFtdcQryCommRateModelField* result = new CThostFtdcQryCommRateModelField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			CommModelID ? strcpy_s(result->CommModelID, netString2ConstChar(CommModelID)) : false;
+			return result;
 		}
 	};
 
@@ -25979,6 +26251,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			MarginModelID ? strcpy_s(result->MarginModelID, netString2ConstChar(MarginModelID)) : false;
 			MarginModelName ? strcpy_s(result->MarginModelName, netString2ConstChar(MarginModelName)) : false;
+			return result;
 		}
 	};
 
@@ -26024,6 +26297,7 @@ namespace PhoenixCTP
 			CThostFtdcQryMarginModelField* result = new CThostFtdcQryMarginModelField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			MarginModelID ? strcpy_s(result->MarginModelID, netString2ConstChar(MarginModelID)) : false;
+			return result;
 		}
 	};
 
@@ -26117,6 +26391,7 @@ namespace PhoenixCTP
 			result->Volume = Volume;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -26186,6 +26461,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -26261,6 +26537,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			ProductGroupID ? strcpy_s(result->ProductGroupID, netString2ConstChar(ProductGroupID)) : false;
+			return result;
 		}
 	};
 
@@ -26474,6 +26751,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
 			ProductGroupID ? strcpy_s(result->ProductGroupID, netString2ConstChar(ProductGroupID)) : false;
+			return result;
 		}
 	};
 
@@ -26525,6 +26803,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			InvestUnitID ? strcpy_s(result->InvestUnitID, netString2ConstChar(InvestUnitID)) : false;
+			return result;
 		}
 	};
 
@@ -26588,6 +26867,7 @@ namespace PhoenixCTP
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			result->KeyID = KeyID;
 			Token ? strcpy_s(result->Token, netString2ConstChar(Token)) : false;
+			return result;
 		}
 	};
 
@@ -26639,6 +26919,7 @@ namespace PhoenixCTP
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
+			return result;
 		}
 	};
 
@@ -26702,6 +26983,7 @@ namespace PhoenixCTP
 			reserve2 ? strcpy_s(result->reserve2, netString2ConstChar(reserve2)) : false;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
 			ProductGroupID ? strcpy_s(result->ProductGroupID, netString2ConstChar(ProductGroupID)) : false;
+			return result;
 		}
 	};
 
@@ -26807,6 +27089,7 @@ namespace PhoenixCTP
 			Content ? strcpy_s(result->Content, netString2ConstChar(Content)) : false;
 			URLLink ? strcpy_s(result->URLLink, netString2ConstChar(URLLink)) : false;
 			MarketID ? strcpy_s(result->MarketID, netString2ConstChar(MarketID)) : false;
+			return result;
 		}
 	};
 
@@ -26870,6 +27153,7 @@ namespace PhoenixCTP
 			result->SequenceNo = SequenceNo;
 			NewsType ? strcpy_s(result->NewsType, netString2ConstChar(NewsType)) : false;
 			result->NewsUrgency = NewsUrgency;
+			return result;
 		}
 	};
 
@@ -26945,6 +27229,7 @@ namespace PhoenixCTP
 			result->VolumeMultiple = VolumeMultiple;
 			result->PriceTick = PriceTick;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -26996,6 +27281,7 @@ namespace PhoenixCTP
 			result->TopicID = TopicID;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -27047,6 +27333,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			AppID ? strcpy_s(result->AppID, netString2ConstChar(AppID)) : false;
 			result->DRIdentityID = DRIdentityID;
+			return result;
 		}
 	};
 
@@ -27350,6 +27637,7 @@ namespace PhoenixCTP
 			result->TID = TID;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -27653,6 +27941,7 @@ namespace PhoenixCTP
 			result->TID = TID;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -27932,6 +28221,7 @@ namespace PhoenixCTP
 			result->TID = TID;
 			Digest ? strcpy_s(result->Digest, netString2ConstChar(Digest)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -28229,6 +28519,7 @@ namespace PhoenixCTP
 			result->TID = TID;
 			result->TransferStatus = TransferStatus;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -28538,6 +28829,7 @@ namespace PhoenixCTP
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -28877,6 +29169,7 @@ namespace PhoenixCTP
 			result->TID = TID;
 			result->TransferStatus = TransferStatus;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -29228,6 +29521,7 @@ namespace PhoenixCTP
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -29483,6 +29777,7 @@ namespace PhoenixCTP
 			result->RequestID = RequestID;
 			result->TID = TID;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -29750,6 +30045,7 @@ namespace PhoenixCTP
 			result->BankUseAmount = BankUseAmount;
 			result->BankFetchAmount = BankFetchAmount;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -29909,6 +30205,7 @@ namespace PhoenixCTP
 			OperNo ? strcpy_s(result->OperNo, netString2ConstChar(OperNo)) : false;
 			result->RequestID = RequestID;
 			result->TID = TID;
+			return result;
 		}
 	};
 
@@ -30092,6 +30389,7 @@ namespace PhoenixCTP
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			PinKey ? strcpy_s(result->PinKey, netString2ConstChar(PinKey)) : false;
 			MacKey ? strcpy_s(result->MacKey, netString2ConstChar(MacKey)) : false;
+			return result;
 		}
 	};
 
@@ -30251,6 +30549,7 @@ namespace PhoenixCTP
 			OperNo ? strcpy_s(result->OperNo, netString2ConstChar(OperNo)) : false;
 			result->RequestID = RequestID;
 			result->TID = TID;
+			return result;
 		}
 	};
 
@@ -30422,6 +30721,7 @@ namespace PhoenixCTP
 			result->TID = TID;
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
+			return result;
 		}
 	};
 
@@ -30617,6 +30917,7 @@ namespace PhoenixCTP
 			result->TradeAmount = TradeAmount;
 			Digest ? strcpy_s(result->Digest, netString2ConstChar(Digest)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -30806,6 +31107,7 @@ namespace PhoenixCTP
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
 			result->TradeAmount = TradeAmount;
 			Digest ? strcpy_s(result->Digest, netString2ConstChar(Digest)) : false;
+			return result;
 		}
 	};
 
@@ -30923,6 +31225,7 @@ namespace PhoenixCTP
 			result->SessionID = SessionID;
 			result->FileBusinessCode = FileBusinessCode;
 			Digest ? strcpy_s(result->Digest, netString2ConstChar(Digest)) : false;
+			return result;
 		}
 	};
 
@@ -30968,6 +31271,7 @@ namespace PhoenixCTP
 			CThostFtdcReturnResultField* result = new CThostFtdcReturnResultField();
 			ReturnCode ? strcpy_s(result->ReturnCode, netString2ConstChar(ReturnCode)) : false;
 			DescrInfoForReturnCode ? strcpy_s(result->DescrInfoForReturnCode, netString2ConstChar(DescrInfoForReturnCode)) : false;
+			return result;
 		}
 	};
 
@@ -31115,6 +31419,7 @@ namespace PhoenixCTP
 			result->InstallID = InstallID;
 			result->TID = TID;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -31178,6 +31483,7 @@ namespace PhoenixCTP
 			IdentifiedCardNo ? strcpy_s(result->IdentifiedCardNo, netString2ConstChar(IdentifiedCardNo)) : false;
 			result->CustType = CustType;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -31259,6 +31565,7 @@ namespace PhoenixCTP
 			Password ? strcpy_s(result->Password, netString2ConstChar(Password)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -31334,6 +31641,7 @@ namespace PhoenixCTP
 			result->RequestID = RequestID;
 			ReturnCode ? strcpy_s(result->ReturnCode, netString2ConstChar(ReturnCode)) : false;
 			DescrInfoForReturnCode ? strcpy_s(result->DescrInfoForReturnCode, netString2ConstChar(DescrInfoForReturnCode)) : false;
+			return result;
 		}
 	};
 
@@ -31487,6 +31795,7 @@ namespace PhoenixCTP
 			OperNo ? strcpy_s(result->OperNo, netString2ConstChar(OperNo)) : false;
 			result->RequestID = RequestID;
 			result->TID = TID;
+			return result;
 		}
 	};
 
@@ -31652,6 +31961,7 @@ namespace PhoenixCTP
 			result->TID = TID;
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
+			return result;
 		}
 	};
 
@@ -31931,6 +32241,7 @@ namespace PhoenixCTP
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -32132,6 +32443,7 @@ namespace PhoenixCTP
 			BankNewAccount ? strcpy_s(result->BankNewAccount, netString2ConstChar(BankNewAccount)) : false;
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
+			return result;
 		}
 	};
 
@@ -32189,6 +32501,7 @@ namespace PhoenixCTP
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			BankID ? strcpy_s(result->BankID, netString2ConstChar(BankID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -32372,6 +32685,7 @@ namespace PhoenixCTP
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			PinKey ? strcpy_s(result->PinKey, netString2ConstChar(PinKey)) : false;
 			MacKey ? strcpy_s(result->MacKey, netString2ConstChar(MacKey)) : false;
+			return result;
 		}
 	};
 
@@ -32543,6 +32857,7 @@ namespace PhoenixCTP
 			result->TID = TID;
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
+			return result;
 		}
 	};
 
@@ -32708,6 +33023,7 @@ namespace PhoenixCTP
 			result->TID = TID;
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
+			return result;
 		}
 	};
 
@@ -32771,6 +33087,7 @@ namespace PhoenixCTP
 			BankID ? strcpy_s(result->BankID, netString2ConstChar(BankID)) : false;
 			BankBranchID ? strcpy_s(result->BankBranchID, netString2ConstChar(BankBranchID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -32912,6 +33229,7 @@ namespace PhoenixCTP
 			result->CustType = CustType;
 			result->BankAccType = BankAccType;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -33227,6 +33545,7 @@ namespace PhoenixCTP
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -33542,6 +33861,7 @@ namespace PhoenixCTP
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -33833,6 +34153,7 @@ namespace PhoenixCTP
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
 			LongCustomerName ? strcpy_s(result->LongCustomerName, netString2ConstChar(LongCustomerName)) : false;
+			return result;
 		}
 	};
 
@@ -33896,6 +34217,7 @@ namespace PhoenixCTP
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
 			BrokerSecAgentID ? strcpy_s(result->BrokerSecAgentID, netString2ConstChar(BrokerSecAgentID)) : false;
+			return result;
 		}
 	};
 
@@ -33953,6 +34275,7 @@ namespace PhoenixCTP
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -34004,6 +34327,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			result->DRIdentityID = DRIdentityID;
+			return result;
 		}
 	};
 
@@ -34055,6 +34379,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			result->DRIdentityID = DRIdentityID;
 			result->Tradeable = Tradeable;
+			return result;
 		}
 	};
 
@@ -34112,6 +34437,7 @@ namespace PhoenixCTP
 			result->DestDRIdentityID = DestDRIdentityID;
 			OrigBrokerID ? strcpy_s(result->OrigBrokerID, netString2ConstChar(OrigBrokerID)) : false;
 			DestBrokerID ? strcpy_s(result->DestBrokerID, netString2ConstChar(DestBrokerID)) : false;
+			return result;
 		}
 	};
 
@@ -34163,6 +34489,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			result->LoginMode = LoginMode;
+			return result;
 		}
 	};
 
@@ -34202,6 +34529,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcCurrTransferIdentityField* result = new CThostFtdcCurrTransferIdentityField();
 			result->IdentityID = IdentityID;
+			return result;
 		}
 	};
 
@@ -34259,6 +34587,7 @@ namespace PhoenixCTP
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -34304,6 +34633,7 @@ namespace PhoenixCTP
 			CThostFtdcQryLoginForbiddenUserField* result = new CThostFtdcQryLoginForbiddenUserField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -34361,6 +34691,7 @@ namespace PhoenixCTP
 			AccountID ? strcpy_s(result->AccountID, netString2ConstChar(AccountID)) : false;
 			result->Reserve = Reserve;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -34406,6 +34737,7 @@ namespace PhoenixCTP
 			CThostFtdcQryLoginForbiddenIPField* result = new CThostFtdcQryLoginForbiddenIPField();
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -34451,6 +34783,7 @@ namespace PhoenixCTP
 			CThostFtdcQryIPListField* result = new CThostFtdcQryIPListField();
 			reserve1 ? strcpy_s(result->reserve1, netString2ConstChar(reserve1)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -34496,6 +34829,7 @@ namespace PhoenixCTP
 			CThostFtdcQryUserRightsAssignField* result = new CThostFtdcQryUserRightsAssignField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -34775,6 +35109,7 @@ namespace PhoenixCTP
 			BookPsw ? strcpy_s(result->BookPsw, netString2ConstChar(BookPsw)) : false;
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
+			return result;
 		}
 	};
 
@@ -35030,6 +35365,7 @@ namespace PhoenixCTP
 			result->ReserveOpenAccStas = ReserveOpenAccStas;
 			result->ErrorID = ErrorID;
 			ErrorMsg ? strcpy_s(result->ErrorMsg, netString2ConstChar(ErrorMsg)) : false;
+			return result;
 		}
 	};
 
@@ -35147,6 +35483,7 @@ namespace PhoenixCTP
 			OperateDate ? strcpy_s(result->OperateDate, netString2ConstChar(OperateDate)) : false;
 			OperateTime ? strcpy_s(result->OperateTime, netString2ConstChar(OperateTime)) : false;
 			CurrencyID ? strcpy_s(result->CurrencyID, netString2ConstChar(CurrencyID)) : false;
+			return result;
 		}
 	};
 
@@ -35186,6 +35523,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQryCurrDRIdentityField* result = new CThostFtdcQryCurrDRIdentityField();
 			result->DRIdentityID = DRIdentityID;
+			return result;
 		}
 	};
 
@@ -35225,6 +35563,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcCurrDRIdentityField* result = new CThostFtdcCurrDRIdentityField();
 			result->DRIdentityID = DRIdentityID;
+			return result;
 		}
 	};
 
@@ -35270,6 +35609,7 @@ namespace PhoenixCTP
 			CThostFtdcQrySecAgentCheckModeField* result = new CThostFtdcQrySecAgentCheckModeField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
+			return result;
 		}
 	};
 
@@ -35315,6 +35655,7 @@ namespace PhoenixCTP
 			CThostFtdcQrySecAgentTradeInfoField* result = new CThostFtdcQrySecAgentTradeInfoField();
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			BrokerSecAgentID ? strcpy_s(result->BrokerSecAgentID, netString2ConstChar(BrokerSecAgentID)) : false;
+			return result;
 		}
 	};
 
@@ -35366,6 +35707,7 @@ namespace PhoenixCTP
 			TradingDay ? strcpy_s(result->TradingDay, netString2ConstChar(TradingDay)) : false;
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -35405,6 +35747,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcRspUserAuthMethodField* result = new CThostFtdcRspUserAuthMethodField();
 			result->UsableAuthMethod = UsableAuthMethod;
+			return result;
 		}
 	};
 
@@ -35456,6 +35799,7 @@ namespace PhoenixCTP
 			TradingDay ? strcpy_s(result->TradingDay, netString2ConstChar(TradingDay)) : false;
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -35513,6 +35857,7 @@ namespace PhoenixCTP
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			result->CaptchaInfoLen = CaptchaInfoLen;
 			CaptchaInfo ? strcpy_s(result->CaptchaInfo, netString2ConstChar(CaptchaInfo)) : false;
+			return result;
 		}
 	};
 
@@ -35564,6 +35909,7 @@ namespace PhoenixCTP
 			TradingDay ? strcpy_s(result->TradingDay, netString2ConstChar(TradingDay)) : false;
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
+			return result;
 		}
 	};
 
@@ -35603,6 +35949,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcRspGenUserTextField* result = new CThostFtdcRspGenUserTextField();
 			result->UserTextSeq = UserTextSeq;
+			return result;
 		}
 	};
 
@@ -35714,6 +36061,7 @@ namespace PhoenixCTP
 			Captcha ? strcpy_s(result->Captcha, netString2ConstChar(Captcha)) : false;
 			result->ClientIPPort = ClientIPPort;
 			ClientIPAddress ? strcpy_s(result->ClientIPAddress, netString2ConstChar(ClientIPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -35825,6 +36173,7 @@ namespace PhoenixCTP
 			Text ? strcpy_s(result->Text, netString2ConstChar(Text)) : false;
 			result->ClientIPPort = ClientIPPort;
 			ClientIPAddress ? strcpy_s(result->ClientIPAddress, netString2ConstChar(ClientIPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -35936,6 +36285,7 @@ namespace PhoenixCTP
 			OTPPassword ? strcpy_s(result->OTPPassword, netString2ConstChar(OTPPassword)) : false;
 			result->ClientIPPort = ClientIPPort;
 			ClientIPAddress ? strcpy_s(result->ClientIPAddress, netString2ConstChar(ClientIPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -35975,6 +36325,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcReqApiHandshakeField* result = new CThostFtdcReqApiHandshakeField();
 			CryptoKeyVersion ? strcpy_s(result->CryptoKeyVersion, netString2ConstChar(CryptoKeyVersion)) : false;
+			return result;
 		}
 	};
 
@@ -36026,6 +36377,7 @@ namespace PhoenixCTP
 			result->FrontHandshakeDataLen = FrontHandshakeDataLen;
 			FrontHandshakeData ? strcpy_s(result->FrontHandshakeData, netString2ConstChar(FrontHandshakeData)) : false;
 			result->IsApiAuthEnabled = IsApiAuthEnabled;
+			return result;
 		}
 	};
 
@@ -36071,6 +36423,7 @@ namespace PhoenixCTP
 			CThostFtdcReqVerifyApiKeyField* result = new CThostFtdcReqVerifyApiKeyField();
 			result->ApiHandshakeDataLen = ApiHandshakeDataLen;
 			ApiHandshakeData ? strcpy_s(result->ApiHandshakeData, netString2ConstChar(ApiHandshakeData)) : false;
+			return result;
 		}
 	};
 
@@ -36128,6 +36481,7 @@ namespace PhoenixCTP
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			result->InvestorRange = InvestorRange;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
+			return result;
 		}
 	};
 
@@ -36167,6 +36521,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQueryFreqField* result = new CThostFtdcQueryFreqField();
 			result->QueryFreq = QueryFreq;
+			return result;
 		}
 	};
 
@@ -36206,6 +36561,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcAuthForbiddenIPField* result = new CThostFtdcAuthForbiddenIPField();
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -36245,6 +36601,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQryAuthForbiddenIPField* result = new CThostFtdcQryAuthForbiddenIPField();
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -36314,6 +36671,7 @@ namespace PhoenixCTP
 			FromCurrencyID ? strcpy_s(result->FromCurrencyID, netString2ConstChar(FromCurrencyID)) : false;
 			result->FromRemainSwap = FromRemainSwap;
 			result->IsManualSwap = IsManualSwap;
+			return result;
 		}
 	};
 
@@ -36407,6 +36765,7 @@ namespace PhoenixCTP
 			ClientAppID ? strcpy_s(result->ClientAppID, netString2ConstChar(ClientAppID)) : false;
 			ClientPublicIP ? strcpy_s(result->ClientPublicIP, netString2ConstChar(ClientPublicIP)) : false;
 			ClientLoginRemark ? strcpy_s(result->ClientLoginRemark, netString2ConstChar(ClientLoginRemark)) : false;
+			return result;
 		}
 	};
 
@@ -36464,6 +36823,7 @@ namespace PhoenixCTP
 			AppID ? strcpy_s(result->AppID, netString2ConstChar(AppID)) : false;
 			UserID ? strcpy_s(result->UserID, netString2ConstChar(UserID)) : false;
 			result->AuthType = AuthType;
+			return result;
 		}
 	};
 
@@ -36515,6 +36875,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			AppID ? strcpy_s(result->AppID, netString2ConstChar(AppID)) : false;
 			IPAddress ? strcpy_s(result->IPAddress, netString2ConstChar(IPAddress)) : false;
+			return result;
 		}
 	};
 
@@ -36584,6 +36945,7 @@ namespace PhoenixCTP
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
 			result->TradingType = TradingType;
 			result->ClassType = ClassType;
+			return result;
 		}
 	};
 
@@ -36629,6 +36991,7 @@ namespace PhoenixCTP
 			CThostFtdcQryCombPromotionParamField* result = new CThostFtdcQryCombPromotionParamField();
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -36686,6 +37049,7 @@ namespace PhoenixCTP
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
 			CombHedgeFlag ? strcpy_s(result->CombHedgeFlag, netString2ConstChar(CombHedgeFlag)) : false;
 			result->Xparameter = Xparameter;
+			return result;
 		}
 	};
 
@@ -36737,6 +37101,7 @@ namespace PhoenixCTP
 			BrokerID ? strcpy_s(result->BrokerID, netString2ConstChar(BrokerID)) : false;
 			InvestorID ? strcpy_s(result->InvestorID, netString2ConstChar(InvestorID)) : false;
 			InstrumentID ? strcpy_s(result->InstrumentID, netString2ConstChar(InstrumentID)) : false;
+			return result;
 		}
 	};
 
@@ -36776,6 +37141,7 @@ namespace PhoenixCTP
 		{
 			CThostFtdcQryRiskSettleProductStatusField* result = new CThostFtdcQryRiskSettleProductStatusField();
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
+			return result;
 		}
 	};
 
@@ -37103,6 +37469,7 @@ namespace PhoenixCTP
 			result->PositionCostOffset = PositionCostOffset;
 			result->TasPosition = TasPosition;
 			result->TasPositionCost = TasPositionCost;
+			return result;
 		}
 	};
 
@@ -37154,6 +37521,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
 			result->ProductStatus = ProductStatus;
+			return result;
 		}
 	};
 
@@ -37211,6 +37579,7 @@ namespace PhoenixCTP
 			result->SyncDeltaStatus = SyncDeltaStatus;
 			SyncDescription ? strcpy_s(result->SyncDescription, netString2ConstChar(SyncDescription)) : false;
 			result->IsOnlyTrdDelta = IsOnlyTrdDelta;
+			return result;
 		}
 	};
 
@@ -37268,6 +37637,7 @@ namespace PhoenixCTP
 			ExchangeID ? strcpy_s(result->ExchangeID, netString2ConstChar(ExchangeID)) : false;
 			ProductID ? strcpy_s(result->ProductID, netString2ConstChar(ProductID)) : false;
 			result->ProductStatus = ProductStatus;
+			return result;
 		}
 	};
 
@@ -37481,6 +37851,7 @@ namespace PhoenixCTP
 			result->SpecPosiType = SpecPosiType;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -37640,6 +38011,7 @@ namespace PhoenixCTP
 			result->TradeGroupID = TradeGroupID;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -37967,6 +38339,7 @@ namespace PhoenixCTP
 			result->FrozenSwap = FrozenSwap;
 			result->RemainSwap = RemainSwap;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -38090,6 +38463,7 @@ namespace PhoenixCTP
 			result->RemainRiskSpecInvstMargin = RemainRiskSpecInvstMargin;
 			result->RemainRiskSpecExchMargin = RemainRiskSpecExchMargin;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -38189,6 +38563,7 @@ namespace PhoenixCTP
 			result->Xparameter = Xparameter;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -38294,6 +38669,7 @@ namespace PhoenixCTP
 			result->IsRelative = IsRelative;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -38381,6 +38757,7 @@ namespace PhoenixCTP
 			result->ShortMarginRatioByVolume = ShortMarginRatioByVolume;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -38486,6 +38863,7 @@ namespace PhoenixCTP
 			result->MShortMarginRatioByVolume = MShortMarginRatioByVolume;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -38609,6 +38987,7 @@ namespace PhoenixCTP
 			result->MShortMarginRatioByVolume = MShortMarginRatioByVolume;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -38708,6 +39087,7 @@ namespace PhoenixCTP
 			result->ShortMarginRatioByVolume = ShortMarginRatioByVolume;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -38825,6 +39205,7 @@ namespace PhoenixCTP
 			result->StrikeRatioByVolume = StrikeRatioByVolume;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -38930,6 +39311,7 @@ namespace PhoenixCTP
 			result->CloseTodayRatioByVolume = CloseTodayRatioByVolume;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -38993,6 +39375,7 @@ namespace PhoenixCTP
 			result->ExchangeRate = ExchangeRate;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -39314,6 +39697,7 @@ namespace PhoenixCTP
 			result->BandingLowerPrice = BandingLowerPrice;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -39377,6 +39761,7 @@ namespace PhoenixCTP
 			result->ClosePrice = ClosePrice;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 
@@ -39470,6 +39855,7 @@ namespace PhoenixCTP
 			result->Volume = Volume;
 			result->ActionDirection = ActionDirection;
 			result->SyncDeltaSequenceNo = SyncDeltaSequenceNo;
+			return result;
 		}
 	};
 }

@@ -123,8 +123,9 @@
   <ItemGroup>
     <ClInclude Include="ApiStructs.h" />
     <ClInclude Include="CMdSpi.h" />
+    <ClInclude Include="CTraderSpi.h" />
     <ClInclude Include="Delegates.h" />
-    <ClInclude Include="EventArgsStructs.h" />
+    <ClInclude Include="EventArgsClasses.h" />
     <ClInclude Include="Functions.h" />
     <ClInclude Include="MdApi.h" />
     <ClInclude Include="MdSpi.h" />
@@ -141,6 +142,7 @@
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CMdSpi.cpp" />
+    <ClCompile Include="CTraderSpi.cpp" />
     <ClCompile Include="MdApi.cpp" />
     <ClCompile Include="MdSpi.cpp" />
     <ClCompile Include="PhoenixCTP.cpp" />

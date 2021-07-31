@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include "pch.h"
 #include "ApiStructs.h"
 #include "TraderSpi.h"
 
@@ -94,6 +95,6 @@ namespace PhoenixCTP
 		/// /// <remarks>该方法要在Init方法前调用。若不调用则不会收到公共流的数据。</remarks>
 		inline virtual void SubscribePublicTopic(THOST_TE_RESUME_TYPE nResumeType) = 0;
 
-		inline virtual int ReqAuthenticate()
+		inline virtual int ReqAuthenticate();
 	};
 }

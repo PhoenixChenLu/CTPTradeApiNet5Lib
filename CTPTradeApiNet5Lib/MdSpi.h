@@ -4,6 +4,8 @@
 #include "Delegates.h"
 #include "CMdSpi.h"
 
+using namespace PhoenixCTP::MdDelegates;
+
 namespace PhoenixCTP
 {
 	ref class MdApi;

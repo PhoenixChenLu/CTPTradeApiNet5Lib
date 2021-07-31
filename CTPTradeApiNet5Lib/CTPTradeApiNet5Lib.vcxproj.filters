@@ -60,7 +60,7 @@
     <ClInclude Include="Functions.h">
       <Filter>Header Files\Resources</Filter>
     </ClInclude>
-    <ClInclude Include="EventArgsStructs.h">
+    <ClInclude Include="EventArgsClasses.h">
       <Filter>Header Files\Resources</Filter>
     </ClInclude>
     <ClInclude Include="ThostFtdcMdApi.h">
@@ -79,6 +79,9 @@
       <Filter>Header Files\Classes</Filter>
     </ClInclude>
     <ClInclude Include="TraderSpi.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CTraderSpi.h">
       <Filter>Header Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
@@ -105,6 +108,9 @@
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
     <ClCompile Include="TraderSpi.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="CTraderSpi.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
   </ItemGroup>

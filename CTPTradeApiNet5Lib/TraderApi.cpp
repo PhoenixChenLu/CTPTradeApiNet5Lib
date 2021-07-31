@@ -8,6 +8,5 @@ namespace PhoenixCTP
 		const char* pszFlowPathChar = netString2ConstChar(pszFlowPath);
 		return CThostFtdcTraderApi::CreateFtdcTraderApi(pszFlowPathChar);
 	}
-
 }
 
