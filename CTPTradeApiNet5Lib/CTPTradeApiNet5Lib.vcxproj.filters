@@ -63,6 +63,15 @@
     <ClInclude Include="EventArgsClasses.h">
       <Filter>Header Files\Resources</Filter>
     </ClInclude>
+    <ClInclude Include="TraderApi.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="TraderSpi.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CTraderSpi.h">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
     <ClInclude Include="ThostFtdcMdApi.h">
       <Filter>Header Files\CTPHeader</Filter>
     </ClInclude>
@@ -74,15 +83,6 @@
     </ClInclude>
     <ClInclude Include="ThostFtdcUserApiStruct.h">
       <Filter>Header Files\CTPHeader</Filter>
-    </ClInclude>
-    <ClInclude Include="TraderApi.h">
-      <Filter>Header Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="TraderSpi.h">
-      <Filter>Header Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="CTraderSpi.h">
-      <Filter>Header Files\Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
