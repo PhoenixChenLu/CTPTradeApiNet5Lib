@@ -11,7 +11,7 @@ namespace PhoenixCTP
 {
 	ref class TraderApi;
 
-	public ref class TraderSpi
+	ref class TraderSpi
 	{
 	public:
 		CThostFtdcTraderSpi* pCSpi;
