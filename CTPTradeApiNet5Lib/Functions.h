@@ -8,6 +8,8 @@ namespace PhoenixCTP
 	/// <returns>指向转化后字符串的char指针</returns>
 	inline const char* netString2ConstChar(System::String^ source)
 	{
+		if (source == nullptr)
+			return "";
 		System::IntPtr ptr = System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(source);
 		const char* result = static_cast<const char*>(ptr.ToPointer());
 		System::Runtime::InteropServices::Marshal::FreeHGlobal(ptr);
@@ -15,12 +17,19 @@ namespace PhoenixCTP
 	}
 
 	inline System::String^ char2NetString(char* source)
+	{		
+		return gcnew System::String(source);
+	}
+
+	inline System::String^ constChar2NetString(const char* source)
 	{
 		return gcnew System::String(source);
 	}
 
 	inline char* netString2Char(System::String^ source)
 	{
+		if (source == nullptr)
+			return "";
 		System::IntPtr ptr = System::Runtime::InteropServices::Marshal::StringToHGlobalAnsi(source);
 		char* result = static_cast<char*>(ptr.ToPointer());
 		System::Runtime::InteropServices::Marshal::FreeHGlobal(ptr);
