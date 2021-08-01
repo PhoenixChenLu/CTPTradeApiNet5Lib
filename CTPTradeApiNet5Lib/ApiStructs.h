@@ -6,8 +6,8 @@
 namespace PhoenixCTP
 {
 	/// <summary>
-///信息分发
-/// </summary>
+	///信息分发
+	/// </summary>
 	public ref struct DisseminationField
 	{
 		/// <summary>
@@ -20,6 +20,13 @@ namespace PhoenixCTP
 		int SequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		DisseminationField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -27,7 +34,7 @@ namespace PhoenixCTP
 		{
 			SequenceSeries = source->SequenceSeries;
 			SequenceNo = source->SequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -110,6 +117,13 @@ namespace PhoenixCTP
 		System::String^ ClientIPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqUserLoginField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -128,7 +142,7 @@ namespace PhoenixCTP
 			LoginRemark = char2NetString(source->LoginRemark);
 			ClientIPPort = source->ClientIPPort;
 			ClientIPAddress = char2NetString(source->ClientIPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -222,6 +236,13 @@ namespace PhoenixCTP
 		System::String^ INETime;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspUserLoginField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -240,7 +261,7 @@ namespace PhoenixCTP
 			CZCETime = char2NetString(source->CZCETime);
 			FFEXTime = char2NetString(source->FFEXTime);
 			INETime = char2NetString(source->INETime);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -290,6 +311,13 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		UserLogoutField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -297,7 +325,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -336,6 +364,13 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ForceUserLogoutField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -343,7 +378,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -394,6 +429,13 @@ namespace PhoenixCTP
 		System::String^ AppID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqAuthenticateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -404,7 +446,7 @@ namespace PhoenixCTP
 			UserProductInfo = char2NetString(source->UserProductInfo);
 			AuthCode = char2NetString(source->AuthCode);
 			AppID = char2NetString(source->AppID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -458,6 +500,13 @@ namespace PhoenixCTP
 		char AppType;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspAuthenticateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -468,7 +517,7 @@ namespace PhoenixCTP
 			UserProductInfo = char2NetString(source->UserProductInfo);
 			AppID = char2NetString(source->AppID);
 			AppType = source->AppType;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -538,6 +587,13 @@ namespace PhoenixCTP
 		System::String^ ClientIPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		AuthenticationInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -552,7 +608,7 @@ namespace PhoenixCTP
 			AppType = source->AppType;
 			reserve1 = char2NetString(source->reserve1);
 			ClientIPAddress = char2NetString(source->ClientIPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -646,6 +702,13 @@ namespace PhoenixCTP
 		System::String^ RandomString;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspUserLogin2Field()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -665,7 +728,7 @@ namespace PhoenixCTP
 			FFEXTime = char2NetString(source->FFEXTime);
 			INETime = char2NetString(source->INETime);
 			RandomString = char2NetString(source->RandomString);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -760,6 +823,13 @@ namespace PhoenixCTP
 		int RequestID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferHeaderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -778,7 +848,7 @@ namespace PhoenixCTP
 			RecordNum = char2NetString(source->RecordNum);
 			SessionID = source->SessionID;
 			RequestID = source->RequestID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -844,6 +914,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyCode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferBankToFutureReqField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -855,7 +932,7 @@ namespace PhoenixCTP
 			TradeAmt = source->TradeAmt;
 			CustFee = source->CustFee;
 			CurrencyCode = char2NetString(source->CurrencyCode);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -914,6 +991,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyCode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferBankToFutureRspField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -925,7 +1009,7 @@ namespace PhoenixCTP
 			TradeAmt = source->TradeAmt;
 			CustFee = source->CustFee;
 			CurrencyCode = char2NetString(source->CurrencyCode);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -984,6 +1068,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyCode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferFutureToBankReqField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -995,7 +1086,7 @@ namespace PhoenixCTP
 			TradeAmt = source->TradeAmt;
 			CustFee = source->CustFee;
 			CurrencyCode = char2NetString(source->CurrencyCode);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1054,6 +1145,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyCode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferFutureToBankRspField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -1065,7 +1163,7 @@ namespace PhoenixCTP
 			TradeAmt = source->TradeAmt;
 			CustFee = source->CustFee;
 			CurrencyCode = char2NetString(source->CurrencyCode);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1116,6 +1214,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyCode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferQryBankReqField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -1125,7 +1230,7 @@ namespace PhoenixCTP
 			FuturePwdFlag = source->FuturePwdFlag;
 			FutureAccPwd = char2NetString(source->FutureAccPwd);
 			CurrencyCode = char2NetString(source->CurrencyCode);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1186,6 +1291,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyCode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferQryBankRspField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -1198,7 +1310,7 @@ namespace PhoenixCTP
 			UseAmt = source->UseAmt;
 			FetchAmt = source->FetchAmt;
 			CurrencyCode = char2NetString(source->CurrencyCode);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1238,13 +1350,20 @@ namespace PhoenixCTP
 		System::String^ FutureAccount;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferQryDetailReqField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcTransferQryDetailReqField* source)
 		{
 			FutureAccount = char2NetString(source->FutureAccount);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1330,6 +1449,13 @@ namespace PhoenixCTP
 		char Flag;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferQryDetailRspField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -1349,7 +1475,7 @@ namespace PhoenixCTP
 			CurrencyCode = char2NetString(source->CurrencyCode);
 			TxAmount = source->TxAmount;
 			Flag = source->Flag;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1400,6 +1526,13 @@ namespace PhoenixCTP
 		System::String^ ErrorMsg;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -1407,7 +1540,7 @@ namespace PhoenixCTP
 		{
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1450,6 +1583,13 @@ namespace PhoenixCTP
 		char ExchangeProperty;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -1458,7 +1598,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			ExchangeName = char2NetString(source->ExchangeName);
 			ExchangeProperty = source->ExchangeProperty;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1566,6 +1706,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeProductID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ProductField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -1590,7 +1737,7 @@ namespace PhoenixCTP
 			UnderlyingMultiple = source->UnderlyingMultiple;
 			ProductID = char2NetString(source->ProductID);
 			ExchangeProductID = char2NetString(source->ExchangeProductID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1778,6 +1925,13 @@ namespace PhoenixCTP
 		System::String^ UnderlyingInstrID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InstrumentField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -1818,7 +1972,7 @@ namespace PhoenixCTP
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			ProductID = char2NetString(source->ProductID);
 			UnderlyingInstrID = char2NetString(source->UnderlyingInstrID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1898,6 +2052,13 @@ namespace PhoenixCTP
 		int IsActive;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -1907,7 +2068,7 @@ namespace PhoenixCTP
 			BrokerAbbr = char2NetString(source->BrokerAbbr);
 			BrokerName = char2NetString(source->BrokerName);
 			IsActive = source->IsActive;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -1964,6 +2125,13 @@ namespace PhoenixCTP
 		System::String^ BrokerID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TraderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -1975,7 +2143,7 @@ namespace PhoenixCTP
 			Password = char2NetString(source->Password);
 			InstallCount = source->InstallCount;
 			BrokerID = char2NetString(source->BrokerID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -2062,6 +2230,13 @@ namespace PhoenixCTP
 		System::String^ MarginModelID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InvestorField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -2080,7 +2255,7 @@ namespace PhoenixCTP
 			Mobile = char2NetString(source->Mobile);
 			CommModelID = char2NetString(source->CommModelID);
 			MarginModelID = char2NetString(source->MarginModelID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -2158,6 +2333,13 @@ namespace PhoenixCTP
 		System::String^ InvestUnitID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TradingCodeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -2172,7 +2354,7 @@ namespace PhoenixCTP
 			BranchID = char2NetString(source->BranchID);
 			BizType = source->BizType;
 			InvestUnitID = char2NetString(source->InvestUnitID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -2226,6 +2408,13 @@ namespace PhoenixCTP
 		int IsActive;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		PartBrokerField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -2235,7 +2424,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			ParticipantID = char2NetString(source->ParticipantID);
 			IsActive = source->IsActive;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -2284,6 +2473,13 @@ namespace PhoenixCTP
 		int IsActive;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SuperUserField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -2293,7 +2489,7 @@ namespace PhoenixCTP
 			UserName = char2NetString(source->UserName);
 			Password = char2NetString(source->Password);
 			IsActive = source->IsActive;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -2334,6 +2530,13 @@ namespace PhoenixCTP
 		char FunctionCode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SuperUserFunctionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -2341,7 +2544,7 @@ namespace PhoenixCTP
 		{
 			UserID = char2NetString(source->UserID);
 			FunctionCode = source->FunctionCode;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -2384,6 +2587,13 @@ namespace PhoenixCTP
 		System::String^ InvestorGroupName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InvestorGroupField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -2392,7 +2602,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorGroupID = char2NetString(source->InvestorGroupID);
 			InvestorGroupName = char2NetString(source->InvestorGroupName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -2620,6 +2830,13 @@ namespace PhoenixCTP
 		double RemainSwap;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TradingAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -2674,7 +2891,7 @@ namespace PhoenixCTP
 			BizType = source->BizType;
 			FrozenSwap = source->FrozenSwap;
 			RemainSwap = source->RemainSwap;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -2952,6 +3169,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InvestorPositionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -3007,7 +3231,7 @@ namespace PhoenixCTP
 			TasPosition = source->TasPosition;
 			TasPositionCost = source->TasPositionCost;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -3138,6 +3362,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InstrumentMarginRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -3156,7 +3387,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -3254,6 +3485,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InstrumentCommissionRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -3273,7 +3511,7 @@ namespace PhoenixCTP
 			BizType = source->BizType;
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -3508,6 +3746,13 @@ namespace PhoenixCTP
 		double BandingLowerPrice;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		DepthMarketDataField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -3561,7 +3806,7 @@ namespace PhoenixCTP
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			BandingUpperPrice = source->BandingUpperPrice;
 			BandingLowerPrice = source->BandingLowerPrice;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -3662,6 +3907,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InstrumentTradingRightField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -3673,7 +3925,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			TradingRight = source->TradingRight;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -3736,6 +3988,13 @@ namespace PhoenixCTP
 		int IsAuthForce;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerUserField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -3748,7 +4007,7 @@ namespace PhoenixCTP
 			IsActive = source->IsActive;
 			IsUsingOTP = source->IsUsingOTP;
 			IsAuthForce = source->IsAuthForce;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -3812,6 +4071,13 @@ namespace PhoenixCTP
 		System::String^ WeakExpireDate;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerUserPasswordField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -3824,7 +4090,7 @@ namespace PhoenixCTP
 			LastLoginTime = char2NetString(source->LastLoginTime);
 			ExpireDate = char2NetString(source->ExpireDate);
 			WeakExpireDate = char2NetString(source->WeakExpireDate);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -3872,6 +4138,13 @@ namespace PhoenixCTP
 		char BrokerFunctionCode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerUserFunctionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -3880,7 +4153,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
 			BrokerFunctionCode = source->BrokerFunctionCode;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -3988,6 +4261,13 @@ namespace PhoenixCTP
 		System::String^ MaxOrderMessageReference;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TraderOfferField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4012,7 +4292,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			MaxTradeID = char2NetString(source->MaxTradeID);
 			MaxOrderMessageReference = char2NetString(source->MaxOrderMessageReference);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4092,6 +4372,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SettlementInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4105,7 +4392,7 @@ namespace PhoenixCTP
 			Content = char2NetString(source->Content);
 			AccountID = char2NetString(source->AccountID);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4186,6 +4473,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InstrumentMarginRateAdjustField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4202,7 +4496,7 @@ namespace PhoenixCTP
 			ShortMarginRatioByVolume = source->ShortMarginRatioByVolume;
 			IsRelative = source->IsRelative;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4278,6 +4572,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeMarginRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4292,7 +4593,7 @@ namespace PhoenixCTP
 			ShortMarginRatioByVolume = source->ShortMarginRatioByVolume;
 			ExchangeID = char2NetString(source->ExchangeID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4394,6 +4695,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeMarginRateAdjustField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4415,7 +4723,7 @@ namespace PhoenixCTP
 			NoShortMarginRatioByMoney = source->NoShortMarginRatioByMoney;
 			NoShortMarginRatioByVolume = source->NoShortMarginRatioByVolume;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4480,6 +4788,13 @@ namespace PhoenixCTP
 		double ExchangeRate;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4490,7 +4805,7 @@ namespace PhoenixCTP
 			FromCurrencyUnit = source->FromCurrencyUnit;
 			ToCurrencyID = char2NetString(source->ToCurrencyID);
 			ExchangeRate = source->ExchangeRate;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4532,6 +4847,13 @@ namespace PhoenixCTP
 		int SettlementID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SettlementRefField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4539,7 +4861,7 @@ namespace PhoenixCTP
 		{
 			TradingDay = char2NetString(source->TradingDay);
 			SettlementID = source->SettlementID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4586,6 +4908,13 @@ namespace PhoenixCTP
 		System::String^ ActionDay;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CurrentTimeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4595,7 +4924,7 @@ namespace PhoenixCTP
 			CurrTime = char2NetString(source->CurrTime);
 			CurrMillisec = source->CurrMillisec;
 			ActionDay = char2NetString(source->ActionDay);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4640,6 +4969,13 @@ namespace PhoenixCTP
 		System::String^ SystemID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CommPhaseField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4648,7 +4984,7 @@ namespace PhoenixCTP
 			TradingDay = char2NetString(source->TradingDay);
 			CommPhaseNo = source->CommPhaseNo;
 			SystemID = char2NetString(source->SystemID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4776,6 +5112,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		LoginInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4805,7 +5148,7 @@ namespace PhoenixCTP
 			LoginRemark = char2NetString(source->LoginRemark);
 			Password = char2NetString(source->Password);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4870,6 +5213,13 @@ namespace PhoenixCTP
 		System::String^ SystemName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		LogoutAllField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4878,7 +5228,7 @@ namespace PhoenixCTP
 			FrontID = source->FrontID;
 			SessionID = source->SessionID;
 			SystemName = char2NetString(source->SystemName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4926,6 +5276,13 @@ namespace PhoenixCTP
 		int IsActive;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		FrontStatusField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4935,7 +5292,7 @@ namespace PhoenixCTP
 			LastReportDate = char2NetString(source->LastReportDate);
 			LastReportTime = char2NetString(source->LastReportTime);
 			IsActive = source->IsActive;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -4984,6 +5341,13 @@ namespace PhoenixCTP
 		System::String^ NewPassword;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		UserPasswordUpdateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -4993,7 +5357,7 @@ namespace PhoenixCTP
 			UserID = char2NetString(source->UserID);
 			OldPassword = char2NetString(source->OldPassword);
 			NewPassword = char2NetString(source->NewPassword);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -5154,6 +5518,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -5191,7 +5562,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -5516,6 +5887,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -5587,7 +5965,7 @@ namespace PhoenixCTP
 			InstrumentID = char2NetString(source->InstrumentID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -5870,6 +6248,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -5922,7 +6307,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -6026,6 +6411,13 @@ namespace PhoenixCTP
 		System::String^ ErrorMsg;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeOrderInsertErrorField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -6038,7 +6430,7 @@ namespace PhoenixCTP
 			OrderLocalID = char2NetString(source->OrderLocalID);
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -6150,6 +6542,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -6174,7 +6573,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -6346,6 +6745,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -6382,7 +6788,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -6522,6 +6928,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -6547,7 +6960,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			MacAddress = char2NetString(source->MacAddress);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -6628,6 +7041,13 @@ namespace PhoenixCTP
 		System::String^ ErrorMsg;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeOrderActionErrorField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -6641,7 +7061,7 @@ namespace PhoenixCTP
 			ActionLocalID = char2NetString(source->ActionLocalID);
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -6770,6 +7190,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeTradeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -6798,7 +7225,7 @@ namespace PhoenixCTP
 			SequenceNo = source->SequenceNo;
 			TradeSource = source->TradeSource;
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -6982,6 +7409,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TradeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -7020,7 +7454,7 @@ namespace PhoenixCTP
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -7134,6 +7568,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		UserSessionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -7152,7 +7593,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			LoginRemark = char2NetString(source->LoginRemark);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -7234,6 +7675,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryMaxOrderVolumeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -7249,7 +7697,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -7316,6 +7764,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SettlementInfoConfirmField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -7328,7 +7783,7 @@ namespace PhoenixCTP
 			SettlementID = source->SettlementID;
 			AccountID = char2NetString(source->AccountID);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -7396,6 +7851,13 @@ namespace PhoenixCTP
 		System::String^ TradingPassword;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDepositField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -7409,7 +7871,7 @@ namespace PhoenixCTP
 			CurrencyID = char2NetString(source->CurrencyID);
 			IsFromSopt = source->IsFromSopt;
 			TradingPassword = char2NetString(source->TradingPassword);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -7470,6 +7932,13 @@ namespace PhoenixCTP
 		System::String^ ToCurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncFundMortgageField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -7481,7 +7950,7 @@ namespace PhoenixCTP
 			FromCurrencyID = char2NetString(source->FromCurrencyID);
 			MortgageAmount = source->MortgageAmount;
 			ToCurrencyID = char2NetString(source->ToCurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -7520,13 +7989,20 @@ namespace PhoenixCTP
 		System::String^ BrokerID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerSyncField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcBrokerSyncField* source)
 		{
 			BrokerID = char2NetString(source->BrokerID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -7608,6 +8084,13 @@ namespace PhoenixCTP
 		System::String^ MarginModelID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncingInvestorField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -7626,7 +8109,7 @@ namespace PhoenixCTP
 			Mobile = char2NetString(source->Mobile);
 			CommModelID = char2NetString(source->CommModelID);
 			MarginModelID = char2NetString(source->MarginModelID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -7692,6 +8175,13 @@ namespace PhoenixCTP
 		char ClientIDType;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncingTradingCodeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -7703,7 +8193,7 @@ namespace PhoenixCTP
 			ClientID = char2NetString(source->ClientID);
 			IsActive = source->IsActive;
 			ClientIDType = source->ClientIDType;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -7750,6 +8240,13 @@ namespace PhoenixCTP
 		System::String^ InvestorGroupName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncingInvestorGroupField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -7758,7 +8255,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorGroupID = char2NetString(source->InvestorGroupID);
 			InvestorGroupName = char2NetString(source->InvestorGroupName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -7982,6 +8479,13 @@ namespace PhoenixCTP
 		double RemainSwap;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncingTradingAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -8035,7 +8539,7 @@ namespace PhoenixCTP
 			SpecProductExchangeMargin = source->SpecProductExchangeMargin;
 			FrozenSwap = source->FrozenSwap;
 			RemainSwap = source->RemainSwap;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -8312,6 +8816,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncingInvestorPositionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -8367,7 +8878,7 @@ namespace PhoenixCTP
 			TasPosition = source->TasPosition;
 			TasPositionCost = source->TasPositionCost;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -8490,6 +9001,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncingInstrumentMarginRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -8506,7 +9024,7 @@ namespace PhoenixCTP
 			ShortMarginRatioByVolume = source->ShortMarginRatioByVolume;
 			IsRelative = source->IsRelative;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -8590,6 +9108,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncingInstrumentCommissionRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -8606,7 +9131,7 @@ namespace PhoenixCTP
 			CloseTodayRatioByMoney = source->CloseTodayRatioByMoney;
 			CloseTodayRatioByVolume = source->CloseTodayRatioByVolume;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -8670,6 +9195,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncingInstrumentTradingRightField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -8681,7 +9213,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			TradingRight = source->TradingRight;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -8752,6 +9284,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -8766,7 +9305,7 @@ namespace PhoenixCTP
 			InsertTimeEnd = char2NetString(source->InsertTimeEnd);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -8840,6 +9379,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryTradeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -8854,7 +9400,7 @@ namespace PhoenixCTP
 			TradeTimeEnd = char2NetString(source->TradeTimeEnd);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -8916,6 +9462,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInvestorPositionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -8927,7 +9480,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -8982,6 +9535,13 @@ namespace PhoenixCTP
 		System::String^ AccountID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryTradingAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -8992,7 +9552,7 @@ namespace PhoenixCTP
 			CurrencyID = char2NetString(source->CurrencyID);
 			BizType = source->BizType;
 			AccountID = char2NetString(source->AccountID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9034,6 +9594,13 @@ namespace PhoenixCTP
 		System::String^ InvestorID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInvestorField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9041,7 +9608,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9096,6 +9663,13 @@ namespace PhoenixCTP
 		System::String^ InvestUnitID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryTradingCodeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9107,7 +9681,7 @@ namespace PhoenixCTP
 			ClientID = char2NetString(source->ClientID);
 			ClientIDType = source->ClientIDType;
 			InvestUnitID = char2NetString(source->InvestUnitID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9146,13 +9720,20 @@ namespace PhoenixCTP
 		System::String^ BrokerID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInvestorGroupField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQryInvestorGroupField* source)
 		{
 			BrokerID = char2NetString(source->BrokerID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9210,6 +9791,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInstrumentMarginRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9222,7 +9810,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9282,6 +9870,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInstrumentCommissionRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9293,7 +9888,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9344,6 +9939,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInstrumentTradingRightField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9353,7 +9955,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			reserve1 = char2NetString(source->reserve1);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9390,13 +9992,20 @@ namespace PhoenixCTP
 		System::String^ BrokerID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryBrokerField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQryBrokerField* source)
 		{
 			BrokerID = char2NetString(source->BrokerID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9438,6 +10047,13 @@ namespace PhoenixCTP
 		System::String^ TraderID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryTraderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9446,7 +10062,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			ParticipantID = char2NetString(source->ParticipantID);
 			TraderID = char2NetString(source->TraderID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9482,13 +10098,20 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySuperUserFunctionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQrySuperUserFunctionField* source)
 		{
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9534,6 +10157,13 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryUserSessionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9543,7 +10173,7 @@ namespace PhoenixCTP
 			SessionID = source->SessionID;
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9588,6 +10218,13 @@ namespace PhoenixCTP
 		System::String^ ParticipantID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryPartBrokerField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9596,7 +10233,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			BrokerID = char2NetString(source->BrokerID);
 			ParticipantID = char2NetString(source->ParticipantID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9632,13 +10269,20 @@ namespace PhoenixCTP
 		int FrontID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryFrontStatusField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQryFrontStatusField* source)
 		{
 			FrontID = source->FrontID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9692,6 +10336,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9703,7 +10354,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			TraderID = char2NetString(source->TraderID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9750,6 +10401,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9758,7 +10416,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
 			ExchangeID = char2NetString(source->ExchangeID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9806,6 +10464,13 @@ namespace PhoenixCTP
 		System::String^ TraderID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9815,7 +10480,7 @@ namespace PhoenixCTP
 			ClientID = char2NetString(source->ClientID);
 			ExchangeID = char2NetString(source->ExchangeID);
 			TraderID = char2NetString(source->TraderID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9852,13 +10517,20 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySuperUserField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQrySuperUserField* source)
 		{
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9892,13 +10564,20 @@ namespace PhoenixCTP
 		System::String^ ExchangeID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQryExchangeField* source)
 		{
 			ExchangeID = char2NetString(source->ExchangeID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -9944,6 +10623,13 @@ namespace PhoenixCTP
 		System::String^ ProductID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryProductField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -9953,7 +10639,7 @@ namespace PhoenixCTP
 			ProductClass = source->ProductClass;
 			ExchangeID = char2NetString(source->ExchangeID);
 			ProductID = char2NetString(source->ProductID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10014,6 +10700,13 @@ namespace PhoenixCTP
 		System::String^ ProductID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInstrumentField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10026,7 +10719,7 @@ namespace PhoenixCTP
 			InstrumentID = char2NetString(source->InstrumentID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			ProductID = char2NetString(source->ProductID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10074,6 +10767,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryDepthMarketDataField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10082,7 +10782,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			ExchangeID = char2NetString(source->ExchangeID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10122,6 +10822,13 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryBrokerUserField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10129,7 +10836,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10168,6 +10875,13 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryBrokerUserFunctionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10175,7 +10889,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10218,6 +10932,13 @@ namespace PhoenixCTP
 		System::String^ TraderID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryTraderOfferField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10226,7 +10947,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			ParticipantID = char2NetString(source->ParticipantID);
 			TraderID = char2NetString(source->TraderID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10266,6 +10987,13 @@ namespace PhoenixCTP
 		System::String^ DepositSeqNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySyncDepositField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10273,7 +11001,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			DepositSeqNo = char2NetString(source->DepositSeqNo);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10324,6 +11052,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySettlementInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10334,7 +11069,7 @@ namespace PhoenixCTP
 			TradingDay = char2NetString(source->TradingDay);
 			AccountID = char2NetString(source->AccountID);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10388,6 +11123,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeMarginRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10398,7 +11140,7 @@ namespace PhoenixCTP
 			HedgeFlag = source->HedgeFlag;
 			ExchangeID = char2NetString(source->ExchangeID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10448,6 +11190,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeMarginRateAdjustField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10457,7 +11206,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			HedgeFlag = source->HedgeFlag;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10502,6 +11251,13 @@ namespace PhoenixCTP
 		System::String^ ToCurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10510,7 +11266,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			FromCurrencyID = char2NetString(source->FromCurrencyID);
 			ToCurrencyID = char2NetString(source->ToCurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10550,6 +11306,13 @@ namespace PhoenixCTP
 		System::String^ MortgageSeqNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySyncFundMortgageField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10557,7 +11320,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			MortgageSeqNo = char2NetString(source->MortgageSeqNo);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10628,6 +11391,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryHisOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10643,7 +11413,7 @@ namespace PhoenixCTP
 			TradingDay = char2NetString(source->TradingDay);
 			SettlementID = source->SettlementID;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10714,6 +11484,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OptionInstrMiniMarginField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10727,7 +11504,7 @@ namespace PhoenixCTP
 			ValueMethod = source->ValueMethod;
 			IsRelative = source->IsRelative;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10820,6 +11597,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OptionInstrMarginAdjustField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10839,7 +11623,7 @@ namespace PhoenixCTP
 			MShortMarginRatioByMoney = source->MShortMarginRatioByMoney;
 			MShortMarginRatioByVolume = source->MShortMarginRatioByVolume;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -10942,6 +11726,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OptionInstrCommRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -10962,7 +11753,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -11054,6 +11845,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OptionInstrTradeCostField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -11071,7 +11869,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -11148,6 +11946,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryOptionInstrTradeCostField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -11162,7 +11967,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -11224,6 +12029,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryOptionInstrCommRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -11235,7 +12047,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -11286,6 +12098,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		IndexPriceField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -11295,7 +12114,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			ClosePrice = source->ClosePrice;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -11420,6 +12239,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputExecOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -11448,7 +12274,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -11568,6 +12394,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputExecOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -11590,7 +12423,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -11824,6 +12657,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExecOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -11876,7 +12716,7 @@ namespace PhoenixCTP
 			InstrumentID = char2NetString(source->InstrumentID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -12072,6 +12912,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExecOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -12107,7 +12954,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -12198,6 +13045,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExecOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -12211,7 +13065,7 @@ namespace PhoenixCTP
 			InsertTimeStart = char2NetString(source->InsertTimeStart);
 			InsertTimeEnd = char2NetString(source->InsertTimeEnd);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -12376,6 +13230,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeExecOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -12413,7 +13274,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -12498,6 +13359,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeExecOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -12509,7 +13377,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			TraderID = char2NetString(source->TraderID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -12556,6 +13424,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExecOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -12564,7 +13439,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
 			ExchangeID = char2NetString(source->ExchangeID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -12684,6 +13559,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeExecOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -12711,7 +13593,7 @@ namespace PhoenixCTP
 			Volume = source->Volume;
 			IPAddress = char2NetString(source->IPAddress);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -12778,6 +13660,13 @@ namespace PhoenixCTP
 		System::String^ TraderID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeExecOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -12787,7 +13676,7 @@ namespace PhoenixCTP
 			ClientID = char2NetString(source->ClientID);
 			ExchangeID = char2NetString(source->ExchangeID);
 			TraderID = char2NetString(source->TraderID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -12920,6 +13809,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ErrExecOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -12950,7 +13846,7 @@ namespace PhoenixCTP
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -13012,6 +13908,13 @@ namespace PhoenixCTP
 		System::String^ InvestorID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryErrExecOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -13019,7 +13922,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -13126,6 +14029,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ErrExecOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -13150,7 +14060,7 @@ namespace PhoenixCTP
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -13206,6 +14116,13 @@ namespace PhoenixCTP
 		System::String^ InvestorID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryErrExecOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -13213,7 +14130,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -13272,6 +14189,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OptionInstrTradingRightField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -13284,7 +14208,7 @@ namespace PhoenixCTP
 			Direction = source->Direction;
 			TradingRight = source->TradingRight;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -13340,6 +14264,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryOptionInstrTradingRightField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -13350,7 +14281,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			Direction = source->Direction;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -13428,6 +14359,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputForQuoteField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -13444,7 +14382,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -13588,6 +14526,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ForQuoteField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -13619,7 +14564,7 @@ namespace PhoenixCTP
 			InstrumentID = char2NetString(source->InstrumentID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -13706,6 +14651,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryForQuoteField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -13719,7 +14671,7 @@ namespace PhoenixCTP
 			InsertTimeEnd = char2NetString(source->InsertTimeEnd);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -13812,6 +14764,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeForQuoteField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -13831,7 +14790,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -13898,6 +14857,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeForQuoteField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -13909,7 +14875,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			TraderID = char2NetString(source->TraderID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -14048,6 +15014,13 @@ namespace PhoenixCTP
 		System::String^ ReplaceSysID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputQuoteField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -14079,7 +15052,7 @@ namespace PhoenixCTP
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
 			ReplaceSysID = char2NetString(source->ReplaceSysID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -14206,6 +15179,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputQuoteActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -14229,7 +15209,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -14492,6 +15472,13 @@ namespace PhoenixCTP
 		System::String^ ReplaceSysID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QuoteField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -14551,7 +15538,7 @@ namespace PhoenixCTP
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
 			ReplaceSysID = char2NetString(source->ReplaceSysID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -14750,6 +15737,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QuoteActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -14784,7 +15778,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -14878,6 +15872,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryQuoteField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -14892,7 +15893,7 @@ namespace PhoenixCTP
 			InsertTimeEnd = char2NetString(source->InsertTimeEnd);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15074,6 +16075,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeQuoteField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15115,7 +16123,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15204,6 +16212,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeQuoteField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15215,7 +16230,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			TraderID = char2NetString(source->TraderID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15262,6 +16277,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryQuoteActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15270,7 +16292,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
 			ExchangeID = char2NetString(source->ExchangeID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15370,6 +16392,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeQuoteActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15392,7 +16421,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			MacAddress = char2NetString(source->MacAddress);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15454,6 +16483,13 @@ namespace PhoenixCTP
 		System::String^ TraderID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeQuoteActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15463,7 +16499,7 @@ namespace PhoenixCTP
 			ClientID = char2NetString(source->ClientID);
 			ExchangeID = char2NetString(source->ExchangeID);
 			TraderID = char2NetString(source->TraderID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15520,6 +16556,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OptionInstrDeltaField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15531,7 +16574,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			Delta = source->Delta;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15594,6 +16637,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ForQuoteRspField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15606,7 +16656,7 @@ namespace PhoenixCTP
 			ActionDay = char2NetString(source->ActionDay);
 			ExchangeID = char2NetString(source->ExchangeID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15670,6 +16720,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		StrikeOffsetField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15682,7 +16739,7 @@ namespace PhoenixCTP
 			Offset = source->Offset;
 			OffsetType = source->OffsetType;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15734,6 +16791,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryStrikeOffsetField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15743,7 +16807,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			reserve1 = char2NetString(source->reserve1);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15824,6 +16888,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputBatchOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15841,7 +16912,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			MacAddress = char2NetString(source->MacAddress);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -15970,6 +17041,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BatchOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -15997,7 +17075,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			MacAddress = char2NetString(source->MacAddress);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -16104,6 +17182,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeBatchOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -16123,7 +17208,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			MacAddress = char2NetString(source->MacAddress);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -16178,6 +17263,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryBatchOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -16186,7 +17278,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
 			ExchangeID = char2NetString(source->ExchangeID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -16238,6 +17330,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CombInstrumentGuardField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -16248,7 +17347,7 @@ namespace PhoenixCTP
 			GuarantRatio = source->GuarantRatio;
 			ExchangeID = char2NetString(source->ExchangeID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -16298,6 +17397,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryCombInstrumentGuardField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -16307,7 +17413,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			ExchangeID = char2NetString(source->ExchangeID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -16408,6 +17514,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputCombActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -16430,7 +17543,7 @@ namespace PhoenixCTP
 			SessionID = source->SessionID;
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -16608,6 +17721,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CombActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -16646,7 +17766,7 @@ namespace PhoenixCTP
 			InstrumentID = char2NetString(source->InstrumentID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -16732,6 +17852,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryCombActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -16743,7 +17870,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -16866,6 +17993,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeCombActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -16893,7 +18027,7 @@ namespace PhoenixCTP
 			BranchID = char2NetString(source->BranchID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -16968,6 +18102,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeCombActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -16979,7 +18120,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			TraderID = char2NetString(source->TraderID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17034,6 +18175,13 @@ namespace PhoenixCTP
 		System::String^ ProductID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ProductExchRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17044,7 +18192,7 @@ namespace PhoenixCTP
 			ExchangeRate = source->ExchangeRate;
 			ExchangeID = char2NetString(source->ExchangeID);
 			ProductID = char2NetString(source->ProductID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17090,6 +18238,13 @@ namespace PhoenixCTP
 		System::String^ ProductID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryProductExchRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17098,7 +18253,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			ExchangeID = char2NetString(source->ExchangeID);
 			ProductID = char2NetString(source->ProductID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17146,6 +18301,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryForQuoteParamField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17155,7 +18317,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			ExchangeID = char2NetString(source->ExchangeID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17212,6 +18374,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ForQuoteParamField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17223,7 +18392,7 @@ namespace PhoenixCTP
 			LastPrice = source->LastPrice;
 			PriceInterval = source->PriceInterval;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17310,6 +18479,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MMOptionInstrCommRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17328,7 +18504,7 @@ namespace PhoenixCTP
 			StrikeRatioByMoney = source->StrikeRatioByMoney;
 			StrikeRatioByVolume = source->StrikeRatioByVolume;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17386,6 +18562,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryMMOptionInstrCommRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17395,7 +18578,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			reserve1 = char2NetString(source->reserve1);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17472,6 +18655,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MMInstrumentCommissionRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17488,7 +18678,7 @@ namespace PhoenixCTP
 			CloseTodayRatioByMoney = source->CloseTodayRatioByMoney;
 			CloseTodayRatioByVolume = source->CloseTodayRatioByVolume;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17544,6 +18734,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryMMInstrumentCommissionRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17553,7 +18750,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			reserve1 = char2NetString(source->reserve1);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17634,6 +18831,13 @@ namespace PhoenixCTP
 		double OrderActionCommByTrade;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InstrumentOrderCommRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17651,7 +18855,7 @@ namespace PhoenixCTP
 			InstrumentID = char2NetString(source->InstrumentID);
 			OrderCommByTrade = source->OrderCommByTrade;
 			OrderActionCommByTrade = source->OrderActionCommByTrade;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17708,6 +18912,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInstrumentOrderCommRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17717,7 +18928,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			reserve1 = char2NetString(source->reserve1);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17766,6 +18977,13 @@ namespace PhoenixCTP
 		System::String^ Memo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TradeParamField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17775,7 +18993,7 @@ namespace PhoenixCTP
 			TradeParamID = source->TradeParamID;
 			TradeParamValue = char2NetString(source->TradeParamValue);
 			Memo = char2NetString(source->Memo);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17848,6 +19066,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InstrumentMarginRateULField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17863,7 +19088,7 @@ namespace PhoenixCTP
 			ShortMarginRatioByMoney = source->ShortMarginRatioByMoney;
 			ShortMarginRatioByVolume = source->ShortMarginRatioByVolume;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17934,6 +19159,13 @@ namespace PhoenixCTP
 		System::String^ ProductID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		FutureLimitPosiParamField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17947,7 +19179,7 @@ namespace PhoenixCTP
 			ArbiOpenVolume = source->ArbiOpenVolume;
 			OpenVolume = source->OpenVolume;
 			ProductID = char2NetString(source->ProductID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -17992,6 +19224,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		LoginForbiddenIPField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -17999,7 +19238,7 @@ namespace PhoenixCTP
 		{
 			reserve1 = char2NetString(source->reserve1);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -18042,6 +19281,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		IPListField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -18050,7 +19296,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			IsWhite = source->IsWhite;
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -18158,6 +19404,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputOptionSelfCloseField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -18182,7 +19435,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -18298,6 +19551,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InputOptionSelfCloseActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -18320,7 +19580,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -18538,6 +19798,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OptionSelfCloseField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -18586,7 +19853,7 @@ namespace PhoenixCTP
 			InstrumentID = char2NetString(source->InstrumentID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -18774,6 +20041,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OptionSelfCloseActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -18808,7 +20082,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -18898,6 +20172,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryOptionSelfCloseField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -18911,7 +20192,7 @@ namespace PhoenixCTP
 			InsertTimeStart = char2NetString(source->InsertTimeStart);
 			InsertTimeEnd = char2NetString(source->InsertTimeEnd);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19060,6 +20341,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeOptionSelfCloseField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19093,7 +20381,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19162,6 +20450,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryOptionSelfCloseActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19170,7 +20465,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
 			ExchangeID = char2NetString(source->ExchangeID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19286,6 +20581,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeOptionSelfCloseActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19312,7 +20614,7 @@ namespace PhoenixCTP
 			OptSelfCloseFlag = source->OptSelfCloseFlag;
 			IPAddress = char2NetString(source->IPAddress);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19406,6 +20708,13 @@ namespace PhoenixCTP
 		int IsAllRemainSetZero;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDelaySwapField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19422,7 +20731,7 @@ namespace PhoenixCTP
 			ToAmount = source->ToAmount;
 			IsManualSwap = source->IsManualSwap;
 			IsAllRemainSetZero = source->IsAllRemainSetZero;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19470,6 +20779,13 @@ namespace PhoenixCTP
 		System::String^ DelaySwapSeqNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySyncDelaySwapField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19477,7 +20793,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			DelaySwapSeqNo = char2NetString(source->DelaySwapSeqNo);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19544,6 +20860,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InvestUnitField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19558,7 +20881,7 @@ namespace PhoenixCTP
 			MarginModelID = char2NetString(source->MarginModelID);
 			AccountID = char2NetString(source->AccountID);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19608,6 +20931,13 @@ namespace PhoenixCTP
 		System::String^ InvestUnitID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInvestUnitField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19616,7 +20946,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19668,6 +20998,13 @@ namespace PhoenixCTP
 		int CheckSelfAccount;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SecAgentCheckModeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19678,7 +21015,7 @@ namespace PhoenixCTP
 			CurrencyID = char2NetString(source->CurrencyID);
 			BrokerSecAgentID = char2NetString(source->BrokerSecAgentID);
 			CheckSelfAccount = source->CheckSelfAccount;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19728,6 +21065,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SecAgentTradeInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19737,7 +21081,7 @@ namespace PhoenixCTP
 			BrokerSecAgentID = char2NetString(source->BrokerSecAgentID);
 			InvestorID = char2NetString(source->InvestorID);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19870,6 +21214,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19900,7 +21251,7 @@ namespace PhoenixCTP
 			ActionDay = char2NetString(source->ActionDay);
 			InstrumentID = char2NetString(source->InstrumentID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -19974,6 +21325,13 @@ namespace PhoenixCTP
 		double PreDelta;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataBaseField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -19984,7 +21342,7 @@ namespace PhoenixCTP
 			PreClosePrice = source->PreClosePrice;
 			PreOpenInterest = source->PreOpenInterest;
 			PreDelta = source->PreDelta;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20050,6 +21408,13 @@ namespace PhoenixCTP
 		double CurrDelta;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataStaticField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20063,7 +21428,7 @@ namespace PhoenixCTP
 			LowerLimitPrice = source->LowerLimitPrice;
 			SettlementPrice = source->SettlementPrice;
 			CurrDelta = source->CurrDelta;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20116,6 +21481,13 @@ namespace PhoenixCTP
 		double OpenInterest;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataLastMatchField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20125,7 +21497,7 @@ namespace PhoenixCTP
 			Volume = source->Volume;
 			Turnover = source->Turnover;
 			OpenInterest = source->OpenInterest;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20174,6 +21546,13 @@ namespace PhoenixCTP
 		int AskVolume1;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataBestPriceField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20183,7 +21562,7 @@ namespace PhoenixCTP
 			BidVolume1 = source->BidVolume1;
 			AskPrice1 = source->AskPrice1;
 			AskVolume1 = source->AskVolume1;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20232,6 +21611,13 @@ namespace PhoenixCTP
 		int BidVolume3;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataBid23Field()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20241,7 +21627,7 @@ namespace PhoenixCTP
 			BidVolume2 = source->BidVolume2;
 			BidPrice3 = source->BidPrice3;
 			BidVolume3 = source->BidVolume3;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20290,6 +21676,13 @@ namespace PhoenixCTP
 		int AskVolume3;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataAsk23Field()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20299,7 +21692,7 @@ namespace PhoenixCTP
 			AskVolume2 = source->AskVolume2;
 			AskPrice3 = source->AskPrice3;
 			AskVolume3 = source->AskVolume3;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20348,6 +21741,13 @@ namespace PhoenixCTP
 		int BidVolume5;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataBid45Field()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20357,7 +21757,7 @@ namespace PhoenixCTP
 			BidVolume4 = source->BidVolume4;
 			BidPrice5 = source->BidPrice5;
 			BidVolume5 = source->BidVolume5;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20406,6 +21806,13 @@ namespace PhoenixCTP
 		int AskVolume5;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataAsk45Field()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20415,7 +21822,7 @@ namespace PhoenixCTP
 			AskVolume4 = source->AskVolume4;
 			AskPrice5 = source->AskPrice5;
 			AskVolume5 = source->AskVolume5;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20468,6 +21875,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataUpdateTimeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20478,7 +21892,7 @@ namespace PhoenixCTP
 			UpdateMillisec = source->UpdateMillisec;
 			ActionDay = char2NetString(source->ActionDay);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20520,6 +21934,13 @@ namespace PhoenixCTP
 		double BandingLowerPrice;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataBandingPriceField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20527,7 +21948,7 @@ namespace PhoenixCTP
 		{
 			BandingUpperPrice = source->BandingUpperPrice;
 			BandingLowerPrice = source->BandingLowerPrice;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20562,13 +21983,20 @@ namespace PhoenixCTP
 		System::String^ ExchangeID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataExchangeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcMarketDataExchangeField* source)
 		{
 			ExchangeID = char2NetString(source->ExchangeID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20606,6 +22034,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SpecificInstrumentField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20613,7 +22048,7 @@ namespace PhoenixCTP
 		{
 			reserve1 = char2NetString(source->reserve1);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20684,6 +22119,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InstrumentStatusField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20699,7 +22141,7 @@ namespace PhoenixCTP
 			EnterReason = source->EnterReason;
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20750,6 +22192,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeInstID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInstrumentStatusField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20758,7 +22207,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			reserve1 = char2NetString(source->reserve1);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20806,6 +22255,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InvestorAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20815,7 +22271,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			AccountID = char2NetString(source->AccountID);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20868,6 +22324,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		PositionProfitAlgorithmField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20878,7 +22341,7 @@ namespace PhoenixCTP
 			Algorithm = source->Algorithm;
 			Memo = char2NetString(source->Memo);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20928,6 +22391,13 @@ namespace PhoenixCTP
 		double Discount;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		DiscountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20937,7 +22407,7 @@ namespace PhoenixCTP
 			InvestorRange = source->InvestorRange;
 			InvestorID = char2NetString(source->InvestorID);
 			Discount = source->Discount;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -20978,6 +22448,13 @@ namespace PhoenixCTP
 		System::String^ BankBrchID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryTransferBankField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -20985,7 +22462,7 @@ namespace PhoenixCTP
 		{
 			BankID = char2NetString(source->BankID);
 			BankBrchID = char2NetString(source->BankBrchID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21032,6 +22509,13 @@ namespace PhoenixCTP
 		int IsActive;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferBankField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21041,7 +22525,7 @@ namespace PhoenixCTP
 			BankBrchID = char2NetString(source->BankBrchID);
 			BankName = char2NetString(source->BankName);
 			IsActive = source->IsActive;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21098,6 +22582,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInvestorPositionDetailField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21109,7 +22600,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21268,6 +22759,13 @@ namespace PhoenixCTP
 		System::String^ CombInstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InvestorPositionDetailField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21304,7 +22802,7 @@ namespace PhoenixCTP
 			SpecPosiType = source->SpecPosiType;
 			InstrumentID = char2NetString(source->InstrumentID);
 			CombInstrumentID = char2NetString(source->CombInstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21380,6 +22878,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TradingAccountPasswordField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21389,7 +22894,7 @@ namespace PhoenixCTP
 			AccountID = char2NetString(source->AccountID);
 			Password = char2NetString(source->Password);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21498,6 +23003,13 @@ namespace PhoenixCTP
 		System::String^ MaxOrderMessageReference;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MDTraderOfferField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21522,7 +23034,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			MaxTradeID = char2NetString(source->MaxTradeID);
 			MaxOrderMessageReference = char2NetString(source->MaxOrderMessageReference);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21582,6 +23094,13 @@ namespace PhoenixCTP
 		System::String^ TraderID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryMDTraderOfferField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21590,7 +23109,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			ParticipantID = char2NetString(source->ParticipantID);
 			TraderID = char2NetString(source->TraderID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21626,13 +23145,20 @@ namespace PhoenixCTP
 		System::String^ BrokerID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryNoticeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQryNoticeField* source)
 		{
 			BrokerID = char2NetString(source->BrokerID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21674,6 +23200,13 @@ namespace PhoenixCTP
 		System::String^ SequenceLabel;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		NoticeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21682,7 +23215,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			Content = char2NetString(source->Content);
 			SequenceLabel = char2NetString(source->SequenceLabel);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21730,6 +23263,13 @@ namespace PhoenixCTP
 		int IsForbidden;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		UserRightField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21739,7 +23279,7 @@ namespace PhoenixCTP
 			UserID = char2NetString(source->UserID);
 			UserRightType = source->UserRightType;
 			IsForbidden = source->IsForbidden;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21788,6 +23328,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySettlementInfoConfirmField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21797,7 +23344,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			AccountID = char2NetString(source->AccountID);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21834,13 +23381,20 @@ namespace PhoenixCTP
 		System::String^ BrokerID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		LoadSettlementInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcLoadSettlementInfoField* source)
 		{
 			BrokerID = char2NetString(source->BrokerID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21910,6 +23464,13 @@ namespace PhoenixCTP
 		char BalanceAlgorithm;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerWithdrawAlgorithmField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21925,7 +23486,7 @@ namespace PhoenixCTP
 			CurrencyID = char2NetString(source->CurrencyID);
 			FundMortgageRatio = source->FundMortgageRatio;
 			BalanceAlgorithm = source->BalanceAlgorithm;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -21980,6 +23541,13 @@ namespace PhoenixCTP
 		System::String^ NewPassword;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TradingAccountPasswordUpdateV1Field()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -21989,7 +23557,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			OldPassword = char2NetString(source->OldPassword);
 			NewPassword = char2NetString(source->NewPassword);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22042,6 +23610,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TradingAccountPasswordUpdateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22052,7 +23627,7 @@ namespace PhoenixCTP
 			OldPassword = char2NetString(source->OldPassword);
 			NewPassword = char2NetString(source->NewPassword);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22106,6 +23681,13 @@ namespace PhoenixCTP
 		System::String^ LegInstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryCombinationLegField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22116,7 +23698,7 @@ namespace PhoenixCTP
 			reserve2 = char2NetString(source->reserve2);
 			CombInstrumentID = char2NetString(source->CombInstrumentID);
 			LegInstrumentID = char2NetString(source->LegInstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22154,13 +23736,20 @@ namespace PhoenixCTP
 		System::String^ TradingDay;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySyncStatusField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQrySyncStatusField* source)
 		{
 			TradingDay = char2NetString(source->TradingDay);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22222,6 +23811,13 @@ namespace PhoenixCTP
 		System::String^ LegInstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CombinationLegField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22235,7 +23831,7 @@ namespace PhoenixCTP
 			ImplyLevel = source->ImplyLevel;
 			CombInstrumentID = char2NetString(source->CombInstrumentID);
 			LegInstrumentID = char2NetString(source->LegInstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22280,6 +23876,13 @@ namespace PhoenixCTP
 		char DataSyncStatus;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncStatusField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22287,7 +23890,7 @@ namespace PhoenixCTP
 		{
 			TradingDay = char2NetString(source->TradingDay);
 			DataSyncStatus = source->DataSyncStatus;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22326,6 +23929,13 @@ namespace PhoenixCTP
 		System::String^ InvestorID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryLinkManField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22333,7 +23943,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22412,6 +24022,13 @@ namespace PhoenixCTP
 		System::String^ PersonFullName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		LinkManField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22429,7 +24046,7 @@ namespace PhoenixCTP
 			Priority = source->Priority;
 			UOAZipCode = char2NetString(source->UOAZipCode);
 			PersonFullName = char2NetString(source->PersonFullName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22482,6 +24099,13 @@ namespace PhoenixCTP
 		char UserEventType;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryBrokerUserEventField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22490,7 +24114,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
 			UserEventType = source->UserEventType;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22562,6 +24186,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerUserEventField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22577,7 +24208,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			reserve1 = char2NetString(source->reserve1);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22628,6 +24259,13 @@ namespace PhoenixCTP
 		System::String^ BankBrchID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryContractBankField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22636,7 +24274,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			BankID = char2NetString(source->BankID);
 			BankBrchID = char2NetString(source->BankBrchID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22684,6 +24322,13 @@ namespace PhoenixCTP
 		System::String^ BankName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ContractBankField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22693,7 +24338,7 @@ namespace PhoenixCTP
 			BankID = char2NetString(source->BankID);
 			BankBrchID = char2NetString(source->BankBrchID);
 			BankName = char2NetString(source->BankName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -22818,6 +24463,13 @@ namespace PhoenixCTP
 		System::String^ CombInstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InvestorPositionCombineDetailField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -22846,7 +24498,7 @@ namespace PhoenixCTP
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
 			CombInstrumentID = char2NetString(source->CombInstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23046,6 +24698,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ParkedOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23088,7 +24747,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23250,6 +24909,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ParkedOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23279,7 +24945,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23356,6 +25022,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryParkedOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23367,7 +25040,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23426,6 +25099,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryParkedOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23437,7 +25117,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23488,6 +25168,13 @@ namespace PhoenixCTP
 		System::String^ InvestUnitID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RemoveParkedOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23497,7 +25184,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			ParkedOrderID = char2NetString(source->ParkedOrderID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23546,6 +25233,13 @@ namespace PhoenixCTP
 		System::String^ InvestUnitID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RemoveParkedOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23555,7 +25249,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			ParkedOrderActionID = char2NetString(source->ParkedOrderActionID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23612,6 +25306,13 @@ namespace PhoenixCTP
 		double FundMortgageRatio;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InvestorWithdrawAlgorithmField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23623,7 +25324,7 @@ namespace PhoenixCTP
 			UsingRatio = source->UsingRatio;
 			CurrencyID = char2NetString(source->CurrencyID);
 			FundMortgageRatio = source->FundMortgageRatio;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23682,6 +25383,13 @@ namespace PhoenixCTP
 		System::String^ CombInstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInvestorPositionCombineDetailField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23693,7 +25401,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			CombInstrumentID = char2NetString(source->CombInstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23732,13 +25440,20 @@ namespace PhoenixCTP
 		double AveragePrice;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarketDataAveragePriceField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcMarketDataAveragePriceField* source)
 		{
 			AveragePrice = source->AveragePrice;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23780,6 +25495,13 @@ namespace PhoenixCTP
 		System::String^ Password;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		VerifyInvestorPasswordField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23788,7 +25510,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
 			Password = char2NetString(source->Password);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23848,6 +25570,13 @@ namespace PhoenixCTP
 		System::String^ IPMask;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		UserIPField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23860,7 +25589,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			IPAddress = char2NetString(source->IPAddress);
 			IPMask = char2NetString(source->IPMask);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -23924,6 +25653,13 @@ namespace PhoenixCTP
 		System::String^ InvestUnitID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TradingNoticeInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -23936,7 +25672,7 @@ namespace PhoenixCTP
 			SequenceSeries = source->SequenceSeries;
 			SequenceNo = source->SequenceNo;
 			InvestUnitID = char2NetString(source->InvestUnitID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -24008,6 +25744,13 @@ namespace PhoenixCTP
 		System::String^ InvestUnitID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TradingNoticeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -24022,7 +25765,7 @@ namespace PhoenixCTP
 			SequenceNo = source->SequenceNo;
 			FieldContent = char2NetString(source->FieldContent);
 			InvestUnitID = char2NetString(source->InvestUnitID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -24072,6 +25815,13 @@ namespace PhoenixCTP
 		System::String^ InvestUnitID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryTradingNoticeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -24080,7 +25830,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -24120,6 +25870,13 @@ namespace PhoenixCTP
 		System::String^ InvestorID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryErrOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -24127,7 +25884,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -24294,6 +26051,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ErrOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -24333,7 +26097,7 @@ namespace PhoenixCTP
 			MacAddress = char2NetString(source->MacAddress);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -24668,6 +26432,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ErrorConditionalOrderField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -24741,7 +26512,7 @@ namespace PhoenixCTP
 			InstrumentID = char2NetString(source->InstrumentID);
 			ExchangeInstID = char2NetString(source->ExchangeInstID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -24846,6 +26617,13 @@ namespace PhoenixCTP
 		System::String^ InvestorID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryErrOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -24853,7 +26631,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25016,6 +26794,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ErrOrderActionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25054,7 +26839,7 @@ namespace PhoenixCTP
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			InstrumentID = char2NetString(source->InstrumentID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25120,13 +26905,20 @@ namespace PhoenixCTP
 		System::String^ ExchangeID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryExchangeSequenceField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQryExchangeSequenceField* source)
 		{
 			ExchangeID = char2NetString(source->ExchangeID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25168,6 +26960,13 @@ namespace PhoenixCTP
 		char MarketStatus;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ExchangeSequenceField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25176,7 +26975,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			SequenceNo = source->SequenceNo;
 			MarketStatus = source->MarketStatus;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25252,6 +27051,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryMaxOrderVolumeWithPriceField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25268,7 +27074,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25324,6 +27130,13 @@ namespace PhoenixCTP
 		System::String^ AccountID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryBrokerTradingParamsField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25333,7 +27146,7 @@ namespace PhoenixCTP
 			InvestorID = char2NetString(source->InvestorID);
 			CurrencyID = char2NetString(source->CurrencyID);
 			AccountID = char2NetString(source->AccountID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25398,6 +27211,13 @@ namespace PhoenixCTP
 		System::String^ AccountID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerTradingParamsField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25411,7 +27231,7 @@ namespace PhoenixCTP
 			CurrencyID = char2NetString(source->CurrencyID);
 			OptionRoyaltyPriceType = source->OptionRoyaltyPriceType;
 			AccountID = char2NetString(source->AccountID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25464,6 +27284,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryBrokerTradingAlgosField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25473,7 +27300,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			reserve1 = char2NetString(source->reserve1);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25534,6 +27361,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerTradingAlgosField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25546,7 +27380,7 @@ namespace PhoenixCTP
 			FindMarginRateAlgoID = source->FindMarginRateAlgoID;
 			HandleTradingAccountAlgoID = source->HandleTradingAccountAlgoID;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25590,6 +27424,13 @@ namespace PhoenixCTP
 		System::String^ ExchangeID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QueryBrokerDepositField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25597,7 +27438,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			ExchangeID = char2NetString(source->ExchangeID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25680,6 +27521,13 @@ namespace PhoenixCTP
 		double FrozenMargin;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerDepositField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25698,7 +27546,7 @@ namespace PhoenixCTP
 			Available = source->Available;
 			Reserve = source->Reserve;
 			FrozenMargin = source->FrozenMargin;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25744,13 +27592,20 @@ namespace PhoenixCTP
 		System::String^ BrokerID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryCFMMCBrokerKeyField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQryCFMMCBrokerKeyField* source)
 		{
 			BrokerID = char2NetString(source->BrokerID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25808,6 +27663,13 @@ namespace PhoenixCTP
 		char KeyKind;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CFMMCBrokerKeyField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25820,7 +27682,7 @@ namespace PhoenixCTP
 			KeyID = source->KeyID;
 			CurrentKey = char2NetString(source->CurrentKey);
 			KeyKind = source->KeyKind;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25876,6 +27738,13 @@ namespace PhoenixCTP
 		System::String^ CurrentKey;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CFMMCTradingAccountKeyField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25886,7 +27755,7 @@ namespace PhoenixCTP
 			AccountID = char2NetString(source->AccountID);
 			KeyID = source->KeyID;
 			CurrentKey = char2NetString(source->CurrentKey);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25928,6 +27797,13 @@ namespace PhoenixCTP
 		System::String^ InvestorID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryCFMMCTradingAccountKeyField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -25935,7 +27811,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -25998,6 +27874,13 @@ namespace PhoenixCTP
 		char OTPType;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerUserOTPParamField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26011,7 +27894,7 @@ namespace PhoenixCTP
 			LastDrift = source->LastDrift;
 			LastSuccess = source->LastSuccess;
 			OTPType = source->OTPType;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26068,6 +27951,13 @@ namespace PhoenixCTP
 		System::String^ SecondOTP;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ManualSyncBrokerUserOTPField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26078,7 +27968,7 @@ namespace PhoenixCTP
 			OTPType = source->OTPType;
 			FirstOTP = char2NetString(source->FirstOTP);
 			SecondOTP = char2NetString(source->SecondOTP);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26124,6 +28014,13 @@ namespace PhoenixCTP
 		System::String^ CommModelName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CommRateModelField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26132,7 +28029,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			CommModelID = char2NetString(source->CommModelID);
 			CommModelName = char2NetString(source->CommModelName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26172,6 +28069,13 @@ namespace PhoenixCTP
 		System::String^ CommModelID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryCommRateModelField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26179,7 +28083,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			CommModelID = char2NetString(source->CommModelID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26222,6 +28126,13 @@ namespace PhoenixCTP
 		System::String^ MarginModelName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MarginModelField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26230,7 +28141,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			MarginModelID = char2NetString(source->MarginModelID);
 			MarginModelName = char2NetString(source->MarginModelName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26270,6 +28181,13 @@ namespace PhoenixCTP
 		System::String^ MarginModelID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryMarginModelField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26277,7 +28195,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			MarginModelID = char2NetString(source->MarginModelID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26348,6 +28266,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		EWarrantOffsetField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26363,7 +28288,7 @@ namespace PhoenixCTP
 			Volume = source->Volume;
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26426,6 +28351,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryEWarrantOffsetField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26437,7 +28369,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26500,6 +28432,13 @@ namespace PhoenixCTP
 		System::String^ ProductGroupID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryInvestorProductGroupMarginField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26512,7 +28451,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			ProductGroupID = char2NetString(source->ProductGroupID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26668,6 +28607,13 @@ namespace PhoenixCTP
 		System::String^ ProductGroupID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		InvestorProductGroupMarginField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26703,7 +28649,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
 			ProductGroupID = char2NetString(source->ProductGroupID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26774,6 +28720,13 @@ namespace PhoenixCTP
 		System::String^ InvestUnitID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QueryCFMMCTradingAccountTokenField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26782,7 +28735,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
 			InvestUnitID = char2NetString(source->InvestUnitID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26834,6 +28787,13 @@ namespace PhoenixCTP
 		System::String^ Token;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CFMMCTradingAccountTokenField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26844,7 +28804,7 @@ namespace PhoenixCTP
 			AccountID = char2NetString(source->AccountID);
 			KeyID = source->KeyID;
 			Token = char2NetString(source->Token);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26890,6 +28850,13 @@ namespace PhoenixCTP
 		System::String^ ProductID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryProductGroupField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26898,7 +28865,7 @@ namespace PhoenixCTP
 			reserve1 = char2NetString(source->reserve1);
 			ExchangeID = char2NetString(source->ExchangeID);
 			ProductID = char2NetString(source->ProductID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -26950,6 +28917,13 @@ namespace PhoenixCTP
 		System::String^ ProductGroupID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ProductGroupField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -26960,7 +28934,7 @@ namespace PhoenixCTP
 			reserve2 = char2NetString(source->reserve2);
 			ProductID = char2NetString(source->ProductID);
 			ProductGroupID = char2NetString(source->ProductGroupID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -27042,6 +29016,13 @@ namespace PhoenixCTP
 		System::String^ MarketID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BulletinField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -27059,7 +29040,7 @@ namespace PhoenixCTP
 			Content = char2NetString(source->Content);
 			URLLink = char2NetString(source->URLLink);
 			MarketID = char2NetString(source->MarketID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -27120,6 +29101,13 @@ namespace PhoenixCTP
 		char NewsUrgency;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryBulletinField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -27130,7 +29118,7 @@ namespace PhoenixCTP
 			SequenceNo = source->SequenceNo;
 			NewsType = char2NetString(source->NewsType);
 			NewsUrgency = source->NewsUrgency;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -27192,6 +29180,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		MulticastInstrumentField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -27204,7 +29199,7 @@ namespace PhoenixCTP
 			VolumeMultiple = source->VolumeMultiple;
 			PriceTick = source->PriceTick;
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -27252,6 +29247,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryMulticastInstrumentField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -27260,7 +29262,7 @@ namespace PhoenixCTP
 			TopicID = source->TopicID;
 			reserve1 = char2NetString(source->reserve1);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -27304,6 +29306,13 @@ namespace PhoenixCTP
 		int DRIdentityID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		AppIDAuthAssignField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -27312,7 +29321,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			AppID = char2NetString(source->AppID);
 			DRIdentityID = source->DRIdentityID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -27524,6 +29533,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqOpenAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -27574,7 +29590,7 @@ namespace PhoenixCTP
 			TID = source->TID;
 			UserID = char2NetString(source->UserID);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -27828,6 +29844,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqCancelAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -27878,7 +29901,7 @@ namespace PhoenixCTP
 			TID = source->TID;
 			UserID = char2NetString(source->UserID);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -28116,6 +30139,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqChangeAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -28162,7 +30192,7 @@ namespace PhoenixCTP
 			TID = source->TID;
 			Digest = char2NetString(source->Digest);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -28408,6 +30438,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqTransferField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -28457,7 +30494,7 @@ namespace PhoenixCTP
 			TID = source->TID;
 			TransferStatus = source->TransferStatus;
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -28714,6 +30751,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspTransferField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -28765,7 +30809,7 @@ namespace PhoenixCTP
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -29044,6 +31088,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqRepealField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -29100,7 +31151,7 @@ namespace PhoenixCTP
 			TID = source->TID;
 			TransferStatus = source->TransferStatus;
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -29392,6 +31443,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspRepealField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -29450,7 +31508,7 @@ namespace PhoenixCTP
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -29680,6 +31738,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqQueryAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -29722,7 +31787,7 @@ namespace PhoenixCTP
 			RequestID = source->RequestID;
 			TID = source->TID;
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -29944,6 +32009,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspQueryAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -29988,7 +32060,7 @@ namespace PhoenixCTP
 			BankUseAmount = source->BankUseAmount;
 			BankFetchAmount = source->BankFetchAmount;
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -30140,6 +32212,13 @@ namespace PhoenixCTP
 		int TID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		FutureSignIOField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -30166,7 +32245,7 @@ namespace PhoenixCTP
 			OperNo = char2NetString(source->OperNo);
 			RequestID = source->RequestID;
 			TID = source->TID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -30316,6 +32395,13 @@ namespace PhoenixCTP
 		System::String^ MacKey;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspFutureSignInField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -30346,7 +32432,7 @@ namespace PhoenixCTP
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			PinKey = char2NetString(source->PinKey);
 			MacKey = char2NetString(source->MacKey);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -30484,6 +32570,13 @@ namespace PhoenixCTP
 		int TID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqFutureSignOutField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -30510,7 +32603,7 @@ namespace PhoenixCTP
 			OperNo = char2NetString(source->OperNo);
 			RequestID = source->RequestID;
 			TID = source->TID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -30652,6 +32745,13 @@ namespace PhoenixCTP
 		System::String^ ErrorMsg;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspFutureSignOutField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -30680,7 +32780,7 @@ namespace PhoenixCTP
 			TID = source->TID;
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -30840,6 +32940,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqQueryTradeResultBySerialField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -30872,7 +32979,7 @@ namespace PhoenixCTP
 			TradeAmount = source->TradeAmount;
 			Digest = char2NetString(source->Digest);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -31032,6 +33139,13 @@ namespace PhoenixCTP
 		System::String^ Digest;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspQueryTradeResultBySerialField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -31063,7 +33177,7 @@ namespace PhoenixCTP
 			CurrencyID = char2NetString(source->CurrencyID);
 			TradeAmount = source->TradeAmount;
 			Digest = char2NetString(source->Digest);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -31174,6 +33288,13 @@ namespace PhoenixCTP
 		System::String^ Digest;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqDayEndFileReadyField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -31193,7 +33314,7 @@ namespace PhoenixCTP
 			SessionID = source->SessionID;
 			FileBusinessCode = source->FileBusinessCode;
 			Digest = char2NetString(source->Digest);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -31244,6 +33365,13 @@ namespace PhoenixCTP
 		System::String^ DescrInfoForReturnCode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReturnResultField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -31251,7 +33379,7 @@ namespace PhoenixCTP
 		{
 			ReturnCode = char2NetString(source->ReturnCode);
 			DescrInfoForReturnCode = char2NetString(source->DescrInfoForReturnCode);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -31358,6 +33486,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		VerifyFuturePasswordField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -31382,7 +33517,7 @@ namespace PhoenixCTP
 			InstallID = source->InstallID;
 			TID = source->TID;
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -31450,6 +33585,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		VerifyCustInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -31460,7 +33602,7 @@ namespace PhoenixCTP
 			IdentifiedCardNo = char2NetString(source->IdentifiedCardNo);
 			CustType = source->CustType;
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -31526,6 +33668,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		VerifyFuturePasswordAndCustInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -31539,7 +33688,7 @@ namespace PhoenixCTP
 			Password = char2NetString(source->Password);
 			CurrencyID = char2NetString(source->CurrencyID);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -31604,6 +33753,13 @@ namespace PhoenixCTP
 		System::String^ DescrInfoForReturnCode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		DepositResultInformField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -31616,7 +33772,7 @@ namespace PhoenixCTP
 			RequestID = source->RequestID;
 			ReturnCode = char2NetString(source->ReturnCode);
 			DescrInfoForReturnCode = char2NetString(source->DescrInfoForReturnCode);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -31732,6 +33888,13 @@ namespace PhoenixCTP
 		int TID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqSyncKeyField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -31757,7 +33920,7 @@ namespace PhoenixCTP
 			OperNo = char2NetString(source->OperNo);
 			RequestID = source->RequestID;
 			TID = source->TID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -31894,6 +34057,13 @@ namespace PhoenixCTP
 		System::String^ ErrorMsg;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspSyncKeyField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -31921,7 +34091,7 @@ namespace PhoenixCTP
 			TID = source->TID;
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -32136,6 +34306,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		NotifyQueryAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -32182,7 +34359,7 @@ namespace PhoenixCTP
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -32364,6 +34541,13 @@ namespace PhoenixCTP
 		System::String^ ErrorMsg;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TransferSerialField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -32397,7 +34581,7 @@ namespace PhoenixCTP
 			BankNewAccount = char2NetString(source->BankNewAccount);
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -32470,6 +34654,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryTransferSerialField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -32479,7 +34670,7 @@ namespace PhoenixCTP
 			AccountID = char2NetString(source->AccountID);
 			BankID = char2NetString(source->BankID);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -32612,6 +34803,13 @@ namespace PhoenixCTP
 		System::String^ MacKey;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		NotifyFutureSignInField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -32642,7 +34840,7 @@ namespace PhoenixCTP
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			PinKey = char2NetString(source->PinKey);
 			MacKey = char2NetString(source->MacKey);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -32788,6 +34986,13 @@ namespace PhoenixCTP
 		System::String^ ErrorMsg;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		NotifyFutureSignOutField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -32816,7 +35021,7 @@ namespace PhoenixCTP
 			TID = source->TID;
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -32956,6 +35161,13 @@ namespace PhoenixCTP
 		System::String^ ErrorMsg;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		NotifySyncKeyField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -32983,7 +35195,7 @@ namespace PhoenixCTP
 			TID = source->TID;
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -33054,6 +35266,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryAccountregisterField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -33064,7 +35283,7 @@ namespace PhoenixCTP
 			BankID = char2NetString(source->BankID);
 			BankBranchID = char2NetString(source->BankBranchID);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -33170,6 +35389,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		AccountregisterField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -33193,7 +35419,7 @@ namespace PhoenixCTP
 			CustType = source->CustType;
 			BankAccType = source->BankAccType;
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -33428,6 +35654,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		OpenAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -33480,7 +35713,7 @@ namespace PhoenixCTP
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -33744,6 +35977,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CancelAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -33796,7 +36036,7 @@ namespace PhoenixCTP
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34044,6 +36284,13 @@ namespace PhoenixCTP
 		System::String^ LongCustomerName;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ChangeAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34092,7 +36339,7 @@ namespace PhoenixCTP
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
 			LongCustomerName = char2NetString(source->LongCustomerName);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34184,6 +36431,13 @@ namespace PhoenixCTP
 		System::String^ BrokerSecAgentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SecAgentACIDMapField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34194,7 +36448,7 @@ namespace PhoenixCTP
 			AccountID = char2NetString(source->AccountID);
 			CurrencyID = char2NetString(source->CurrencyID);
 			BrokerSecAgentID = char2NetString(source->BrokerSecAgentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34244,6 +36498,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySecAgentACIDMapField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34253,7 +36514,7 @@ namespace PhoenixCTP
 			UserID = char2NetString(source->UserID);
 			AccountID = char2NetString(source->AccountID);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34298,6 +36559,13 @@ namespace PhoenixCTP
 		int DRIdentityID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		UserRightsAssignField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34306,7 +36574,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
 			DRIdentityID = source->DRIdentityID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34350,6 +36618,13 @@ namespace PhoenixCTP
 		int Tradeable;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		BrokerUserRightAssignField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34358,7 +36633,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			DRIdentityID = source->DRIdentityID;
 			Tradeable = source->Tradeable;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34406,6 +36681,13 @@ namespace PhoenixCTP
 		System::String^ DestBrokerID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		DRTransferField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34415,7 +36697,7 @@ namespace PhoenixCTP
 			DestDRIdentityID = source->DestDRIdentityID;
 			OrigBrokerID = char2NetString(source->OrigBrokerID);
 			DestBrokerID = char2NetString(source->DestBrokerID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34460,6 +36742,13 @@ namespace PhoenixCTP
 		char LoginMode;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		FensUserInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34468,7 +36757,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
 			LoginMode = source->LoginMode;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34504,13 +36793,20 @@ namespace PhoenixCTP
 		int IdentityID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CurrTransferIdentityField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcCurrTransferIdentityField* source)
 		{
 			IdentityID = source->IdentityID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34556,6 +36852,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		LoginForbiddenUserField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34565,7 +36868,7 @@ namespace PhoenixCTP
 			UserID = char2NetString(source->UserID);
 			reserve1 = char2NetString(source->reserve1);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34606,6 +36909,13 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryLoginForbiddenUserField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34613,7 +36923,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34660,6 +36970,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		TradingAccountReserveField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34669,7 +36986,7 @@ namespace PhoenixCTP
 			AccountID = char2NetString(source->AccountID);
 			Reserve = source->Reserve;
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34710,6 +37027,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryLoginForbiddenIPField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34717,7 +37041,7 @@ namespace PhoenixCTP
 		{
 			reserve1 = char2NetString(source->reserve1);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34756,6 +37080,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryIPListField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34763,7 +37094,7 @@ namespace PhoenixCTP
 		{
 			reserve1 = char2NetString(source->reserve1);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -34802,6 +37133,13 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryUserRightsAssignField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -34809,7 +37147,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35004,6 +37342,13 @@ namespace PhoenixCTP
 		System::String^ ErrorMsg;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReserveOpenAccountConfirmField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -35050,7 +37395,7 @@ namespace PhoenixCTP
 			BookPsw = char2NetString(source->BookPsw);
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35268,6 +37613,13 @@ namespace PhoenixCTP
 		System::String^ ErrorMsg;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReserveOpenAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -35310,7 +37662,7 @@ namespace PhoenixCTP
 			ReserveOpenAccStas = source->ReserveOpenAccStas;
 			ErrorID = source->ErrorID;
 			ErrorMsg = char2NetString(source->ErrorMsg);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35432,6 +37784,13 @@ namespace PhoenixCTP
 		System::String^ CurrencyID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		AccountPropertyField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -35451,7 +37810,7 @@ namespace PhoenixCTP
 			OperateDate = char2NetString(source->OperateDate);
 			OperateTime = char2NetString(source->OperateTime);
 			CurrencyID = char2NetString(source->CurrencyID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35498,13 +37857,20 @@ namespace PhoenixCTP
 		int DRIdentityID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryCurrDRIdentityField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQryCurrDRIdentityField* source)
 		{
 			DRIdentityID = source->DRIdentityID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35538,13 +37904,20 @@ namespace PhoenixCTP
 		int DRIdentityID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CurrDRIdentityField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcCurrDRIdentityField* source)
 		{
 			DRIdentityID = source->DRIdentityID;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35582,6 +37955,13 @@ namespace PhoenixCTP
 		System::String^ InvestorID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySecAgentCheckModeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -35589,7 +37969,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35628,6 +38008,13 @@ namespace PhoenixCTP
 		System::String^ BrokerSecAgentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QrySecAgentTradeInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -35635,7 +38022,7 @@ namespace PhoenixCTP
 		{
 			BrokerID = char2NetString(source->BrokerID);
 			BrokerSecAgentID = char2NetString(source->BrokerSecAgentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35678,6 +38065,13 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqUserAuthMethodField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -35686,7 +38080,7 @@ namespace PhoenixCTP
 			TradingDay = char2NetString(source->TradingDay);
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35722,13 +38116,20 @@ namespace PhoenixCTP
 		int UsableAuthMethod;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspUserAuthMethodField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcRspUserAuthMethodField* source)
 		{
 			UsableAuthMethod = source->UsableAuthMethod;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35770,6 +38171,13 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqGenUserCaptchaField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -35778,7 +38186,7 @@ namespace PhoenixCTP
 			TradingDay = char2NetString(source->TradingDay);
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35826,6 +38234,13 @@ namespace PhoenixCTP
 		System::String^ CaptchaInfo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspGenUserCaptchaField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -35835,7 +38250,7 @@ namespace PhoenixCTP
 			UserID = char2NetString(source->UserID);
 			CaptchaInfoLen = source->CaptchaInfoLen;
 			CaptchaInfo = char2NetString(source->CaptchaInfo);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35880,6 +38295,13 @@ namespace PhoenixCTP
 		System::String^ UserID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqGenUserTextField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -35888,7 +38310,7 @@ namespace PhoenixCTP
 			TradingDay = char2NetString(source->TradingDay);
 			BrokerID = char2NetString(source->BrokerID);
 			UserID = char2NetString(source->UserID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -35924,13 +38346,20 @@ namespace PhoenixCTP
 		int UserTextSeq;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspGenUserTextField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcRspGenUserTextField* source)
 		{
 			UserTextSeq = source->UserTextSeq;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36012,6 +38441,13 @@ namespace PhoenixCTP
 		System::String^ ClientIPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqUserLoginWithCaptchaField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36030,7 +38466,7 @@ namespace PhoenixCTP
 			Captcha = char2NetString(source->Captcha);
 			ClientIPPort = source->ClientIPPort;
 			ClientIPAddress = char2NetString(source->ClientIPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36124,6 +38560,13 @@ namespace PhoenixCTP
 		System::String^ ClientIPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqUserLoginWithTextField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36142,7 +38585,7 @@ namespace PhoenixCTP
 			Text = char2NetString(source->Text);
 			ClientIPPort = source->ClientIPPort;
 			ClientIPAddress = char2NetString(source->ClientIPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36236,6 +38679,13 @@ namespace PhoenixCTP
 		System::String^ ClientIPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqUserLoginWithOTPField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36254,7 +38704,7 @@ namespace PhoenixCTP
 			OTPPassword = char2NetString(source->OTPPassword);
 			ClientIPPort = source->ClientIPPort;
 			ClientIPAddress = char2NetString(source->ClientIPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36300,13 +38750,20 @@ namespace PhoenixCTP
 		System::String^ CryptoKeyVersion;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqApiHandshakeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcReqApiHandshakeField* source)
 		{
 			CryptoKeyVersion = char2NetString(source->CryptoKeyVersion);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36348,6 +38805,13 @@ namespace PhoenixCTP
 		int IsApiAuthEnabled;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RspApiHandshakeField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36356,7 +38820,7 @@ namespace PhoenixCTP
 			FrontHandshakeDataLen = source->FrontHandshakeDataLen;
 			FrontHandshakeData = char2NetString(source->FrontHandshakeData);
 			IsApiAuthEnabled = source->IsApiAuthEnabled;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36396,6 +38860,13 @@ namespace PhoenixCTP
 		System::String^ ApiHandshakeData;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		ReqVerifyApiKeyField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36403,7 +38874,7 @@ namespace PhoenixCTP
 		{
 			ApiHandshakeDataLen = source->ApiHandshakeDataLen;
 			ApiHandshakeData = char2NetString(source->ApiHandshakeData);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36450,6 +38921,13 @@ namespace PhoenixCTP
 		System::String^ InvestorID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		DepartmentUserField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36459,7 +38937,7 @@ namespace PhoenixCTP
 			UserID = char2NetString(source->UserID);
 			InvestorRange = source->InvestorRange;
 			InvestorID = char2NetString(source->InvestorID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36496,13 +38974,20 @@ namespace PhoenixCTP
 		int QueryFreq;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QueryFreqField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQueryFreqField* source)
 		{
 			QueryFreq = source->QueryFreq;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36536,13 +39021,20 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		AuthForbiddenIPField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcAuthForbiddenIPField* source)
 		{
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36576,13 +39068,20 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryAuthForbiddenIPField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQryAuthForbiddenIPField* source)
 		{
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36636,6 +39135,13 @@ namespace PhoenixCTP
 		int IsManualSwap;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDelaySwapFrozenField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36647,7 +39153,7 @@ namespace PhoenixCTP
 			FromCurrencyID = char2NetString(source->FromCurrencyID);
 			FromRemainSwap = source->FromRemainSwap;
 			IsManualSwap = source->IsManualSwap;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36722,6 +39228,13 @@ namespace PhoenixCTP
 		System::String^ ClientLoginRemark;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		UserSystemInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36737,7 +39250,7 @@ namespace PhoenixCTP
 			ClientAppID = char2NetString(source->ClientAppID);
 			ClientPublicIP = char2NetString(source->ClientPublicIP);
 			ClientLoginRemark = char2NetString(source->ClientLoginRemark);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36792,6 +39305,13 @@ namespace PhoenixCTP
 		char AuthType;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		AuthUserIDField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36801,7 +39321,7 @@ namespace PhoenixCTP
 			AppID = char2NetString(source->AppID);
 			UserID = char2NetString(source->UserID);
 			AuthType = source->AuthType;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36846,6 +39366,13 @@ namespace PhoenixCTP
 		System::String^ IPAddress;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		AuthIPField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36854,7 +39381,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			AppID = char2NetString(source->AppID);
 			IPAddress = char2NetString(source->IPAddress);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36910,6 +39437,13 @@ namespace PhoenixCTP
 		char ClassType;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryClassifiedInstrumentField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36921,7 +39455,7 @@ namespace PhoenixCTP
 			ProductID = char2NetString(source->ProductID);
 			TradingType = source->TradingType;
 			ClassType = source->ClassType;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -36964,6 +39498,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryCombPromotionParamField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -36971,7 +39512,7 @@ namespace PhoenixCTP
 		{
 			ExchangeID = char2NetString(source->ExchangeID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -37018,6 +39559,13 @@ namespace PhoenixCTP
 		double Xparameter;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		CombPromotionParamField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -37027,7 +39575,7 @@ namespace PhoenixCTP
 			InstrumentID = char2NetString(source->InstrumentID);
 			CombHedgeFlag = char2NetString(source->CombHedgeFlag);
 			Xparameter = source->Xparameter;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -37072,6 +39620,13 @@ namespace PhoenixCTP
 		System::String^ InstrumentID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryRiskSettleInvstPositionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -37080,7 +39635,7 @@ namespace PhoenixCTP
 			BrokerID = char2NetString(source->BrokerID);
 			InvestorID = char2NetString(source->InvestorID);
 			InstrumentID = char2NetString(source->InstrumentID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -37116,13 +39671,20 @@ namespace PhoenixCTP
 		System::String^ ProductID;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		QryRiskSettleProductStatusField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
 		void initFromUnmanagedStruct(CThostFtdcQryRiskSettleProductStatusField* source)
 		{
 			ProductID = char2NetString(source->ProductID);
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -37348,6 +39910,13 @@ namespace PhoenixCTP
 		double TasPositionCost;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RiskSettleInvstPositionField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -37402,7 +39971,7 @@ namespace PhoenixCTP
 			PositionCostOffset = source->PositionCostOffset;
 			TasPosition = source->TasPosition;
 			TasPositionCost = source->TasPositionCost;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -37492,6 +40061,13 @@ namespace PhoenixCTP
 		char ProductStatus;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		RiskSettleProductStatusField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -37500,7 +40076,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			ProductID = char2NetString(source->ProductID);
 			ProductStatus = source->ProductStatus;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -37548,6 +40124,13 @@ namespace PhoenixCTP
 		int IsOnlyTrdDelta;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaInfoField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -37557,7 +40140,7 @@ namespace PhoenixCTP
 			SyncDeltaStatus = source->SyncDeltaStatus;
 			SyncDescription = char2NetString(source->SyncDescription);
 			IsOnlyTrdDelta = source->IsOnlyTrdDelta;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -37606,6 +40189,13 @@ namespace PhoenixCTP
 		char ProductStatus;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaProductStatusField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -37615,7 +40205,7 @@ namespace PhoenixCTP
 			ExchangeID = char2NetString(source->ExchangeID);
 			ProductID = char2NetString(source->ProductID);
 			ProductStatus = source->ProductStatus;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -37768,6 +40358,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaInvstPosDtlField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -37803,7 +40400,7 @@ namespace PhoenixCTP
 			SpecPosiType = source->SpecPosiType;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -37946,6 +40543,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaInvstPosCombDtlField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -37972,7 +40576,7 @@ namespace PhoenixCTP
 			TradeGroupID = source->TradeGroupID;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -38218,6 +40822,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaTradingAccountField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -38272,7 +40883,7 @@ namespace PhoenixCTP
 			FrozenSwap = source->FrozenSwap;
 			RemainSwap = source->RemainSwap;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -38410,6 +41021,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaInitInvstMarginField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -38430,7 +41048,7 @@ namespace PhoenixCTP
 			RemainRiskSpecInvstMargin = source->RemainRiskSpecInvstMargin;
 			RemainRiskSpecExchMargin = source->RemainRiskSpecExchMargin;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -38518,6 +41136,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaDceCombInstrumentField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -38534,7 +41159,7 @@ namespace PhoenixCTP
 			Xparameter = source->Xparameter;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -38622,6 +41247,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaInvstMarginRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -38639,7 +41271,7 @@ namespace PhoenixCTP
 			IsRelative = source->IsRelative;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -38716,6 +41348,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaExchMarginRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -38730,7 +41369,7 @@ namespace PhoenixCTP
 			ShortMarginRatioByVolume = source->ShortMarginRatioByVolume;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -38816,6 +41455,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaOptExchMarginField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -38833,7 +41479,7 @@ namespace PhoenixCTP
 			MShortMarginRatioByVolume = source->MShortMarginRatioByVolume;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -38934,6 +41580,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaOptInvstMarginField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -38954,7 +41607,7 @@ namespace PhoenixCTP
 			MShortMarginRatioByVolume = source->MShortMarginRatioByVolume;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -39042,6 +41695,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaInvstMarginRateULField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -39058,7 +41718,7 @@ namespace PhoenixCTP
 			ShortMarginRatioByVolume = source->ShortMarginRatioByVolume;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -39154,6 +41814,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaOptInvstCommRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -39173,7 +41840,7 @@ namespace PhoenixCTP
 			StrikeRatioByVolume = source->StrikeRatioByVolume;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -39264,6 +41931,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaInvstCommRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -39281,7 +41955,7 @@ namespace PhoenixCTP
 			CloseTodayRatioByVolume = source->CloseTodayRatioByVolume;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -39342,6 +42016,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaProductExchRateField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -39352,7 +42033,7 @@ namespace PhoenixCTP
 			ExchangeRate = source->ExchangeRate;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -39578,6 +42259,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaDepthMarketDataField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -39631,7 +42319,7 @@ namespace PhoenixCTP
 			BandingLowerPrice = source->BandingLowerPrice;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -39728,6 +42416,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaIndexPriceField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -39738,7 +42433,7 @@ namespace PhoenixCTP
 			ClosePrice = source->ClosePrice;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -39812,6 +42507,13 @@ namespace PhoenixCTP
 		int SyncDeltaSequenceNo;
 
 		/// <summary>
+		/// 默认构造函数	</summary>
+		SyncDeltaEWarrantOffsetField()
+		{
+		}
+
+
+		/// <summary>
 		/// 使用非托管的结构体初始化本结构体
 		/// </summary>
 		/// <param name="source">指向非托管结构体的指针</param>
@@ -39827,7 +42529,7 @@ namespace PhoenixCTP
 			Volume = source->Volume;
 			ActionDirection = source->ActionDirection;
 			SyncDeltaSequenceNo = source->SyncDeltaSequenceNo;
-		};
+		}
 
 		/// <summary>
 		/// 使用非托管的结构体构造本结构体
@@ -39858,4 +42560,6 @@ namespace PhoenixCTP
 			return result;
 		}
 	};
+
+
 }
