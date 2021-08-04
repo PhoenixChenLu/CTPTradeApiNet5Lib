@@ -100,40 +100,40 @@ namespace PhoenixCTP
 
 	void MdSpi::OnRspSubMarketData(SpecificInstrumentField^ pSpecificInstrument, RspInfoField^ pRspInfo, int nRequestID, bool bIsLast)
 	{
-		this->RspSubMarketData(this, gcnew SpecificInstrumentEventArgs(pSpecificInstrument, pRspInfo, nRequestID, bIsLast));
+		this->RspSubMarketData(this, gcnew RspSubMarketDataArgs(pSpecificInstrument, pRspInfo, nRequestID, bIsLast));
 	}
 
-	void MdSpi::OnRspSubMarketData(MdSpi^ sender, SpecificInstrumentEventArgs^ e)
+	void MdSpi::OnRspSubMarketData(MdSpi^ sender, RspSubMarketDataArgs^ e)
 	{
 		this->RspSubMarketData(sender, e);
 	}
 
 	void MdSpi::OnRspUnSubMarketData(SpecificInstrumentField^ pSpecificInstrument, RspInfoField^ pRspInfo, int nRequestID, bool bIsLast)
 	{
-		this->RspUnSubMarketData(this, gcnew SpecificInstrumentEventArgs(pSpecificInstrument, pRspInfo, nRequestID, bIsLast));
+		this->RspUnSubMarketData(this, gcnew RspUnSubMarketDataArgs(pSpecificInstrument, pRspInfo, nRequestID, bIsLast));
 	}
 
-	void MdSpi::OnRspUnSubMarketData(MdSpi^ sender, SpecificInstrumentEventArgs^ e)
+	void MdSpi::OnRspUnSubMarketData(MdSpi^ sender, RspUnSubMarketDataArgs^ e)
 	{
 		this->RspUnSubMarketData(sender, e);
 	}
 
 	void MdSpi::OnRspSubForQuoteRsp(SpecificInstrumentField^ pSpecificInstrument, RspInfoField^ pRspInfo, int nRequestID, bool bIsLast)
 	{
-		this->RspSubForQuoteRsp(this, gcnew SpecificInstrumentEventArgs(pSpecificInstrument, pRspInfo, nRequestID, bIsLast));
+		this->RspSubForQuoteRsp(this, gcnew RspSubForQuoteRspArgs(pSpecificInstrument, pRspInfo, nRequestID, bIsLast));
 	}
 
-	void MdSpi::OnRspSubForQuoteRsp(MdSpi^ sender, SpecificInstrumentEventArgs^ e)
+	void MdSpi::OnRspSubForQuoteRsp(MdSpi^ sender, RspSubForQuoteRspArgs^ e)
 	{
 		this->RspSubForQuoteRsp(sender, e);
 	}
 
 	void MdSpi::OnRspUnSubForQuoteRsp(SpecificInstrumentField^ pSpecificInstrument, RspInfoField^ pRspInfo, int nRequestID, bool bIsLast)
 	{
-		this->RspUnSubForQuoteRsp(this, gcnew SpecificInstrumentEventArgs(pSpecificInstrument, pRspInfo, nRequestID, bIsLast));
+		this->RspUnSubForQuoteRsp(this, gcnew RspUnSubForQuoteRspArgs(pSpecificInstrument, pRspInfo, nRequestID, bIsLast));
 	}
 
-	void MdSpi::OnRspUnSubForQuoteRsp(MdSpi^ sender, SpecificInstrumentEventArgs^ e)
+	void MdSpi::OnRspUnSubForQuoteRsp(MdSpi^ sender, RspUnSubForQuoteRspArgs^ e)
 	{
 		this->RspUnSubForQuoteRsp(sender, e);
 	}

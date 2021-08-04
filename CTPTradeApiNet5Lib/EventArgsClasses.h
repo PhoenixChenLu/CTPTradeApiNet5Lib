@@ -33,7 +33,6 @@ namespace PhoenixCTP
 	public ref class FrontConnectedArgs : System::EventArgs
 	{
 	public:
-
 		/// <summary>
 		/// 当客户端与交易后台建立起通信连接事件参数
 		/// </summary>
@@ -42,7 +41,7 @@ namespace PhoenixCTP
 		}
 	};
 
-	
+
 	/// <summary>
 	/// 客户端与后台通信连接中断事件参数
 	/// </summary>
@@ -72,7 +71,7 @@ namespace PhoenixCTP
 		}
 	};
 
-	
+
 	/// <summary>
 	/// 心跳超时警告事件参数
 	/// </summary>
@@ -133,7 +132,7 @@ namespace PhoenixCTP
 			this->pUserLogout = pUserLogout;
 		}
 	};
-	
+
 	/// <summary>
 	/// 请求查询组播合约响应事件参数
 	/// </summary>
@@ -172,7 +171,7 @@ namespace PhoenixCTP
 		}
 	};
 
-	/// <summary>
+	/*/// <summary>
 	/// 订阅行情、取消订阅行情、订阅询价、取消订阅询价应答事件参数
 	/// </summary>
 	public ref class SpecificInstrumentEventArgs : BasicArgs
@@ -184,7 +183,81 @@ namespace PhoenixCTP
 		/// 订阅行情、取消订阅行情、订阅询价、取消订阅询价应答事件参数
 		/// </summary>
 		/// <param name="pDepthMarketData">指定的合约</param>
-		SpecificInstrumentEventArgs(SpecificInstrumentField^ pSpecificInstrument, RspInfoField^ pRspInfo, int nRequestID, bool bIsLast): BasicArgs(pRspInfo, nRequestID, bIsLast)
+		SpecificInstrumentEventArgs(SpecificInstrumentField^ pSpecificInstrument, RspInfoField^ pRspInfo, int nRequestID, bool bIsLast) : BasicArgs(pRspInfo, nRequestID, bIsLast)
+		{
+			this->pSpecificInstrument = pSpecificInstrument;
+		}
+	};*/
+
+	/// <summary>
+	/// 订阅行情应答事件参数
+	/// </summary>
+	public ref class RspSubMarketDataArgs : BasicArgs
+	{
+	public:
+		SpecificInstrumentField^ pSpecificInstrument;
+
+		/// <summary>
+		/// 订阅行情应答事件参数
+		/// </summary>
+		/// <param name="pDepthMarketData">指定的合约</param>
+		RspSubMarketDataArgs(SpecificInstrumentField^ pSpecificInstrument, RspInfoField^ pRspInfo, int nRequestID, bool bIsLast) : BasicArgs(pRspInfo, nRequestID, bIsLast)
+		{
+			this->pSpecificInstrument = pSpecificInstrument;
+		}
+	};
+
+
+	/// <summary>
+	///取消订阅行情应答事件参数
+	/// </summary>
+	public ref class RspUnSubMarketDataArgs : BasicArgs
+	{
+	public:
+		SpecificInstrumentField^ pSpecificInstrument;
+
+		/// <summary>
+		/// 取消订阅行情应答事件参数
+		/// </summary>
+		/// <param name="pDepthMarketData">指定的合约</param>
+		RspUnSubMarketDataArgs(SpecificInstrumentField^ pSpecificInstrument, RspInfoField^ pRspInfo, int nRequestID, bool bIsLast) : BasicArgs(pRspInfo, nRequestID, bIsLast)
+		{
+			this->pSpecificInstrument = pSpecificInstrument;
+		}
+	};
+
+	/// <summary>
+	/// 订阅询价应答事件参数
+	/// </summary>
+	public ref class RspSubForQuoteRspArgs : BasicArgs
+	{
+	public:
+		SpecificInstrumentField^ pSpecificInstrument;
+
+		/// <summary>
+		/// 订阅询价应答事件参数
+		/// </summary>
+		/// <param name="pDepthMarketData">指定的合约</param>
+		RspSubForQuoteRspArgs(SpecificInstrumentField^ pSpecificInstrument, RspInfoField^ pRspInfo, int nRequestID, bool bIsLast) : BasicArgs(pRspInfo, nRequestID, bIsLast)
+		{
+			this->pSpecificInstrument = pSpecificInstrument;
+		}
+	};
+
+
+	/// <summary>
+	/// 取消订阅询价应答事件参数
+	/// </summary>
+	public ref class RspUnSubForQuoteRspArgs : BasicArgs
+	{
+	public:
+		SpecificInstrumentField^ pSpecificInstrument;
+
+		/// <summary>
+		/// 取消订阅询价应答事件参数
+		/// </summary>
+		/// <param name="pDepthMarketData">指定的合约</param>
+		RspUnSubForQuoteRspArgs(SpecificInstrumentField^ pSpecificInstrument, RspInfoField^ pRspInfo, int nRequestID, bool bIsLast) : BasicArgs(pRspInfo, nRequestID, bIsLast)
 		{
 			this->pSpecificInstrument = pSpecificInstrument;
 		}
@@ -232,8 +305,6 @@ namespace PhoenixCTP
 /// </summary>
 namespace PhoenixCTP
 {
-
-
 	/// <summary>
 	/// 客户端认证响应事件参数
 	/// </summary>
@@ -254,7 +325,6 @@ namespace PhoenixCTP
 			this->pRspAuthenticateField = pRspAuthenticateField;
 		}
 	};
-
 
 
 	/// <summary>
@@ -1644,7 +1714,6 @@ namespace PhoenixCTP
 	};
 
 
-
 	/// <summary>
 	/// 报单通知事件参数
 	/// </summary>
@@ -2708,6 +2777,4 @@ namespace PhoenixCTP
 			this->pRiskSettleProductStatus = pRiskSettleProductStatus;
 		}
 	};
-
-
 }

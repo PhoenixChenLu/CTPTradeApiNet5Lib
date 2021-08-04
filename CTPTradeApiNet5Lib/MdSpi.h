@@ -205,7 +205,7 @@ namespace PhoenixCTP
 		/// </summary>
 		/// <param name="sender">引发事件的类</param>
 		/// <param name="e">引发事件参数</param>
-		inline virtual void OnRspSubMarketData(MdSpi^ sender, SpecificInstrumentEventArgs^ e);
+		inline virtual void OnRspSubMarketData(MdSpi^ sender, RspSubMarketDataArgs^ e);
 
 		event DOnRspUnSubMarketData^ RspUnSubMarketData;
 
@@ -225,7 +225,7 @@ namespace PhoenixCTP
 		/// </summary>
 		/// <param name="sender">引发事件的类</param>
 		/// <param name="e">引发事件参数</param>
-		inline virtual void OnRspUnSubMarketData(MdSpi^ sender, SpecificInstrumentEventArgs^ e);
+		inline virtual void OnRspUnSubMarketData(MdSpi^ sender, RspUnSubMarketDataArgs^ e);
 
 		event DOnRspSubForQuoteRsp^ RspSubForQuoteRsp;
 
@@ -245,7 +245,7 @@ namespace PhoenixCTP
 		/// </summary>
 		/// <param name="sender">引发事件的类</param>
 		/// <param name="e">引发事件参数</param>
-		inline virtual void OnRspSubForQuoteRsp(MdSpi^ sender, SpecificInstrumentEventArgs^ e);
+		inline virtual void OnRspSubForQuoteRsp(MdSpi^ sender, RspSubForQuoteRspArgs^ e);
 
 		event DOnRspUnSubForQuoteRsp^ RspUnSubForQuoteRsp;
 
@@ -265,7 +265,7 @@ namespace PhoenixCTP
 		/// </summary>
 		/// <param name="sender">引发事件的类</param>
 		/// <param name="e">引发事件参数</param>
-		inline virtual void OnRspUnSubForQuoteRsp(MdSpi^ sender, SpecificInstrumentEventArgs^ e);
+		inline virtual void OnRspUnSubForQuoteRsp(MdSpi^ sender, RspUnSubForQuoteRspArgs ^ e);
 
 		event DOnRtnDepthMarketData^ RtnDepthMarketData;
 

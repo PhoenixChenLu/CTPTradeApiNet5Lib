@@ -48,22 +48,22 @@ namespace PhoenixCTP
 		/// <summary>
 		/// 订阅行情应答的委托
 		/// </summary>
-		public delegate void DOnRspSubMarketData(MdSpi^ sender, SpecificInstrumentEventArgs^ e);
+		public delegate void DOnRspSubMarketData(MdSpi^ sender, RspSubMarketDataArgs^ e);
 
 		/// <summary>
 		/// 取消订阅行情应答的委托
 		/// </summary>
-		public delegate void DOnRspUnSubMarketData(MdSpi^ sender, SpecificInstrumentEventArgs^ e);
+		public delegate void DOnRspUnSubMarketData(MdSpi^ sender, RspUnSubMarketDataArgs^ e);
 
 		/// <summary>
 		/// 订阅询价应答的委托
 		/// </summary>
-		public delegate void DOnRspSubForQuoteRsp(MdSpi^ sender, SpecificInstrumentEventArgs^ e);
+		public delegate void DOnRspSubForQuoteRsp(MdSpi^ sender, RspSubForQuoteRspArgs^ e);
 
 		/// <summary>
 		/// 取消订阅询价应答的委托
 		/// </summary>
-		public delegate void DOnRspUnSubForQuoteRsp(MdSpi^ sender, SpecificInstrumentEventArgs^ e);
+		public delegate void DOnRspUnSubForQuoteRsp(MdSpi^ sender, RspUnSubForQuoteRspArgs^ e);
 
 		/// <summary>
 		/// 深度行情通知的委托
