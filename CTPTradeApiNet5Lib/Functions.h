@@ -16,16 +16,31 @@ namespace PhoenixCTP
 		return result;
 	}
 
+	/**
+	 * \brief 将非托管的字符串转化为托管字符串
+	 * \param source 非托管的字符串指针
+	 * \return .Net托管字符串
+	 */
 	inline System::String^ char2NetString(char* source)
 	{		
 		return gcnew System::String(source);
 	}
-
+	
+	/**
+	 * \brief 将非托管的常量字符串转化为托管字符串
+	 * \param source 非托管的常字符串指针
+	 * \return .Net托管字符串
+	 */
 	inline System::String^ constChar2NetString(const char* source)
 	{
 		return gcnew System::String(source);
 	}
 
+	/**
+	 * \brief 将托管的字符串转化为非托管的字符指针
+	 * \param source 托管的.Net字符串
+	 * \return 字符指针
+	 */
 	inline char* netString2Char(System::String^ source)
 	{
 		if (source == nullptr)
@@ -36,6 +51,11 @@ namespace PhoenixCTP
 		return result;
 	}
 
+	/**
+	 * \brief 将托管的字符串数组转化为非托管的指针数组
+	 * \param source 托管的字符串数组
+	 * \return 指向字符串的指针数组
+	 */
 	inline char** netArray2CharArray(array<System::String^>^ source)
 	{
 		int length = source->Length;
@@ -47,11 +67,21 @@ namespace PhoenixCTP
 		return result;
 	}
 
+	/**
+	 * \brief 将托管类转化为非托管整型指针
+	 * \param value 托管类
+	 * \return 指向托管类的非托管指针
+	 */
 	inline System::IntPtr managedClass2IntPtr(System::Object^ value)
 	{
 		return static_cast<System::IntPtr>(System::Runtime::InteropServices::GCHandle::Alloc(value));
 	}
 
+	/**
+	 * \brief 将非托管的整形指针转化为托管类
+	 * \param source 非托管的整型指针
+	 * \return 托管的Object类
+	 */
 	inline System::Object^ intPtr2ManagedClass(System::IntPtr source)
 	{
 		return safe_cast<System::Object^>(static_cast<System::Runtime::InteropServices::GCHandle>(source).Target);

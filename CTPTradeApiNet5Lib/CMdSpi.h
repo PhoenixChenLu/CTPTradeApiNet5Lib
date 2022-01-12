@@ -4,35 +4,43 @@
 
 namespace PhoenixCTP
 {
-	class CMdSpi :public CThostFtdcMdSpi
+	class CMdSpi : public CThostFtdcMdSpi
 	{
 	public:
 		System::IntPtr pMdSpi;
 
+		/**
+		 * \brief 构造函数
+		 * \param intPMdSpi 指向托管SPI的指针
+		 */
 		CMdSpi(System::IntPtr intPMdSpi);
 
+		/**
+		 * \brief 使用托管的SPI初始化本SPI
+		 * \param intPMdSpi 指向托管SPI的指针
+		 */
 		inline void setNetSpi(System::IntPtr intPMdSpi);
 
-		/// <summary>
-		/// 当客户端与交易后台建立起通信连接时（还未登录前），该方法被调用。
-		/// </summary>
+		/**
+		 * \brief 当客户端与交易后台建立起通信连接时（还未登录前），该方法被调用。
+		 */
 		inline virtual void OnFrontConnected() override;
 
-		/// <summary>
-		/// 当客户端与交易后台通信连接断开时，该方法被调用。当发生这个情况后，API会自动重新连接，客户端可不做处理。
-		/// </summary>
-		/// <param name="nReason">错误原因
-		/// 0x1001 网络读失败
-		/// 0x1002 网络写失败
-		/// 0x2001 接收心跳超时
-		/// 0x2002 发送心跳失败
-		/// 0x2003 收到错误报文</param>
+		/**
+		 * \brief 当客户端与交易后台通信连接断开时，该方法被调用。当发生这个情况后，API会自动重新连接，客户端可不做处理。
+		 * \param nReason 错误原因
+		 *			0x1001 网络读失败
+		 *			0x1002 网络写失败
+		 *			0x2001 接收心跳超时
+		 *			0x2002 发送心跳失败
+		 *			0x2003 收到错误报文       
+		 */
 		inline virtual void OnFrontDisconnected(int nReason) override;
 
-		/// <summary>
-		/// 心跳超时警告。当长时间未收到报文时，该方法被调用。
-		/// </summary>
-		/// <param name="nTimeLapse">距离上次接收报文的时间</param>
+		/**
+		 * \brief 心跳超时警告。当长时间未收到报文时，该方法被调用。
+		 * \param nTimeLapse 距离上次接收报文的时间
+		 */
 		inline virtual void OnHeartBeatWarning(int nTimeLapse) override;
 
 		/// <summary>
@@ -77,7 +85,7 @@ namespace PhoenixCTP
 		/// <param name="pRspInfo">响应信息结构体指针</param>
 		/// <param name="nRequestID">请求ID</param>
 		/// <param name="bIsLast">响应是否持续</param>
-		inline  virtual void OnRspSubMarketData(CThostFtdcSpecificInstrumentField* pSpecificInstrument, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) override;
+		inline virtual void OnRspSubMarketData(CThostFtdcSpecificInstrumentField* pSpecificInstrument, CThostFtdcRspInfoField* pRspInfo, int nRequestID, bool bIsLast) override;
 
 		/// <summary>
 		/// 取消订阅行情应答

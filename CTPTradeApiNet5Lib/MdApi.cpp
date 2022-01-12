@@ -13,7 +13,7 @@ namespace PhoenixCTP
 	CThostFtdcMdApi* MdApi::CreateFtdcMdApi(System::String^ pszFlowPath, const bool bIsUsingUdp, const bool bIsMulticast)
 	{
 		const char* pszFlowPathChar = netString2ConstChar(pszFlowPath);
-		return CThostFtdcMdApi::CreateFtdcMdApi();
+		return CThostFtdcMdApi::CreateFtdcMdApi(pszFlowPathChar, bIsUsingUdp, bIsMulticast);
 	}
 
 	void MdApi::CreateMdApi(System::String^ pszFlowPath, const bool bIsUsingUdp, const bool bIsMulticast)
